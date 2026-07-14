@@ -1,0 +1,33 @@
+{
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 19011220,
+    "spacing": 70,
+    "separation": 30,
+    "frequency_reduction_method": "default",
+    "frequency": 0.6
+  },
+
+  "structures": [
+    {
+      "structure": "alpha_darkworld:house_of_bob",
+      "weight": 1
+    },
+    {
+      "structure": "alpha_darkworld:shrine",
+      "weight": 7
+    },
+    {
+      "structure": "alpha_darkworld:not_abandoned_house_1",
+      "weight": 3
+    },
+    {
+      "structure": "alpha_darkworld:not_abandoned_house_2",
+      "weight": 1
+    },
+    {
+      "structure": "alpha_darkworld:not_abandoned_house_3",
+      "weight": 1
+    }
+  ]
+}

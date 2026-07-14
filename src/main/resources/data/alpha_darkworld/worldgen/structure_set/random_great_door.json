@@ -1,0 +1,15 @@
+{
+  "structures": [
+    {
+      "structure": "alpha_darkworld:random_alpha_great_door",
+      "weight": 5
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 32,
+    "frequency": 0.7,
+    "separation": 14,
+    "salt": 2596828
+  }
+}

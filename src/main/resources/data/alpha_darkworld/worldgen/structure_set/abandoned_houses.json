@@ -1,0 +1,25 @@
+{
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 76044880,
+    "spacing": 34,
+    "separation": 8,
+    "frequency_reduction_method": "default",
+    "frequency": 1
+  },
+
+  "structures": [
+    {
+      "structure": "alpha_darkworld:abandoned_house_1",
+      "weight": 5
+    },
+    {
+      "structure": "alpha_darkworld:abandoned_house_2",
+      "weight": 2
+    },
+    {
+      "structure": "alpha_darkworld:abandoned_house_3",
+      "weight": 2
+    }
+  ]
+}

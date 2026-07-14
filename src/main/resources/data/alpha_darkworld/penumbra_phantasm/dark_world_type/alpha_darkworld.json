@@ -1,0 +1,23 @@
+{
+  "block_tag": "alpha_darkworld:influences_alpha_darkworld",
+  "block_amount": 6,
+  "noise_settings": "alpha_darkworld:alpha_darkworld",
+  "dimension_type": "alpha_darkworld:alpha_darkworld_dimension_type",
+  "biome_source": {
+    "type": "minecraft:multi_noise",
+    "biomes": [
+      {
+        "biome": "alpha_darkworld:alpha_islands",
+        "parameters": {
+          "temperature": -0.45,
+          "humidity": -0.25,
+          "continentalness": 0,
+          "erosion": 0,
+          "weirdness": 0,
+          "depth": 0,
+          "offset": 0.12
+        }
+      }
+    ]
+  }
+}
