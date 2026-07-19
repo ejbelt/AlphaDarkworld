@@ -1,0 +1,26 @@
+{
+  "block_tag": "alpha_darkworld:influences_icey_waters",
+  "block_amount": 9,
+  "noise_settings": "alpha_darkworld:icey_waters",
+  "dimension_type": "alpha_darkworld:icey_waters_dimension_type",
+  "biome_source": {
+    "type": "minecraft:multi_noise",
+    "biomes": [
+      {
+        "biome": "alpha_darkworld:alpha_islands_winter",
+        "parameters": {
+          "temperature": -0.25,
+          "humidity": 0,
+            "continentalness": [
+              -1.05,
+              -0.455
+            ],
+          "erosion": 0.1,
+          "weirdness": 0.1,
+          "depth": 0.2,
+          "offset": 0.10
+        }
+      }
+    ]
+  }
+}

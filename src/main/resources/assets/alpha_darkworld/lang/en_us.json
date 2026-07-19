@@ -1,6 +1,10 @@
 {
   "biome.alpha_darkworld.alpha_islands": "Desolate Grasslands",
   "biome.alpha_darkworld.alpha_islands.description": "Reminds you of old times....",
+  "biome.alpha_darkworld.alpha_caves": "Blossoming Caverns",
+  "biome.alpha_darkworld.alpha_caves.description": "Wet, Green, and very hostile....",
+  "biome.alpha_darkworld.icey_waters": "Blossoming Caverns",
+  "biome.alpha_darkworld.icey_waters.description": "Wet, Green, and very hostile....",
   "biome.alpha_darkworld.alpha_islands_winter": "Desolate Snowlands",
   "biome.alpha_darkworld.alpha_islands_winter.description": "It sure is chilly today...."
 }

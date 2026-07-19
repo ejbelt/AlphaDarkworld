@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:lake",
+  "config": {
+    "barrier": {
+      "type": "minecraft:weighted_state_provider",
+      "entries": [
+        {
+          "weight": 1,
+          "data": {
+            "Name": "minecraft:sand"
+          }
+        },
+        {
+          "weight": 2,
+          "data": {
+            "Name": "minecraft:dirt"
+          }
+        }
+      ]
+    },
+    "fluid": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "minecraft:ice",
+        "Properties": {
+          "level": "0"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "temperature": 0.2,
+  "temperature_modifier": "frozen",
+  "creature_spawn_probability": 0.7,
+  "spawns_by_category": {},
+  "carvers": {
+    "air": [
+      "minecraft:cave_extra_underground"
+    ]
+  },
+  "downfall": 0.8,
+  "effects": {
+    "fog_color": 38282,
+    "foliage_color": 7120588,
+    "grass_color": 3762287,
+    "grass_color_modifier": "none",
+    "ambient_sound": {
+      "sound_id": "alpha_darkworld:icey_ocean_ambient_loop",
+      "range": 1
+    },
+    "mood_sound": {
+        "block_search_extent": 8,
+        "offset": 2,
+        "sound": "minecraft:ambient.cave",
+        "tick_delay": 6000
+    },
+    "music": {
+      "max_delay": 24000,
+      "min_delay": 12000,
+      "replace_current_music": true,
+      "sound": "minecraft:music.under_water"
+    },
+    "sky_color": 0,
+    "water_color": 65535,
+    "water_fog_color": 329011
+  },
+  "features": [
+    [],
+    [],
+    [
+      "minecraft:blue_ice",
+      "minecraft:ice_patch"
+    ],
+    [
+      "minecraft:monster_room"
+    ],
+    [
+      "minecraft:freeze_top_layer"
+    ],
+    [
+      "minecraft:seagrass_cold"
+    ],
+    [],
+    [
+      "minecraft:seagrass_deep_cold"
+    ],
+    []
+  ],
+  "has_precipitation": true,
+  "spawn_costs": {},
+  "spawners": {
+    "ambient": [
+      {
+        "weight": 0,
+        "type": "minecraft:rabbit",
+        "minCount": 0,
+        "maxCount": 0
+      }
+    ],
+    "creature": [
+      {
+        "type": "minecraft:polar_bear",
+        "maxCount": 2,
+        "minCount": 2,
+        "weight": 12
+      }
+    ],
+    "misc": [],
+    "monster": [
+      {
+        "type": "minecraft:stray",
+        "maxCount": 2,
+        "minCount": 1,
+        "weight": 20
+      },
+      
+      {
+        "type": "minecraft:enderman",
+        "maxCount": 4,
+        "minCount": 1,
+        "weight": 20
+      },
+
+      {
+        "type": "minecraft:zombie",
+        "maxCount": 4,
+        "minCount": 2,
+        "weight": 95
+      }
+    ],
+    "underground_water_creature": [
+      {
+        "type": "minecraft:squid",
+        "maxCount": 6,
+        "minCount": 4,
+        "weight": 30
+      }
+    ],
+    "water_ambient": [],
+    "water_creature": [
+      {
+        "type": "minecraft:guardian",
+        "maxCount": 2,
+        "minCount": 1,
+        "weight": 30
+      },
+      {
+        "type": "minecraft:drowned",
+        "maxCount": 6,
+        "minCount": 4,
+        "weight": 60
+      },
+      {
+        "type": "minecraft:elder_guardian",
+        "maxCount": 1,
+        "minCount": 1,
+        "weight": 10
+      }
+    ]
+  }
+}

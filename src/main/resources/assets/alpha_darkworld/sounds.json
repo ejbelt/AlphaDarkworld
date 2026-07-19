@@ -1,0 +1,17 @@
+{
+  "icey_ocean_ambient_loop": {
+    "subtitle": "sound.alpha_darkworld.icey_ocean_ambient_loop",
+    "sounds":
+    [
+      "alpha_darkworld:ambient/icey_ocean/dark_place"
+    ]
+  },
+
+  "silent": {
+    "subtitle": "sound.alpha_darkworld.silence",
+    "sounds":
+    [
+      "alpha_darkworld:blank"
+    ]
+  }
+}

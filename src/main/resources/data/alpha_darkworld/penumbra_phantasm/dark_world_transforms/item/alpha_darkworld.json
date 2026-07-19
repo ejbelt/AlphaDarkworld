@@ -7,9 +7,6 @@
   ],
   "converting_items":
   [
-    {
-      "light_world": "minecraft:diamond_axe",
-      "dark_world": "penumbra_phantasm:familiar_ax"
-    }
+    
   ]
 }
