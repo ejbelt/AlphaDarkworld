@@ -12,6 +12,10 @@
     "fog_color": 2038806,
     "foliage_color": 7929657,
     "grass_color": 11599739,
+    "ambient_sound": {
+      "sound_id": "alpha_darkworld:caveland_loop",
+      "range": 1
+    },
     "mood_sound": {
       "block_search_extent": 8,
       "offset": 2,
@@ -22,7 +26,10 @@
       "max_delay": 24000,
       "min_delay": 12000,
       "replace_current_music": true,
-      "sound": "minecraft:music.game"
+      "sound": {
+        "sound_id": "alpha_darkworld:silent",
+        "range": 1
+      }
     },
     "sky_color": 0,
     "water_color": 0,
