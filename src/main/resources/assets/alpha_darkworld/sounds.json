@@ -11,14 +11,7 @@
     "subtitle": "sound.alpha_darkworld.caveland_loop",
     "sounds":
     [
-      "alpha_darkworld:ambient/mossland/loop/cc1",
-      "alpha_darkworld:ambient/mossland/loop/cc2",
-      "alpha_darkworld:ambient/mossland/loop/cc3",
-      "alpha_darkworld:ambient/mossland/loop/cc4",
-      "alpha_darkworld:ambient/mossland/loop/cc5",
-      "alpha_darkworld:ambient/mossland/loop/cc6",
-      "alpha_darkworld:ambient/mossland/loop/cc8",
-      "alpha_darkworld:ambient/mossland/loop/cc9"
+      "alpha_darkworld:ambient/mossland/loop/night_ambience"
     ]
   },
 
