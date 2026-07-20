@@ -30,7 +30,6 @@ public class AlphaDarkworld
         MinecraftForge.EVENT_BUS.register(this);
 
         SoundRegistry.SOUNDS.register(modEventBus);
-        EntityRegistry.ENTITIES.register(modEventBus);
 
         modEventBus.addListener(this::addCreative);
     }
