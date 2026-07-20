@@ -10,10 +10,6 @@
     "fog_color": 12638463,
     "foliage_color": 7929657,
     "grass_color": 11599739,
-    "ambient_sound": {
-      "sound_id": "alpha_darkworld:icey_ocean_ambient_loop",
-      "range": 1
-    },
     "mood_sound": {
       "block_search_extent": 8,
       "offset": 2,
@@ -23,7 +19,7 @@
     "music": {
       "max_delay": 24000,
       "min_delay": 12000,
-      "replace_current_music": true,
+      "replace_current_music": false,
       "sound": {
         "sound_id": "alpha_darkworld:silent",
         "range": 1

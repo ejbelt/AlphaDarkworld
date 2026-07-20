@@ -1,6 +1,7 @@
 package net.res.alphadarkworld;
 
 import com.mojang.logging.LogUtils;
+import net.res.alphadarkworld.server.registry.*;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -27,6 +28,10 @@ public class AlphaDarkworld
         modEventBus.addListener(this::commonSetup);
 
         MinecraftForge.EVENT_BUS.register(this);
+
+        SoundRegistry.SOUNDS.register(modEventBus);
+        EntityRegistry.ENTITIES.register(modEventBus);
+
         modEventBus.addListener(this::addCreative);
     }
 

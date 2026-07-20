@@ -1,0 +1,7 @@
+{
+  "biome": "alpha_darkworld:alpha_caves",
+  "sound_event": "alpha_darkworld:silent",
+  "loops": false,
+  "min_delay": 60,
+  "max_delay": 120
+}

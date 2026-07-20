@@ -7,6 +7,14 @@
     ]
   },
 
+  "music.snowland": {
+    "subtitle": "sound.alpha_darkworld.music.snowland",
+    "sounds":
+    [
+      "alpha_darkworld:music/snowland/dark_place"
+    ]
+  },
+
   "caveland_loop": {
     "subtitle": "sound.alpha_darkworld.caveland_loop",
     "sounds":
