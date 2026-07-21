@@ -24,7 +24,7 @@
                   }
                 }
               ],
-              "name": "alpha_darkworld:ruby_ore"
+              "name": "alpha_darkworld:mithril_ore"
             },
             {
               "type": "minecraft:item",
@@ -38,7 +38,7 @@
                   "function": "minecraft:explosion_decay"
                 }
               ],
-              "name": "alpha_darkworld:ruby"
+              "name": "alpha_darkworld:raw_mithril"
             }
           ]
         }
@@ -46,5 +46,5 @@
       "rolls": 1
     }
   ],
-  "random_sequence": "alpha_darkworld:blocks/ruby_ore"
+  "random_sequence": "alpha_darkworld:blocks/mithril_ore"
 }

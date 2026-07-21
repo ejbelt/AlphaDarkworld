@@ -1,6 +1,7 @@
 package net.res.alphadarkworld.server.registry;
 
 import net.res.alphadarkworld.AlphaDarkworld;
+import net.res.alphadarkworld.server.registry.TierRegistry;
 import net.minecraft.core.Direction;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.*;
@@ -17,21 +18,39 @@ public class ItemRegistry {
         return new Item.Properties().stacksTo(1);
     }
 
+    //Mithril
+    public static final RegistryObject<Item> RAW_MITHRIL = ITEMS.register("raw_mithril",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> MITHRIL_INGOT = ITEMS.register("mithril_ingot",
+            () -> new Item(new Item.Properties()));
+
+
+
+    public static final RegistryObject<Item> MITHRIL_SWORD = ITEMS.register("mithril_sword",
+            () -> new SwordItem(TierRegistry.MITHRIL, 4, -2, new Item.Properties()));
+    public static final RegistryObject<Item> MITHRIL_AXE = ITEMS.register("mithril_axe",
+            () -> new AxeItem(TierRegistry.MITHRIL, 7, -2.5f, new Item.Properties()));
+    public static final RegistryObject<Item> MITHRIL_PICKAXE = ITEMS.register("mithril_pickaxe",
+            () -> new PickaxeItem(TierRegistry.MITHRIL, 2, -2, new Item.Properties()));
+    public static final RegistryObject<Item> MITHRIL_SHOVEL = ITEMS.register("mithril_shovel",
+            () -> new ShovelItem(TierRegistry.MITHRIL, 1, -1.5f, new Item.Properties()));
+    public static final RegistryObject<Item> MITHRIL_HOE = ITEMS.register("mithril_hoe",
+            () -> new HoeItem(TierRegistry.MITHRIL, 0, 0.5f, new Item.Properties()));
+
     //Ruby
-    
     public static final RegistryObject<Item> RUBY = ITEMS.register("ruby",
             () -> new Item(new Item.Properties()));
 
 
     public static final RegistryObject<Item> RUBY_SWORD = ITEMS.register("ruby_sword",
-            () -> new SwordItem(Tiers.DIAMOND, 4, -2, new Item.Properties()));
+            () -> new SwordItem(TierRegistry.RUBY, 4, -2, new Item.Properties()));
     public static final RegistryObject<Item> RUBY_AXE = ITEMS.register("ruby_axe",
-            () -> new AxeItem(Tiers.DIAMOND, 7, -2.5f, new Item.Properties()));
+            () -> new AxeItem(TierRegistry.RUBY, 7, -2.5f, new Item.Properties()));
     public static final RegistryObject<Item> RUBY_PICKAXE = ITEMS.register("ruby_pickaxe",
-            () -> new PickaxeItem(Tiers.DIAMOND, 2, -2, new Item.Properties()));
+            () -> new PickaxeItem(TierRegistry.RUBY, 2, -2, new Item.Properties()));
     public static final RegistryObject<Item> RUBY_SHOVEL = ITEMS.register("ruby_shovel",
-            () -> new ShovelItem(Tiers.DIAMOND, 1, -1.5f, new Item.Properties()));
+            () -> new ShovelItem(TierRegistry.RUBY, 1, -1.5f, new Item.Properties()));
     public static final RegistryObject<Item> RUBY_HOE = ITEMS.register("ruby_hoe",
-            () -> new HoeItem(Tiers.DIAMOND, 0, 0.5f, new Item.Properties()));
+            () -> new HoeItem(TierRegistry.RUBY, 0, 0.5f, new Item.Properties()));
 
 }

@@ -19,7 +19,15 @@ public class CreativeTabRegistry {
             .title(Component.translatable("itemGroup.alpha_darkworld.main"))
             .displayItems((parameters, output) -> {
                 output.accept(BlockRegistry.RUBY_ORE.get());
+                output.accept(BlockRegistry.MITHRIL_ORE.get());
                 output.accept(ItemRegistry.RUBY.get());
+                output.accept(ItemRegistry.RAW_MITHRIL.get());
+                output.accept(ItemRegistry.MITHRIL_INGOT.get());
+                output.accept(ItemRegistry.MITHRIL_AXE.get());
+                output.accept(ItemRegistry.MITHRIL_HOE.get());
+                output.accept(ItemRegistry.MITHRIL_PICKAXE.get());
+                output.accept(ItemRegistry.MITHRIL_SHOVEL.get());
+                output.accept(ItemRegistry.MITHRIL_SWORD.get());
                 output.accept(ItemRegistry.RUBY_AXE.get());
                 output.accept(ItemRegistry.RUBY_HOE.get());
                 output.accept(ItemRegistry.RUBY_PICKAXE.get());

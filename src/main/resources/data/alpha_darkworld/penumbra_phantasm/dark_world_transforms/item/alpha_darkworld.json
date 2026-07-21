@@ -7,6 +7,30 @@
   ],
   "converting_items":
   [
-    
+    {
+
+      "light_world": "minecraft:diamond",
+      "dark_world": "alpha_darkworld:ruby"
+    },
+    {
+
+      "light_world": "minecraft:diamond_ore",
+      "dark_world": "alpha_darkworld:ruby_ore"
+    },
+    {
+
+      "light_world": "minecraft:iron_ingot",
+      "dark_world": "alpha_darkworld:mithril_ingot"
+    },
+    {
+
+      "light_world": "minecraft:iron_ore",
+      "dark_world": "alpha_darkworld:mithril_ore"
+    },
+    {
+
+      "light_world": "minecraft:raw_iron",
+      "dark_world": "alpha_darkworld:raw_mithril"
+    }
   ]
 }
