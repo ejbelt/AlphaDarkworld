@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "alpha_darkworld:ruby_shovel"
+    "alpha_darkworld:ruby_shovel",
+    "alpha_darkworld:mithril_shovel"
   ]
 }

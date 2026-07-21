@@ -20,7 +20,7 @@ public class TierRegistry {
     public static final Tier MITHRIL = TierSortingRegistry.registerTier(
             new ForgeTier(3, 650, 6.2f, 2f, 18,
                     BlockTags.NEEDS_STONE_TOOL, () -> Ingredient.of(ItemRegistry.RUBY.get())),
-            new ResourceLocation(AlphaDarkworld.MOD_ID, "mithril"), List.of(Tiers.DIAMOND), List.of());
+            new ResourceLocation(AlphaDarkworld.MOD_ID, "mithril"), List.of(Tiers.IRON), List.of());
 
     public static final Tier RUBY = TierSortingRegistry.registerTier(
             new ForgeTier(4, 1450, 9.8f, 4f, 20,
