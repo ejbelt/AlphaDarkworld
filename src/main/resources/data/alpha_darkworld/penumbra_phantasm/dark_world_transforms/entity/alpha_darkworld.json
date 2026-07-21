@@ -1,0 +1,11 @@
+{
+  "persistent_entities":
+  [
+    "minecraft:villager",
+    "minecraft:iron_golem"
+  ],
+  "converting_entities":
+  [
+    
+  ]
+}

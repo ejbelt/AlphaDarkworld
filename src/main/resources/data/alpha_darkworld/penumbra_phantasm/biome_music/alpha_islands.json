@@ -1,6 +1,6 @@
 {
   "biome": "alpha_darkworld:alpha_islands",
-  "sound_event": "minecraft:music.game",
+  "sound_event": "alpha_darkworld:music.alphalands",
   "loops": false,
   "min_delay": 60,
   "max_delay": 120

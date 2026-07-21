@@ -6,5 +6,6 @@
   "biome.alpha_darkworld.icey_waters": "Blossoming Caverns",
   "biome.alpha_darkworld.icey_waters.description": "Wet, Green, and very hostile....",
   "biome.alpha_darkworld.alpha_islands_winter": "Desolate Snowlands",
-  "biome.alpha_darkworld.alpha_islands_winter.description": "It sure is chilly today...."
+  "biome.alpha_darkworld.alpha_islands_winter.description": "It sure is chilly today....",
+  "item.alpha_darkworld.ruby": "Ruby"
 }

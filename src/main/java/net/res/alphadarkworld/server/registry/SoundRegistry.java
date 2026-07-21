@@ -13,6 +13,7 @@ public class SoundRegistry {
 
     //Datapacks themselves can't add the custom tunes. So We'll add them here.
 
+    public static RegistryObject<SoundEvent> ALPHALAND_MUSIC= registerSoundEvent("music.alphalands");
     public static RegistryObject<SoundEvent> SNOWLAND_MUSIC = registerSoundEvent("music.snowland");
     public static RegistryObject<SoundEvent> ICEY_OCEAN_AMBIENT = registerSoundEvent("icey_ocean_ambient_loop");
     public static RegistryObject<SoundEvent> MOSS_CAVE_LOOP = registerSoundEvent("caveland_loop");

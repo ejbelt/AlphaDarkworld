@@ -1,6 +1,6 @@
 {
   "ambient_light": 0.0,
-  "bed_works": true,
+  "bed_works": false,
   "coordinate_scale": 1,
   "fixed_time": 16000,
   "has_ceiling": true,
