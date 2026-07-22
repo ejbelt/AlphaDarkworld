@@ -31,6 +31,12 @@ public class BlockLootTableGenerator extends BlockLootSubProvider {
         this.dropSelf(BlockRegistry.ROSE_WOOL.get());
         this.dropSelf(BlockRegistry.SPRING_WOOL.get());
         this.dropSelf(BlockRegistry.VIOLET_WOOL.get());
+        this.dropSelf(BlockRegistry.ULTRAMARINE_CARPET.get());
+        this.dropSelf(BlockRegistry.CAPRI_CARPET.get());
+        this.dropSelf(BlockRegistry.CHARTREUSE_CARPET.get());
+        this.dropSelf(BlockRegistry.ROSE_CARPET.get());
+        this.dropSelf(BlockRegistry.SPRING_CARPET.get());
+        this.dropSelf(BlockRegistry.VIOLET_CARPET.get());
 
         this.add(BlockRegistry.RUBY_ORE.get(), 
             block -> createOreDrop(block, ItemRegistry.RUBY.get()));

@@ -42,6 +42,12 @@ public class CreativeTabRegistry {
                 output.accept(BlockRegistry.ROSE_WOOL.get());
                 output.accept(BlockRegistry.SPRING_WOOL.get());
                 output.accept(BlockRegistry.VIOLET_WOOL.get());
+                output.accept(BlockRegistry.ULTRAMARINE_CARPET.get());
+                output.accept(BlockRegistry.CAPRI_CARPET.get());
+                output.accept(BlockRegistry.CHARTREUSE_CARPET.get());
+                output.accept(BlockRegistry.ROSE_CARPET.get());
+                output.accept(BlockRegistry.SPRING_CARPET.get());
+                output.accept(BlockRegistry.VIOLET_CARPET.get());
             })
             .build()
     );

@@ -22,6 +22,9 @@ public class BlockRegistry {
     public static final BlockBehaviour.Properties RUBY_PROPERTIES = BlockBehaviour.Properties.copy(Blocks.EMERALD_BLOCK).mapColor(MapColor.COLOR_RED).requiresCorrectToolForDrops().sound(SoundType.METAL);
     public static final BlockBehaviour.Properties RAW_BLOCK_PROPERTIES = BlockBehaviour.Properties.copy(Blocks.RAW_IRON_BLOCK).mapColor(MapColor.COLOR_RED).requiresCorrectToolForDrops();
     public static final BlockBehaviour.Properties CLOTH_PROPERTIES = BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL);
+    public static final BlockBehaviour.Properties CARPET_PROPERTIES = BlockBehaviour.Properties.copy(Blocks.WHITE_CARPET);
+
+
 
     //Ruby
     public static final RegistryObject<Block> RUBY_ORE 
@@ -55,6 +58,21 @@ public class BlockRegistry {
     = registerBlock("spring_wool", () -> new Block(CLOTH_PROPERTIES.mapColor(MapColor.COLOR_LIGHT_GREEN)));
     public static final RegistryObject<Block> VIOLET_WOOL 
     = registerBlock("violet_wool", () -> new Block(CLOTH_PROPERTIES.mapColor(MapColor.COLOR_PURPLE)));
+
+    
+    //Carpets.
+    public static final RegistryObject<Block> ULTRAMARINE_CARPET 
+    = registerBlock("ultramarine_carpet", () -> new CarpetBlock(CARPET_PROPERTIES.mapColor(MapColor.COLOR_BLUE)));
+    public static final RegistryObject<Block> CAPRI_CARPET 
+    = registerBlock("capri_carpet", () -> new CarpetBlock(CARPET_PROPERTIES.mapColor(MapColor.COLOR_CYAN)));
+    public static final RegistryObject<Block> CHARTREUSE_CARPET 
+    = registerBlock("chartreuse_carpet", () -> new CarpetBlock(CARPET_PROPERTIES.mapColor(MapColor.COLOR_LIGHT_GREEN)));
+    public static final RegistryObject<Block> ROSE_CARPET 
+    = registerBlock("rose_carpet", () -> new CarpetBlock(CARPET_PROPERTIES.mapColor(MapColor.COLOR_PINK)));
+    public static final RegistryObject<Block> SPRING_CARPET 
+    = registerBlock("spring_carpet", () -> new CarpetBlock(CARPET_PROPERTIES.mapColor(MapColor.COLOR_LIGHT_GREEN)));
+    public static final RegistryObject<Block> VIOLET_CARPET 
+    = registerBlock("violet_carpet", () -> new CarpetBlock(CARPET_PROPERTIES.mapColor(MapColor.COLOR_PURPLE)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

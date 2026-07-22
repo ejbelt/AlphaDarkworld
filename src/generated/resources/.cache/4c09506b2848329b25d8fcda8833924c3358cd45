@@ -1,7 +1,8 @@
-// 1.20.1	2026-07-21T21:57:16.5906876	Tags for minecraft:block mod id alpha_darkworld
+// 1.20.1	2026-07-22T01:12:04.0127312	Tags for minecraft:block mod id alpha_darkworld
 dbe05708cc65050db2aeebf1eba3571dafc5a8fd data/alpha_darkworld/tags/blocks/needs_mithril_tool.json
-4506ca326eba6d4f628d553dfdcebd2ec8c70120 data/minecraft/tags/blocks/dampens_vibrations.json
+0d5bad40257eb6d929fbbd2c3d32716ea90fadff data/minecraft/tags/blocks/dampens_vibrations.json
 2c1315bbf4e8d6d26d6b56a37672ba1a1bfc8dee data/minecraft/tags/blocks/mineable/pickaxe.json
 2bc1887c220b16162bc5ef648eca3dc8e5731f0d data/minecraft/tags/blocks/needs_iron_tool.json
 4506ca326eba6d4f628d553dfdcebd2ec8c70120 data/minecraft/tags/blocks/occludes_vibration_signals.json
 4506ca326eba6d4f628d553dfdcebd2ec8c70120 data/minecraft/tags/blocks/wool.json
+1ac130e3b2a904b215e0346d37ab272ad0a30474 data/minecraft/tags/blocks/wool_carpets.json

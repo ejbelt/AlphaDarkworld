@@ -33,6 +33,16 @@ public class BlockTagGenerator extends BlockTagsProvider {
                 BlockRegistry.VIOLET_WOOL.get()
             );
 
+        this.tag(BlockTags.WOOL_CARPETS)
+            .add(
+                BlockRegistry.ULTRAMARINE_CARPET.get(),
+                BlockRegistry.CAPRI_CARPET.get(),
+                BlockRegistry.CHARTREUSE_CARPET.get(),
+                BlockRegistry.ROSE_CARPET.get(),
+                BlockRegistry.SPRING_CARPET.get(),
+                BlockRegistry.VIOLET_CARPET.get()
+            );
+
         this.tag(BlockTags.OCCLUDES_VIBRATION_SIGNALS)
             .add(
                 BlockRegistry.ULTRAMARINE_WOOL.get(),
@@ -50,7 +60,13 @@ public class BlockTagGenerator extends BlockTagsProvider {
                 BlockRegistry.CHARTREUSE_WOOL.get(),
                 BlockRegistry.ROSE_WOOL.get(),
                 BlockRegistry.SPRING_WOOL.get(),
-                BlockRegistry.VIOLET_WOOL.get()
+                BlockRegistry.VIOLET_WOOL.get(),
+                BlockRegistry.ULTRAMARINE_CARPET.get(),
+                BlockRegistry.CAPRI_CARPET.get(),
+                BlockRegistry.CHARTREUSE_CARPET.get(),
+                BlockRegistry.ROSE_CARPET.get(),
+                BlockRegistry.SPRING_CARPET.get(),
+                BlockRegistry.VIOLET_CARPET.get()
             );
 
         this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
