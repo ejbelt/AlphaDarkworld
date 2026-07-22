@@ -20,6 +20,9 @@ public class CreativeTabRegistry {
             .displayItems((parameters, output) -> {
                 output.accept(BlockRegistry.RUBY_ORE.get());
                 output.accept(BlockRegistry.MITHRIL_ORE.get());
+                output.accept(BlockRegistry.RUBY_BLOCK.get());
+                output.accept(BlockRegistry.MITHRIL_BLOCK.get());
+                output.accept(BlockRegistry.RAW_MITHRIL_BLOCK.get());
                 output.accept(ItemRegistry.RUBY.get());
                 output.accept(ItemRegistry.RAW_MITHRIL.get());
                 output.accept(ItemRegistry.MITHRIL_INGOT.get());
@@ -33,6 +36,12 @@ public class CreativeTabRegistry {
                 output.accept(ItemRegistry.RUBY_PICKAXE.get());
                 output.accept(ItemRegistry.RUBY_SHOVEL.get());
                 output.accept(ItemRegistry.RUBY_SWORD.get());
+                output.accept(BlockRegistry.ULTRAMARINE_WOOL.get());
+                output.accept(BlockRegistry.CAPRI_WOOL.get());
+                output.accept(BlockRegistry.CHARTREUSE_WOOL.get());
+                output.accept(BlockRegistry.ROSE_WOOL.get());
+                output.accept(BlockRegistry.SPRING_WOOL.get());
+                output.accept(BlockRegistry.VIOLET_WOOL.get());
             })
             .build()
     );

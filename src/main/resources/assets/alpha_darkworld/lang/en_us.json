@@ -9,6 +9,7 @@
   "biome.alpha_darkworld.alpha_islands_winter.description": "It sure is chilly today....",
   "item.alpha_darkworld.ruby": "Ruby",
   "block.alpha_darkworld.ruby_ore": "Ruby Ore",
+  "block.alpha_darkworld.ruby_block": "Block of Ruby",
   "item.alpha_darkworld.ruby_sword": "Ruby Sword",
   "item.alpha_darkworld.ruby_pickaxe": "Ruby Pickaxe",
   "item.alpha_darkworld.ruby_axe": "Ruby Axe",
@@ -17,10 +18,18 @@
   "item.alpha_darkworld.raw_mithril": "Raw Mithril",
   "item.alpha_darkworld.mithril_ingot": "Mithril Ingot",
   "block.alpha_darkworld.mithril_ore": "Mithril Ore",
+  "block.alpha_darkworld.mithril_block": "Block of Mithril",
+  "block.alpha_darkworld.raw_mithril_block": "Block of Raw Mithril",
   "item.alpha_darkworld.mithril_sword": "Mithril Sword",
   "item.alpha_darkworld.mithril_pickaxe": "Mithril Pickaxe",
   "item.alpha_darkworld.mithril_axe": "Mithril Axe",
   "item.alpha_darkworld.mithril_hoe": "Mithril Hoe",
   "item.alpha_darkworld.mithril_shovel": "Mithril Shovel",
-  "itemGroup.alpha_darkworld.main": "Alpha Darkworld Junk"
+  "block.alpha_darkworld.capri_wool": "Capri Wool",
+  "block.alpha_darkworld.chartreuse_wool": "Chartreuse Wool",
+  "block.alpha_darkworld.rose_wool": "Rose Wool",
+  "block.alpha_darkworld.spring_wool": "Spring Wool",
+  "block.alpha_darkworld.ultramarine_wool": "Ultramarine Wool",
+  "block.alpha_darkworld.violet_wool": "Violet Wool",
+  "itemGroup.alpha_darkworld.main": "Penumbra Phantasm: Alpha Darkworld"
 }

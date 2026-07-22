@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "alpha_darkworld:ruby_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "alpha_darkworld:ruby"
+  }
+}

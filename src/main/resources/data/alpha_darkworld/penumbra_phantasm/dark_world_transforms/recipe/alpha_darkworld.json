@@ -1,0 +1,12 @@
+{
+  "dark_world_allowed":
+          [
+             "alpha_darkworld:blocks/uncraft/raw_mithril_from_block",
+             "alpha_darkworld:blocks/uncraft/mithril_from_block",
+             "alpha_darkworld:blocks/uncraft/ruby_from_block"
+          ],
+  "dark_world_blocked":
+          [
+            
+          ]
+}
