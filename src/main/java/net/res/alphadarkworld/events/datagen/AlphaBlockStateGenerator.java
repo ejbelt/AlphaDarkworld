@@ -38,7 +38,7 @@ public class AlphaBlockStateGenerator extends BlockStateProvider {
 
     private void carpetBlock(String name, RegistryObject<Block> blockRegistryObject, RegistryObject<Block> woolParent){
         String path = woolParent.getId().getPath();
-        simpleBlock(blockRegistryObject.get(), models().carpet(name, new ResourceLocation(AlphaDarkworld.MOD_ID, "block/" + path)));
+        simpleBlockWithItem(blockRegistryObject.get(), models().carpet(name, new ResourceLocation(AlphaDarkworld.MOD_ID, "block/" + path)));
     }
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {
