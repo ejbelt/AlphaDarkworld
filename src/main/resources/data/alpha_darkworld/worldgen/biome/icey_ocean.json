@@ -2,10 +2,9 @@
   "temperature": 0.2,
   "temperature_modifier": "frozen",
   "creature_spawn_probability": 0.7,
-  "spawns_by_category": {},
   "carvers": {
     "air": [
-      "minecraft:cave_extra_underground"
+      "minecraft:canyon"
     ]
   },
   "downfall": 0.8,
@@ -14,15 +13,11 @@
     "foliage_color": 7120588,
     "grass_color": 3762287,
     "grass_color_modifier": "none",
-    "ambient_sound": {
-      "sound_id": "alpha_darkworld:icey_ocean_ambient_loop",
-      "range": 1
-    },
     "mood_sound": {
-        "block_search_extent": 8,
-        "offset": 2,
-        "sound": "minecraft:ambient.cave",
-        "tick_delay": 6000
+      "block_search_extent": 8,
+      "offset": 2,
+      "sound": "minecraft:ambient.cave",
+      "tick_delay": 6000
     },
     "music": {
       "max_delay": 24000,
@@ -83,14 +78,12 @@
         "minCount": 1,
         "weight": 20
       },
-      
       {
         "type": "minecraft:enderman",
         "maxCount": 4,
         "minCount": 1,
         "weight": 20
       },
-
       {
         "type": "minecraft:zombie",
         "maxCount": 4,

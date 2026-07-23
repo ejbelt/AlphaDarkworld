@@ -1,0 +1,38 @@
+{
+  "block_tag": "alpha_darkworld:influences_alpha_iceland",
+  "block_amount": 9,
+  "noise_settings": "alpha_darkworld:alpha_iceworld",
+  "dimension_type": "alpha_darkworld:alpha_snowworld_dimension_type",
+  "biome_source": {
+    "type": "minecraft:multi_noise",
+    "biomes": [
+      {
+        "biome": "alpha_darkworld:icey_ocean",
+        "parameters": {
+          "continentalness": [
+              -1.05,
+              -0.455
+            ],
+            "depth": 0,
+            "erosion": [
+              -1,
+              1
+            ],
+            "humidity": [
+              -1,
+              1
+            ],
+            "offset": 0,
+            "temperature": [
+              -1,
+              -0.45
+            ],
+            "weirdness": [
+              -1,
+              1
+            ]
+        }
+      }
+    ]
+  }
+}
