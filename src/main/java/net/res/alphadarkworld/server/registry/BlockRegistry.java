@@ -2,6 +2,8 @@ package net.res.alphadarkworld.server.registry;
 
 
 import net.res.alphadarkworld.AlphaDarkworld;
+import net.res.alphadarkworld.server.world.worldgen.tree.AlphaBirchTreeGrower;
+import net.res.alphadarkworld.server.world.worldgen.tree.AlphaOakTreeGrower;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
@@ -18,13 +20,15 @@ public class BlockRegistry {
     
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, AlphaDarkworld.MOD_ID);
 
-    public static final BlockBehaviour.Properties MITHRIL_PROPERTIES = BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).mapColor(MapColor.COLOR_CYAN).requiresCorrectToolForDrops().sound(SoundType.METAL);
+    public static final BlockBehaviour.Properties MITHRIL_PROPERTIES = BlockBehaviour.Properties.copy(Blocks.GOLD_BLOCK).mapColor(MapColor.COLOR_CYAN).requiresCorrectToolForDrops().sound(SoundType.METAL);
     public static final BlockBehaviour.Properties RUBY_PROPERTIES = BlockBehaviour.Properties.copy(Blocks.EMERALD_BLOCK).mapColor(MapColor.COLOR_RED).requiresCorrectToolForDrops().sound(SoundType.METAL);
     public static final BlockBehaviour.Properties RAW_BLOCK_PROPERTIES = BlockBehaviour.Properties.copy(Blocks.RAW_IRON_BLOCK).mapColor(MapColor.COLOR_RED).requiresCorrectToolForDrops();
     public static final BlockBehaviour.Properties CLOTH_PROPERTIES = BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL);
     public static final BlockBehaviour.Properties CARPET_PROPERTIES = BlockBehaviour.Properties.copy(Blocks.WHITE_CARPET);
 
-
+    public static final BlockBehaviour.Properties WOOD_PROPERTIES = BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS);
+    public static final BlockBehaviour.Properties LOG_PROPERTIES = BlockBehaviour.Properties.copy(Blocks.OAK_WOOD);
+    public static final BlockBehaviour.Properties LEAF_PROPERTIES = BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES);
 
     //Ruby
     public static final RegistryObject<Block> RUBY_ORE 
@@ -73,6 +77,28 @@ public class BlockRegistry {
     = registerBlock("spring_carpet", () -> new CarpetBlock(CARPET_PROPERTIES.mapColor(MapColor.COLOR_LIGHT_GREEN)));
     public static final RegistryObject<Block> VIOLET_CARPET 
     = registerBlock("violet_carpet", () -> new CarpetBlock(CARPET_PROPERTIES.mapColor(MapColor.COLOR_PURPLE)));
+
+    //Woodstuff.
+    public static final RegistryObject<Block> ALPHA_PLANKS
+    = registerBlock("alpha_planks", () -> new Block(WOOD_PROPERTIES));
+
+    public static final RegistryObject<RotatedPillarBlock> ALPHA_LOG
+    = registerBlock("alpha_log", () -> new RotatedPillarBlock(LOG_PROPERTIES));
+    public static final RegistryObject<RotatedPillarBlock> ALPHA_BIRCH_LOG
+    = registerBlock("alpha_birch_log", () -> new RotatedPillarBlock(LOG_PROPERTIES));
+
+    
+    public static final RegistryObject<Block> ALPHA_LEAVES
+    = registerBlock("alpha_leaves", () -> new LeavesBlock(LEAF_PROPERTIES));
+    public static final RegistryObject<Block> ALPHA_BIRCH_LEAVES
+    = registerBlock("alpha_birch_leaves", () -> new LeavesBlock(BlockBehaviour.Properties.copy(Blocks.BIRCH_LEAVES)));
+
+    
+    public static final RegistryObject<Block> ALPHA_SAPLING
+    = registerBlock("alpha_sapling", () -> new SaplingBlock(new AlphaOakTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
+
+        public static final RegistryObject<Block> ALPHA_BIRCH_SAPLING
+    = registerBlock("alpha_birch_sapling", () -> new SaplingBlock(new AlphaBirchTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

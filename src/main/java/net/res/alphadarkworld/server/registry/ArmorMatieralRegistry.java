@@ -13,13 +13,11 @@ import java.util.function.Supplier;
 
 public enum ArmorMatieralRegistry implements ArmorMaterial {
 
-    //MITHRIL("mithril", 18, new int[]{2, 6, 3, 2}, 28, 
-    //    SoundEvents.ARMOR_EQUIP_GOLD, 2f, 2f, () -> Ingredient.of(ItemRegistry.MITHRIL.get()));
-
-
-    RUBY("ruby", 20, new int[]{3, 8, 6, 3}, 22, 
-        SoundEvents.ARMOR_EQUIP_GOLD, 4f, 8f, () -> Ingredient.of(ItemRegistry.RUBY.get()));
-
+    MITHRIL("mithril", 20, new int[]{4, 7, 3, 2}, 28, 
+        SoundEvents.ARMOR_EQUIP_CHAIN, 1f, 0.05f, () -> Ingredient.of(ItemRegistry.MITHRIL_INGOT.get())),
+    RUBY("ruby", 30, new int[]{3, 8, 6, 3}, 16, 
+       SoundEvents.ARMOR_EQUIP_DIAMOND, 4f, 0.15f, () -> Ingredient.of(ItemRegistry.RUBY.get()));
+    
     private final String name;
     private final int durabilityMultiplier;
     private final int[] protectionAmounts;

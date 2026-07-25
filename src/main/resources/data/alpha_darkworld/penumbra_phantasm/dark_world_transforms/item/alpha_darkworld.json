@@ -8,7 +8,6 @@
   "converting_items":
   [
     {
-
       "light_world": "minecraft:diamond",
       "dark_world": "alpha_darkworld:ruby"
     },
@@ -31,6 +30,66 @@
 
       "light_world": "minecraft:raw_iron",
       "dark_world": "alpha_darkworld:raw_mithril"
+    },
+    {
+
+      "light_world": "minecraft:cyan_wool",
+      "dark_world": "alpha_darkworld:ultramarine_wool"
+    },
+    {
+
+      "light_world": "minecraft:light_blue_wool",
+      "dark_world": "alpha_darkworld:capri_wool"
+    },
+    {
+
+      "light_world": "minecraft:yellow_wool",
+      "dark_world": "alpha_darkworld:chartreuse_wool"
+    },
+    {
+
+      "light_world": "minecraft:pink_wool",
+      "dark_world": "alpha_darkworld:rose_wool"
+    },
+    {
+
+      "light_world": "minecraft:lime_wool",
+      "dark_world": "alpha_darkworld:spring_wool"
+    },
+    {
+
+      "light_world": "minecraft:purple_wool",
+      "dark_world": "alpha_darkworld:violet_wool"
+    },
+    {
+
+      "light_world": "minecraft:cyan_carpet",
+      "dark_world": "alpha_darkworld:ultramarine_carpet"
+    },
+    {
+
+      "light_world": "minecraft:light_blue_carpet",
+      "dark_world": "alpha_darkworld:capri_carpet"
+    },
+    {
+
+      "light_world": "minecraft:yellow_carpet",
+      "dark_world": "alpha_darkworld:chartreuse_carpet"
+    },
+    {
+
+      "light_world": "minecraft:pink_carpet",
+      "dark_world": "alpha_darkworld:rose_carpet"
+    },
+    {
+
+      "light_world": "minecraft:lime_carpet",
+      "dark_world": "alpha_darkworld:spring_carpet"
+    },
+    {
+
+      "light_world": "minecraft:purple_carpet",
+      "dark_world": "alpha_darkworld:violet_carpet"
     }
   ]
 }

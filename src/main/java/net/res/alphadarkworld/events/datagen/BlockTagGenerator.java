@@ -23,6 +23,34 @@ public class BlockTagGenerator extends BlockTagsProvider {
     @Override
     protected void addTags(HolderLookup.Provider pProvider) {
         
+        this.tag(BlockTags.SAPLINGS)
+        .add(
+            BlockRegistry.ALPHA_SAPLING.get(),
+            BlockRegistry.ALPHA_BIRCH_SAPLING.get()
+        );
+
+        this.tag(BlockTags.LEAVES)
+        .add(
+            BlockRegistry.ALPHA_LEAVES.get(),
+            BlockRegistry.ALPHA_BIRCH_LEAVES.get()
+        );
+
+        this.tag(BlockTags.OVERWORLD_NATURAL_LOGS)
+        .add(
+            BlockRegistry.ALPHA_LOG.get(),
+            BlockRegistry.ALPHA_BIRCH_LOG.get()
+        );
+
+        this.tag(BlockTags.OAK_LOGS)
+        .add(
+            BlockRegistry.ALPHA_LOG.get()
+        );
+
+        this.tag(BlockTags.BIRCH_LOGS)
+        .add(
+            BlockRegistry.ALPHA_BIRCH_LOG.get()
+        );
+
         this.tag(BlockTags.WOOL)
             .add(
                 BlockRegistry.ULTRAMARINE_WOOL.get(),

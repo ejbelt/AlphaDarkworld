@@ -51,7 +51,7 @@
     [
       "minecraft:lush_caves_ceiling_vegetation",
       "minecraft:lush_caves_clay",
-      "minecraft:lush_caves_vegetation"
+      "alpha_darkworld:alpha_caveland_vegetation"
     ],
     [
       "minecraft:ore_dirt",

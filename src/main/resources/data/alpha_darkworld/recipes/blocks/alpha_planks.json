@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "planks",
+  "ingredients": [
+    {
+      "tag": "alpha_darkworld:darkworld_logs"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "item": "alpha_darkworld:alpha_planks"
+  }
+}

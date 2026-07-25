@@ -1,0 +1,49 @@
+{
+  "type": "minecraft:simple_block",
+  "config": {
+    "to_place": {
+      "type": "minecraft:weighted_state_provider",
+      "entries": [
+        {
+          "data": {
+            "Name": "penumbra_phantasm:night_grass"
+          },
+          "weight": 7
+        },
+        {
+          "data": {
+            "Name": "penumbra_phantasm:twilight_grass"
+          },
+          "weight": 7
+        },
+        {
+          "data": {
+            "Name": "penumbra_phantasm:echo_flower"
+          },
+          "weight": 4
+        },
+        {
+          "data": {
+            "Name": "minecraft:moss_carpet"
+          },
+          "weight": 25
+        },
+        {
+          "data": {
+            "Name": "minecraft:grass"
+          },
+          "weight": 50
+        },
+        {
+          "data": {
+            "Name": "minecraft:tall_grass",
+            "Properties": {
+              "half": "lower"
+            }
+          },
+          "weight": 10
+        }
+      ]
+    }
+  }
+}

@@ -15,9 +15,11 @@ public class SoundRegistry {
 
     public static RegistryObject<SoundEvent> ALPHALAND_MUSIC= registerSoundEvent("music.alphalands");
     public static RegistryObject<SoundEvent> SNOWLAND_MUSIC = registerSoundEvent("music.snowland");
+    public static RegistryObject<SoundEvent> CAVELAND_MUSIC = registerSoundEvent("music.cavelands");
     public static RegistryObject<SoundEvent> ICEY_OCEAN_AMBIENT = registerSoundEvent("icey_ocean_ambient_loop");
     public static RegistryObject<SoundEvent> MOSS_CAVE_LOOP = registerSoundEvent("caveland_loop");
     public static RegistryObject<SoundEvent> SILENCE = registerSoundEvent("silent");
+
 
     private static RegistryObject<SoundEvent> registerSoundEvent(String sound)
     {

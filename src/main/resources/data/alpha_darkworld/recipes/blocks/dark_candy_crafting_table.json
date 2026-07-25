@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "tag": "alpha_darkworld:darkworld_planks"
+    }
+  },
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "result": {
+    "item": "penumbra_phantasm:dark_candy_crafting_table"
+  },
+  "show_notification": false
+}
