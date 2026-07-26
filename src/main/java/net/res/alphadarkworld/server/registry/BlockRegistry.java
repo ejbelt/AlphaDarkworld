@@ -93,9 +93,9 @@ public class BlockRegistry {
     /// The result is leaves UNRELATED to these leaves will immediatley start decaying.
     /// SO FUCK YOU.
     public static final RegistryObject<Block> ALPHA_LEAVES
-    = registerBlock("alpha_leaves", () -> new Block(LEAF_PROPERTIES));
+    = registerBlock("alpha_leaves", () -> new LeavesBlock(LEAF_PROPERTIES));
     public static final RegistryObject<Block> ALPHA_BIRCH_LEAVES
-    = registerBlock("alpha_birch_leaves", () -> new Block(BlockBehaviour.Properties.copy(Blocks.BIRCH_LEAVES)));
+    = registerBlock("alpha_birch_leaves", () -> new LeavesBlock(BlockBehaviour.Properties.copy(Blocks.BIRCH_LEAVES)));
 
     
     public static final RegistryObject<Block> ALPHA_SAPLING
