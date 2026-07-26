@@ -5,6 +5,10 @@
     "alpha_darkworld:ruby_ore",
     "alpha_darkworld:mithril_block",
     "alpha_darkworld:ruby_block",
-    "alpha_darkworld:raw_mithril_block"
+    "alpha_darkworld:raw_mithril_block",
+    "alpha_darkworld:alpha_cobblestone",
+    "alpha_darkworld:limestone",
+    "alpha_darkworld:alpha_mossy_cobblestone",
+    "alpha_darkworld:alpha_bricks"
   ]
 }

@@ -2524,7 +2524,7 @@
           "false_at_and_above": {
             "absolute": 8
           },
-          "random_name": "minecraft:deepslate",
+          "random_name": "alpha_darkworld:limestone",
           "true_at_and_below": {
             "absolute": 0
           }
@@ -2532,7 +2532,7 @@
         "then_run": {
           "type": "minecraft:block",
           "result_state": {
-            "Name": "minecraft:deepslate",
+            "Name": "alpha_darkworld:limestone",
             "Properties": {
               "axis": "y"
             }

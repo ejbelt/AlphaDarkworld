@@ -62,21 +62,32 @@ public class BlockLootTableGenerator extends BlockLootSubProvider {
         this.dropSelf(BlockRegistry.ALPHA_BIRCH_LOG.get());
         this.dropSelf(BlockRegistry.ALPHA_SAPLING.get());
         this.dropSelf(BlockRegistry.ALPHA_BIRCH_SAPLING.get());
-        this.dropSelf(BlockRegistry.LIMESTONE.get());
         this.dropSelf(BlockRegistry.ALPHA_COBBLESTONE.get());
         this.dropSelf(BlockRegistry.ALPHA_MOSSY_COBBLESTONE.get());
         this.dropSelf(BlockRegistry.ALPHA_BRICKS.get());
+        this.dropSelf(BlockRegistry.ALPHA_DIRT.get());
+
+        this.add(BlockRegistry.LIMESTONE.get(), block ->
+            createSingleItemTableWithSilkTouch(block, BlockRegistry.ALPHA_COBBLESTONE.get())
+        );
+        this.add(BlockRegistry.ALPHA_GRASS_BLOCK.get(), block ->
+            createSingleItemTableWithSilkTouch(block, BlockRegistry.ALPHA_DIRT.get())
+        );
+
 
         this.add(BlockRegistry.ALPHA_LEAVES.get(), block ->
-            createDarkWorldOakLeavesDrops(block, BlockRegistry.ALPHA_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+            createDarkWorldOakLeavesDrops(block, BlockRegistry.ALPHA_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES)
+        );
         this.add(BlockRegistry.ALPHA_BIRCH_LEAVES.get(), block ->
-            createDarkWorldLeavesDrop(block, BlockRegistry.ALPHA_BIRCH_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+            createDarkWorldLeavesDrop(block, BlockRegistry.ALPHA_BIRCH_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES)
+        );
 
         this.add(BlockRegistry.RUBY_ORE.get(), 
-            block -> createOreDrop(block, ItemRegistry.RUBY.get()));
-
+            block -> createOreDrop(block, ItemRegistry.RUBY.get())
+        );
         this.add(BlockRegistry.MITHRIL_ORE.get(), 
-            block -> createOreDrop(block, ItemRegistry.RAW_MITHRIL.get()));
+            block -> createOreDrop(block, ItemRegistry.RAW_MITHRIL.get())
+        );
     }
 
     protected LootTable.Builder createDarkWorldOakLeavesDrops(Block pOakLeavesBlock, Block pSaplingBlock, float... pChances) {

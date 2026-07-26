@@ -35,6 +35,7 @@ public class AlphaBlockStateGenerator extends BlockStateProvider {
         blockWithItem(BlockRegistry.ALPHA_COBBLESTONE);
         blockWithItem(BlockRegistry.ALPHA_MOSSY_COBBLESTONE);
         blockWithItem(BlockRegistry.ALPHA_BRICKS);
+        blockWithItem(BlockRegistry.ALPHA_DIRT);
 
         logWithItem(BlockRegistry.ALPHA_LOG);
         logWithItem(BlockRegistry.ALPHA_BIRCH_LOG);
@@ -48,6 +49,9 @@ public class AlphaBlockStateGenerator extends BlockStateProvider {
         carpetBlock("rose_carpet", BlockRegistry.ROSE_CARPET, BlockRegistry.ROSE_WOOL);
         carpetBlock("spring_carpet", BlockRegistry.SPRING_CARPET, BlockRegistry.SPRING_WOOL);
         carpetBlock("violet_carpet", BlockRegistry.VIOLET_CARPET, BlockRegistry.VIOLET_WOOL);
+
+        //Do this manually.
+        //grassBlockModel(BlockRegistry.ALPHA_GRASS_BLOCK);
 
         leavesBlock(BlockRegistry.ALPHA_LEAVES);
         leavesBlock(BlockRegistry.ALPHA_BIRCH_LEAVES);

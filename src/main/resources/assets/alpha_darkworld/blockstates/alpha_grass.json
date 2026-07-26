@@ -1,0 +1,24 @@
+{
+"variants": {
+        "": [
+        {
+            "model": "alpha_darkworld:block/alpha_grass"
+        },
+        {
+            "model": "alpha_darkworld:block/alpha_grass",
+            "y": 90
+        },
+        {
+            "model": "alpha_darkworld:block/alpha_grass",
+            "y": 180
+        },
+        {
+            "model": "alpha_darkworld:block/alpha_grass",
+            "y": 270
+        }
+        ],
+        "snowy=true": {
+            "model": "minecraft:block/grass_block_snow"
+        }
+    }
+}

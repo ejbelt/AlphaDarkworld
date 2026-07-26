@@ -24,7 +24,7 @@
                   }
                 }
               ],
-              "name": "alpha_darkworld:limestone"
+              "name": "alpha_darkworld:alpha_grass"
             },
             {
               "type": "minecraft:item",
@@ -33,7 +33,7 @@
                   "condition": "minecraft:survives_explosion"
                 }
               ],
-              "name": "alpha_darkworld:alpha_cobblestone"
+              "name": "alpha_darkworld:alpha_dirt"
             }
           ]
         }
@@ -41,5 +41,5 @@
       "rolls": 1.0
     }
   ],
-  "random_sequence": "alpha_darkworld:blocks/limestone"
+  "random_sequence": "alpha_darkworld:blocks/alpha_grass"
 }
