@@ -41,8 +41,8 @@ public class AlphaBlockStateGenerator extends BlockStateProvider {
         carpetBlock("rose_carpet", BlockRegistry.ROSE_CARPET, BlockRegistry.ROSE_WOOL);
         carpetBlock("spring_carpet", BlockRegistry.SPRING_CARPET, BlockRegistry.SPRING_WOOL);
         carpetBlock("violet_carpet", BlockRegistry.VIOLET_CARPET, BlockRegistry.VIOLET_WOOL);
-        leavesBlock(BlockRegistry.ALPHA_LEAVES);
-        leavesBlock(BlockRegistry.ALPHA_BIRCH_LEAVES);
+        //leavesBlock(BlockRegistry.ALPHA_LEAVES);
+        //leavesBlock(BlockRegistry.ALPHA_BIRCH_LEAVES);
     }
 
     private void carpetBlock(String name, RegistryObject<Block> blockRegistryObject, RegistryObject<Block> woolParent){

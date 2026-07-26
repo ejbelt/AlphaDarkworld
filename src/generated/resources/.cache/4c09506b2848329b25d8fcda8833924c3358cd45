@@ -1,13 +1,2 @@
-// 1.20.1	2026-07-25T18:10:27.4468484	Tags for minecraft:block mod id alpha_darkworld
+// 1.20.1	2026-07-26T00:29:04.026081	Tags for minecraft:block mod id alpha_darkworld
 dbe05708cc65050db2aeebf1eba3571dafc5a8fd data/alpha_darkworld/tags/blocks/needs_mithril_tool.json
-038ce95f173de9ea3dd94c42c2ef4cf223726559 data/minecraft/tags/blocks/birch_logs.json
-0d5bad40257eb6d929fbbd2c3d32716ea90fadff data/minecraft/tags/blocks/dampens_vibrations.json
-6d90c3ec863f29a447722e859a14ade1298790bf data/minecraft/tags/blocks/leaves.json
-2c1315bbf4e8d6d26d6b56a37672ba1a1bfc8dee data/minecraft/tags/blocks/mineable/pickaxe.json
-2bc1887c220b16162bc5ef648eca3dc8e5731f0d data/minecraft/tags/blocks/needs_iron_tool.json
-0098a5044fc6d1a50b870b25c3806eff5fb80e39 data/minecraft/tags/blocks/oak_logs.json
-4506ca326eba6d4f628d553dfdcebd2ec8c70120 data/minecraft/tags/blocks/occludes_vibration_signals.json
-eb08e1337c314f7399d201d5f26c5c3ba8ae5e41 data/minecraft/tags/blocks/overworld_natural_logs.json
-5de3bee5a88d45d6d0f4d62e5da741eaf3b2597a data/minecraft/tags/blocks/saplings.json
-4506ca326eba6d4f628d553dfdcebd2ec8c70120 data/minecraft/tags/blocks/wool.json
-1ac130e3b2a904b215e0346d37ab272ad0a30474 data/minecraft/tags/blocks/wool_carpets.json

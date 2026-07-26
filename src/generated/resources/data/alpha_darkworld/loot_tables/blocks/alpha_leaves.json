@@ -65,11 +65,6 @@
     },
     {
       "bonus_rolls": 0.0,
-      "entries": [],
-      "rolls": 1.0
-    },
-    {
-      "bonus_rolls": 0.0,
       "conditions": [
         {
           "condition": "minecraft:inverted",
@@ -106,21 +101,32 @@
           "type": "minecraft:item",
           "conditions": [
             {
-              "condition": "minecraft:survives_explosion"
-            },
-            {
               "chances": [
-                0.005,
-                0.0055555557,
-                0.00625,
-                0.008333334,
-                0.025
+                0.02,
+                0.022222223,
+                0.025,
+                0.033333335,
+                0.1
               ],
               "condition": "minecraft:table_bonus",
               "enchantment": "minecraft:fortune"
             }
           ],
-          "name": "minecraft:apple"
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 2.0,
+                "min": 1.0
+              },
+              "function": "minecraft:set_count"
+            },
+            {
+              "function": "minecraft:explosion_decay"
+            }
+          ],
+          "name": "minecraft:stick"
         }
       ],
       "rolls": 1.0

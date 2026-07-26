@@ -1,8 +1,8 @@
-// 1.20.1	2026-07-25T17:53:58.6973163	Loot Tables
-995da572d27d6769a7ff8d5620a5c4fe9bffc922 data/alpha_darkworld/loot_tables/blocks/alpha_birch_leaves.json
+// 1.20.1	2026-07-26T00:37:02.4589283	Loot Tables
+266ebd52ff68cada7308a51079effe08dd06bf1a data/alpha_darkworld/loot_tables/blocks/alpha_birch_leaves.json
 cfc6e98ae32ce66211bbff241d2bd79b9a28bfb0 data/alpha_darkworld/loot_tables/blocks/alpha_birch_log.json
 a0a693a5a646fb5115867cbb8b72df034293d39d data/alpha_darkworld/loot_tables/blocks/alpha_birch_sapling.json
-dda0ee2f7ea4117636f4904afd7e9f93317d5b17 data/alpha_darkworld/loot_tables/blocks/alpha_leaves.json
+154920e885b30df92f56bd0a37d280a39855f041 data/alpha_darkworld/loot_tables/blocks/alpha_leaves.json
 09b260731fb6eab6ea700c4a53b7c8cd43f33dda data/alpha_darkworld/loot_tables/blocks/alpha_log.json
 6cefae1994369c37302d979060b1e6e920ff1eb7 data/alpha_darkworld/loot_tables/blocks/alpha_planks.json
 3098e5e7ccc888fa70add05fb306bbb9167ed0f5 data/alpha_darkworld/loot_tables/blocks/alpha_sapling.json

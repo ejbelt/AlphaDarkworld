@@ -2,8 +2,7 @@ package net.res.alphadarkworld.server.registry;
 
 
 import net.res.alphadarkworld.AlphaDarkworld;
-import net.res.alphadarkworld.server.world.worldgen.tree.AlphaBirchTreeGrower;
-import net.res.alphadarkworld.server.world.worldgen.tree.AlphaOakTreeGrower;
+import net.res.alphadarkworld.server.world.worldgen.tree.*;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
@@ -87,11 +86,16 @@ public class BlockRegistry {
     public static final RegistryObject<RotatedPillarBlock> ALPHA_BIRCH_LOG
     = registerBlock("alpha_birch_log", () -> new RotatedPillarBlock(LOG_PROPERTIES));
 
-    
+    ///
+    /// NEVERMIND YOU DON'T GET TO DECAY
+    /// WHY? BECAUSE MINECRAFT AND FORGE HATES ME THAT'S WHY!!!!
+    /// I try to make these into LeavesBlocks
+    /// The result is leaves UNRELATED to these leaves will immediatley start decaying.
+    /// SO FUCK YOU.
     public static final RegistryObject<Block> ALPHA_LEAVES
-    = registerBlock("alpha_leaves", () -> new LeavesBlock(LEAF_PROPERTIES));
+    = registerBlock("alpha_leaves", () -> new Block(LEAF_PROPERTIES));
     public static final RegistryObject<Block> ALPHA_BIRCH_LEAVES
-    = registerBlock("alpha_birch_leaves", () -> new LeavesBlock(BlockBehaviour.Properties.copy(Blocks.BIRCH_LEAVES)));
+    = registerBlock("alpha_birch_leaves", () -> new Block(BlockBehaviour.Properties.copy(Blocks.BIRCH_LEAVES)));
 
     
     public static final RegistryObject<Block> ALPHA_SAPLING
