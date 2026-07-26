@@ -1,5 +1,5 @@
 {
-  "feature": "alpha_darkworld:birch_scary",
+  "feature": "alpha_darkworld:birch",
   "placement": [
     {
       "type": "minecraft:count",
@@ -8,7 +8,7 @@
         "distribution": [
           {
             "data": 0,
-            "weight": 2
+            "weight": 9
           },
           {
             "data": 1,

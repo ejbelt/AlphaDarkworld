@@ -44,13 +44,15 @@ public class BlockLootTableGenerator extends BlockLootSubProvider {
         this.dropSelf(BlockRegistry.ALPHA_PLANKS.get());
         this.dropSelf(BlockRegistry.ALPHA_LOG.get());
         this.dropSelf(BlockRegistry.ALPHA_BIRCH_LOG.get());
-        this.dropSelf(BlockRegistry.ALPHA_SAPLING.get());
-        this.dropSelf(BlockRegistry.ALPHA_BIRCH_SAPLING.get());
+    //    this.dropSelf(BlockRegistry.ALPHA_SAPLING.get());
+    //    this.dropSelf(BlockRegistry.ALPHA_BIRCH_SAPLING.get());
+        this.dropSelf(BlockRegistry.ALPHA_BIRCH_LEAVES.get());
+        this.dropSelf(BlockRegistry.ALPHA_LEAVES.get());
 
-        this.add(BlockRegistry.ALPHA_LEAVES.get(), block ->
-            createLeavesDrops(block, BlockRegistry.ALPHA_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
-        this.add(BlockRegistry.ALPHA_BIRCH_LEAVES.get(), block ->
-            createLeavesDrops(block, BlockRegistry.ALPHA_BIRCH_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+    //    this.add(BlockRegistry.ALPHA_LEAVES.get(), block ->
+    //        createLeavesDrops(block, BlockRegistry.ALPHA_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+    //    this.add(BlockRegistry.ALPHA_BIRCH_LEAVES.get(), block ->
+    //        createLeavesDrops(block, BlockRegistry.ALPHA_BIRCH_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
 
         this.add(BlockRegistry.RUBY_ORE.get(), 
             block -> createOreDrop(block, ItemRegistry.RUBY.get()));

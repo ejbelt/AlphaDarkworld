@@ -1,11 +1,9 @@
-// 1.20.1	2026-07-26T00:37:02.4589283	Loot Tables
-266ebd52ff68cada7308a51079effe08dd06bf1a data/alpha_darkworld/loot_tables/blocks/alpha_birch_leaves.json
+// 1.20.1	2026-07-26T00:54:37.0371721	Loot Tables
+a12b46040cf80a454fd441e0c7ed92e5fe7a518b data/alpha_darkworld/loot_tables/blocks/alpha_birch_leaves.json
 cfc6e98ae32ce66211bbff241d2bd79b9a28bfb0 data/alpha_darkworld/loot_tables/blocks/alpha_birch_log.json
-a0a693a5a646fb5115867cbb8b72df034293d39d data/alpha_darkworld/loot_tables/blocks/alpha_birch_sapling.json
-154920e885b30df92f56bd0a37d280a39855f041 data/alpha_darkworld/loot_tables/blocks/alpha_leaves.json
+3d5509bb1e02ffcf8ad2ca75ade5bcb43fe45bdc data/alpha_darkworld/loot_tables/blocks/alpha_leaves.json
 09b260731fb6eab6ea700c4a53b7c8cd43f33dda data/alpha_darkworld/loot_tables/blocks/alpha_log.json
 6cefae1994369c37302d979060b1e6e920ff1eb7 data/alpha_darkworld/loot_tables/blocks/alpha_planks.json
-3098e5e7ccc888fa70add05fb306bbb9167ed0f5 data/alpha_darkworld/loot_tables/blocks/alpha_sapling.json
 2be3ced4efb7631870f81380150865fb48a23beb data/alpha_darkworld/loot_tables/blocks/capri_carpet.json
 43643f92553f5950bc585edb311065f8efe27455 data/alpha_darkworld/loot_tables/blocks/capri_wool.json
 f3644d98be1ae28f72a1ae4decf578ec0a23fe1c data/alpha_darkworld/loot_tables/blocks/chartreuse_carpet.json

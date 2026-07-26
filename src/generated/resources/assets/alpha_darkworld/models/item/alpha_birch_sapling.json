@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "alpha_darkworld:block/alpha_birch_sapling"
-  }
-}

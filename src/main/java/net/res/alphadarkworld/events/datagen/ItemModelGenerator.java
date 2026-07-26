@@ -68,8 +68,8 @@ private static LinkedHashMap<ResourceKey<TrimMaterial>, Float> trimMaterials = n
         trimmedArmorItem(ItemRegistry.RUBY_LEGGINGS);
         trimmedArmorItem(ItemRegistry.RUBY_BOOTS);
         
-        saplingItem(BlockRegistry.ALPHA_SAPLING);
-        saplingItem(BlockRegistry.ALPHA_BIRCH_SAPLING);
+        //saplingItem(BlockRegistry.ALPHA_SAPLING);
+        //saplingItem(BlockRegistry.ALPHA_BIRCH_SAPLING);
 
     }
     

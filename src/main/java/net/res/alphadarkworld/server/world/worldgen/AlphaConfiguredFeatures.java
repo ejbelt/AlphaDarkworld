@@ -37,7 +37,7 @@ public class AlphaConfiguredFeatures {
 
     public static void bootstrap(BootstapContext<ConfiguredFeature<?, ?>> context) {
 
-        register(context, ALPHA_OAK_TREE_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+        /*register(context, ALPHA_OAK_TREE_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(BlockRegistry.ALPHA_LOG.get()),
                 new StraightTrunkPlacer(4, 2, 0),
                 
@@ -73,7 +73,7 @@ public class AlphaConfiguredFeatures {
                 BlockStateProvider.simple(BlockRegistry.ALPHA_BIRCH_LEAVES.get()),
                 new FancyFoliagePlacer(ConstantInt.of(2), ConstantInt.of(4), 4),
 
-                new TwoLayersFeatureSize(1, 0, 1)).build());   
+                new TwoLayersFeatureSize(1, 0, 1)).build());   */
 
     }
 

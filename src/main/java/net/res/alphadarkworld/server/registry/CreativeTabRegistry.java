@@ -65,8 +65,8 @@ public class CreativeTabRegistry {
                 output.accept(BlockRegistry.ROSE_CARPET.get());
                 output.accept(BlockRegistry.SPRING_CARPET.get());
                 output.accept(BlockRegistry.VIOLET_CARPET.get());
-                output.accept(BlockRegistry.ALPHA_SAPLING.get());
-                output.accept(BlockRegistry.ALPHA_BIRCH_SAPLING.get());
+                //output.accept(BlockRegistry.ALPHA_SAPLING.get());
+                //output.accept(BlockRegistry.ALPHA_BIRCH_SAPLING.get());
             })
             .build()
     );
