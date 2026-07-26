@@ -26,4 +26,4 @@ forge*changelog.txt
 
 # Unused stuff
 src/main/resources/unusedrn/*
-run-data/*
+run-data/logs/*
