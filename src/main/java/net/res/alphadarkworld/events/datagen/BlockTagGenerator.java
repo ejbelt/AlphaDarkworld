@@ -22,12 +22,6 @@ public class BlockTagGenerator extends BlockTagsProvider {
 
     @Override
     protected void addTags(HolderLookup.Provider pProvider) {
-
-       /*this.tag(BlockTags.LEAVES)
-        .add(
-            BlockRegistry.ALPHA_LEAVES.get(),
-            BlockRegistry.ALPHA_BIRCH_LEAVES.get()
-        );*/
         
         this.tag(TagRegistry.Blocks.NEEDS_MITHRIL_TOOL)
             .add(
