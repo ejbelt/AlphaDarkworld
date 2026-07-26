@@ -6,16 +6,16 @@
       "tag": "alpha_darkworld:darkworld_sticks"
     },
     "X": {
-      "tag": "penumbra_phantasm:card_kingdom_materials_tier_one"
+      "item": "penumbra_phantasm:ivory"
     }
   },
   "pattern": [
-    "X",
-    "#",
-    "#"
+    " X ",
+    " # ",
+    " # "
   ],
   "result": {
-    "item": "penumbra_phantasm:dark_candy_shovel"
+    "item": "penumbra_phantasm:ivory_shovel"
   },
   "show_notification": true
 }

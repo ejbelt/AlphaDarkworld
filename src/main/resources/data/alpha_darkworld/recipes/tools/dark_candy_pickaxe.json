@@ -3,7 +3,7 @@
   "category": "equipment",
   "key": {
     "#": {
-      "item": "alpha_darkworld:dark_stick"
+      "tag": "alpha_darkworld:darkworld_sticks"
     },
     "X": {
       "tag": "penumbra_phantasm:card_kingdom_materials_tier_one"

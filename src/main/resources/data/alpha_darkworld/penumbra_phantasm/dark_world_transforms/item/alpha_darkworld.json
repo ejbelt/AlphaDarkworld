@@ -8,6 +8,10 @@
   "converting_items":
   [
     {
+      "light_world": "minecraft:stick",
+      "dark_world": "alpha_darkworld:dark_stick"
+    },
+    {
       "light_world": "minecraft:diamond",
       "dark_world": "alpha_darkworld:ruby"
     },

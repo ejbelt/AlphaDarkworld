@@ -29,26 +29,37 @@ public class BlockRegistry {
     public static final BlockBehaviour.Properties LOG_PROPERTIES = BlockBehaviour.Properties.copy(Blocks.OAK_WOOD);
     public static final BlockBehaviour.Properties LEAF_PROPERTIES = BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES);
 
+    //Nature
+    //public static final RegistryObject<Block> ALPHA_GRASS_BLOCK
+    //= registerBlock("alpha_grass", () -> new Block(BlockBehaviour.Properties.copy(Blocks.GRASS_BLOCK)));
+    //public static final RegistryObject<Block> ALPHA_DIRT
+    //= registerBlock("alpha_dirt", () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIRT)));
+    public static final RegistryObject<Block> LIMESTONE
+    = registerBlock("limestone", () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE)));
+
+    //Building Blocks
+    public static final RegistryObject<Block> ALPHA_COBBLESTONE
+    = registerBlock("alpha_cobblestone", () -> new Block(BlockBehaviour.Properties.copy(Blocks.COBBLESTONE)));
+    public static final RegistryObject<Block> ALPHA_MOSSY_COBBLESTONE
+    = registerBlock("alpha_mossy_cobblestone", () -> new Block(BlockBehaviour.Properties.copy(Blocks.MOSSY_COBBLESTONE)));
+    public static final RegistryObject<Block> ALPHA_BRICKS
+    = registerBlock("alpha_bricks", () -> new Block(BlockBehaviour.Properties.copy(Blocks.BRICKS)));
+
     //Ruby
     public static final RegistryObject<Block> RUBY_ORE 
     = registerBlock("ruby_ore", () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DIAMOND_ORE), UniformInt.of(0, 1)));
-
     public static final RegistryObject<Block> RUBY_BLOCK 
     = registerBlock("ruby_block", () -> new Block(RUBY_PROPERTIES));
 
     //Mithril
     public static final RegistryObject<Block> MITHRIL_ORE
     = registerBlock("mithril_ore", () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE).requiresCorrectToolForDrops()));
-
     public static final RegistryObject<Block> MITHRIL_BLOCK 
     = registerBlock("mithril_block", () -> new Block(MITHRIL_PROPERTIES));
-
     public static final RegistryObject<Block> RAW_MITHRIL_BLOCK 
     = registerBlock("raw_mithril_block", () -> new Block(MITHRIL_PROPERTIES));
 
-    ///Wool Time
-    /// 
-    
+    //Wool
     public static final RegistryObject<Block> ULTRAMARINE_WOOL 
     = registerBlock("ultramarine_wool", () -> new Block(CLOTH_PROPERTIES.mapColor(MapColor.COLOR_BLUE)));
     public static final RegistryObject<Block> CAPRI_WOOL 
@@ -61,7 +72,6 @@ public class BlockRegistry {
     = registerBlock("spring_wool", () -> new Block(CLOTH_PROPERTIES.mapColor(MapColor.COLOR_LIGHT_GREEN)));
     public static final RegistryObject<Block> VIOLET_WOOL 
     = registerBlock("violet_wool", () -> new Block(CLOTH_PROPERTIES.mapColor(MapColor.COLOR_PURPLE)));
-
     
     //Carpets.
     public static final RegistryObject<Block> ULTRAMARINE_CARPET 
@@ -80,7 +90,6 @@ public class BlockRegistry {
     //Woodstuff.
     public static final RegistryObject<Block> ALPHA_PLANKS
     = registerBlock("alpha_planks", () -> new Block(WOOD_PROPERTIES));
-
     public static final RegistryObject<RotatedPillarBlock> ALPHA_LOG
     = registerBlock("alpha_log", () -> new RotatedPillarBlock(LOG_PROPERTIES));
     public static final RegistryObject<RotatedPillarBlock> ALPHA_BIRCH_LOG
@@ -92,15 +101,13 @@ public class BlockRegistry {
     /// I try to make these into LeavesBlocks
     /// The result is leaves UNRELATED to these leaves will immediatley start decaying.
     /// SO FUCK YOU.
+    /// Anyways, leaves....
     public static final RegistryObject<Block> ALPHA_LEAVES
     = registerBlock("alpha_leaves", () -> new LeavesBlock(LEAF_PROPERTIES));
     public static final RegistryObject<Block> ALPHA_BIRCH_LEAVES
     = registerBlock("alpha_birch_leaves", () -> new LeavesBlock(BlockBehaviour.Properties.copy(Blocks.BIRCH_LEAVES)));
-
-    
     public static final RegistryObject<Block> ALPHA_SAPLING
     = registerBlock("alpha_sapling", () -> new SaplingBlock(new AlphaOakTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
-
         public static final RegistryObject<Block> ALPHA_BIRCH_SAPLING
     = registerBlock("alpha_birch_sapling", () -> new SaplingBlock(new AlphaBirchTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
 

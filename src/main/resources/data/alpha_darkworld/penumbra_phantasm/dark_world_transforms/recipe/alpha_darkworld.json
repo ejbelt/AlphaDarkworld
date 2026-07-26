@@ -1,40 +1,39 @@
 {
-  "dark_world_allowed":
-          [
-             "alpha_darkworld:blocks/uncraft/raw_mithril_from_block",
-             "alpha_darkworld:blocks/uncraft/mithril_from_block",
-             "alpha_darkworld:blocks/uncraft/ruby_from_block",
-             "alpha_darkworld:tools/dark_sticks",
-             "alpha_darkworld:tools/mithril_axe",
-             "alpha_darkworld:tools/mithril_hoe",
-             "alpha_darkworld:tools/mithril_pickaxe",
-             "alpha_darkworld:tools/mithril_shovel",
-             "alpha_darkworld:tools/mithril_sword",
-             "alpha_darkworld:tools/ruby_axe",
-             "alpha_darkworld:tools/ruby_hoe",
-             "alpha_darkworld:tools/ruby_pickaxe",
-             "alpha_darkworld:tools/ruby_shovel",
-             "alpha_darkworld:tools/ruby_sword",
-             "alpha_darkworld:tools/stone_axe",
-             "alpha_darkworld:tools/stone_hoe",
-             "alpha_darkworld:tools/stone_pickaxe",
-             "alpha_darkworld:tools/stone_shovel",
-             "alpha_darkworld:tools/stone_sword",
-             "alpha_darkworld:smelting/mithril_from_ore",
-             "alpha_darkworld:smelting/mithril_from_ore_blast",
-             "alpha_darkworld:smelting/mithril_from_raw",
-             "alpha_darkworld:smelting/mithril_from_ore_blast",
-             "alpha_darkworld:smelting/ruby_from_ore",
-             "alpha_darkworld:smelting/ruby_from_ore_blast",
-             "alpha_darkworld:blocks/alpha_planks",
-             "alpha_darkworld:blocks/dark_candy_crafting_table",
-             "alpha_darkworld:blocks/mithril_block",
-             "alpha_darkworld:blocks/raw_mithril_block",
-             "alpha_darkworld:blocks/ruby_block"
-             
-          ],
-  "dark_world_blocked":
-          [
-            
-          ]
+"dark_world_allowed":
+        [
+        "alpha_darkworld:blocks/uncraft/raw_mithril_from_block",
+        "alpha_darkworld:blocks/uncraft/mithril_from_block",
+        "alpha_darkworld:blocks/uncraft/ruby_from_block",
+        "alpha_darkworld:tools/dark_sticks",
+        "alpha_darkworld:tools/mithril_axe",
+        "alpha_darkworld:tools/mithril_hoe",
+        "alpha_darkworld:tools/mithril_pickaxe",
+        "alpha_darkworld:tools/mithril_shovel",
+        "alpha_darkworld:tools/mithril_sword",
+        "alpha_darkworld:tools/ruby_axe",
+        "alpha_darkworld:tools/ruby_hoe",
+        "alpha_darkworld:tools/ruby_pickaxe",
+        "alpha_darkworld:tools/ruby_shovel",
+        "alpha_darkworld:tools/ruby_sword",
+        "alpha_darkworld:tools/stone_axe",
+        "alpha_darkworld:tools/stone_hoe",
+        "alpha_darkworld:tools/stone_pickaxe",
+        "alpha_darkworld:tools/stone_shovel",
+        "alpha_darkworld:tools/stone_sword",
+        "alpha_darkworld:smelting/mithril_from_ore",
+        "alpha_darkworld:smelting/mithril_from_ore_blast",
+        "alpha_darkworld:smelting/mithril_from_raw",
+        "alpha_darkworld:smelting/mithril_from_ore_blast",
+        "alpha_darkworld:smelting/ruby_from_ore",
+        "alpha_darkworld:smelting/ruby_from_ore_blast",
+        "alpha_darkworld:blocks/alpha_planks",
+        "alpha_darkworld:blocks/dark_candy_crafting_table",
+        "alpha_darkworld:blocks/mithril_block",
+        "alpha_darkworld:blocks/raw_mithril_block",
+        "alpha_darkworld:blocks/ruby_block"
+        ],
+"dark_world_blocked":
+        [
+
+        ]
 }

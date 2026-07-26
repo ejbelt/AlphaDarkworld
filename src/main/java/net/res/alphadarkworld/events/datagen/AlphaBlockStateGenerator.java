@@ -31,16 +31,24 @@ public class AlphaBlockStateGenerator extends BlockStateProvider {
         blockWithItem(BlockRegistry.SPRING_WOOL);
         blockWithItem(BlockRegistry.VIOLET_WOOL);
         blockWithItem(BlockRegistry.ALPHA_PLANKS);
+        blockWithItem(BlockRegistry.LIMESTONE);
+        blockWithItem(BlockRegistry.ALPHA_COBBLESTONE);
+        blockWithItem(BlockRegistry.ALPHA_MOSSY_COBBLESTONE);
+        blockWithItem(BlockRegistry.ALPHA_BRICKS);
+
         logWithItem(BlockRegistry.ALPHA_LOG);
         logWithItem(BlockRegistry.ALPHA_BIRCH_LOG);
+
         saplingModel(BlockRegistry.ALPHA_SAPLING);
         saplingModel(BlockRegistry.ALPHA_BIRCH_SAPLING);
+
         carpetBlock("ultramarine_carpet", BlockRegistry.ULTRAMARINE_CARPET, BlockRegistry.ULTRAMARINE_WOOL);
         carpetBlock("capri_carpet", BlockRegistry.CAPRI_CARPET, BlockRegistry.CAPRI_WOOL);
         carpetBlock("chartreuse_carpet", BlockRegistry.CHARTREUSE_CARPET, BlockRegistry.CHARTREUSE_WOOL);
         carpetBlock("rose_carpet", BlockRegistry.ROSE_CARPET, BlockRegistry.ROSE_WOOL);
         carpetBlock("spring_carpet", BlockRegistry.SPRING_CARPET, BlockRegistry.SPRING_WOOL);
         carpetBlock("violet_carpet", BlockRegistry.VIOLET_CARPET, BlockRegistry.VIOLET_WOOL);
+
         leavesBlock(BlockRegistry.ALPHA_LEAVES);
         leavesBlock(BlockRegistry.ALPHA_BIRCH_LEAVES);
     }
@@ -56,8 +64,8 @@ public class AlphaBlockStateGenerator extends BlockStateProvider {
 
     private void logWithItem(RegistryObject<RotatedPillarBlock> blockRegistryObject){
         String path = blockRegistryObject.getId().getPath();
-        logBlock(blockRegistryObject.get());
-        simpleBlockItem(blockRegistryObject.get(), models().cubeTop(path, new ResourceLocation(AlphaDarkworld.MOD_ID, "block/" + path), new ResourceLocation(AlphaDarkworld.MOD_ID, "block/" + path +"_top")));
+        axisBlock(blockRegistryObject.get(), new ResourceLocation(AlphaDarkworld.MOD_ID, "block/" + path), new ResourceLocation(AlphaDarkworld.MOD_ID, "block/" + path +"_top"));
+        simpleBlockItem(blockRegistryObject.get(), models().cubeBottomTop(path, new ResourceLocation(AlphaDarkworld.MOD_ID, "block/" + path), new ResourceLocation(AlphaDarkworld.MOD_ID, "block/" + path +"_top"), new ResourceLocation(AlphaDarkworld.MOD_ID, "block/" + path +"_top")));
     }
 
     private void leavesBlock(RegistryObject<Block> blockRegistryObject){

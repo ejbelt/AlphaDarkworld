@@ -62,6 +62,10 @@ public class BlockLootTableGenerator extends BlockLootSubProvider {
         this.dropSelf(BlockRegistry.ALPHA_BIRCH_LOG.get());
         this.dropSelf(BlockRegistry.ALPHA_SAPLING.get());
         this.dropSelf(BlockRegistry.ALPHA_BIRCH_SAPLING.get());
+        this.dropSelf(BlockRegistry.LIMESTONE.get());
+        this.dropSelf(BlockRegistry.ALPHA_COBBLESTONE.get());
+        this.dropSelf(BlockRegistry.ALPHA_MOSSY_COBBLESTONE.get());
+        this.dropSelf(BlockRegistry.ALPHA_BRICKS.get());
 
         this.add(BlockRegistry.ALPHA_LEAVES.get(), block ->
             createDarkWorldOakLeavesDrops(block, BlockRegistry.ALPHA_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));

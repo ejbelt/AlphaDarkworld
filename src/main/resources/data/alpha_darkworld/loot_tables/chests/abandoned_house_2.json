@@ -13,7 +13,7 @@
               "function": "minecraft:set_count"
             }
           ],
-          "name": "minecraft:iron_block"
+          "name": "alpha_darkworld:mithril_block"
         }
       ],
       "rolls": 1
@@ -67,7 +67,7 @@
               "function": "minecraft:set_count"
             }
           ],
-          "name": "minecraft:diamond"
+          "name": "alpha_darkworld:ruby"
         },
         {
           "type": "minecraft:item",
@@ -98,32 +98,6 @@
           "functions": [
             {
               "add": false,
-              "count": 1,
-              "function": "minecraft:set_count"
-            }
-          ],
-          "name": "minecraft:gold_block"
-        },
-        {
-          "type": "minecraft:item",
-          "functions": [
-            {
-              "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 9,
-                "min": 2
-              },
-              "function": "minecraft:set_count"
-            }
-          ],
-          "name": "minecraft:gold_ingot"
-        },
-        {
-          "type": "minecraft:item",
-          "functions": [
-            {
-              "add": false,
               "count": {
                 "type": "minecraft:uniform",
                 "max": 9,
@@ -132,7 +106,7 @@
               "function": "minecraft:set_count"
             }
           ],
-          "name": "minecraft:iron_ingot"
+          "name": "alpha_darkworld:mithril_ingot"
         },
         {
           "type": "minecraft:item",
@@ -161,7 +135,7 @@
               "function": "minecraft:set_count"
             }
           ],
-          "name": "minecraft:iron_sword"
+          "name": "alpha_darkworld:mithril_sword"
         },
         {
           "type": "minecraft:item",
@@ -175,7 +149,7 @@
               "function": "minecraft:enchant_randomly"
             }
           ],
-          "name": "minecraft:iron_chestplate"
+          "name": "alpha_darkworld:mithril_chestplate"
         },
         {
           "type": "minecraft:item",
@@ -197,7 +171,7 @@
               "function": "minecraft:enchant_randomly"
             }
           ],
-          "name": "minecraft:iron_helmet"
+          "name": "alpha_darkworld:mithril_helmet"
         },
         {
           "type": "minecraft:item",
@@ -219,7 +193,7 @@
               "function": "minecraft:enchant_randomly"
             }
           ],
-          "name": "minecraft:iron_leggings"
+          "name": "alpha_darkworld:mithril_leggings"
         },
         {
           "type": "minecraft:item",
@@ -238,7 +212,7 @@
               "function": "minecraft:enchant_randomly"
             }
           ],
-          "name": "minecraft:iron_boots"
+          "name": "alpha_darkworld:mithril_leggings"
         },
         {
           "type": "minecraft:item",
@@ -257,7 +231,7 @@
               "function": "minecraft:enchant_randomly"
             }
           ],
-          "name": "minecraft:iron_axe"
+          "name": "alpha_darkworld:mithril_axe"
         },
         {
           "type": "minecraft:item",
@@ -363,7 +337,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "penumbra_phantasm:dark_candy_sapling",
+          "name": "alpha_darkworld:alpha_birch_sapling",
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -384,7 +358,36 @@
     },
     {
       "rolls": 0,
-      "entries": []
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "alpha_darkworld:random_wool",
+          "weight": 1,
+          "quality": 1
+        }
+      ]
+    },
+    {
+      "rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "alpha_darkworld:random_wool",
+          "weight": 1,
+          "quality": 1
+        }
+      ]
+    },
+    {
+      "rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "alpha_darkworld:random_wool",
+          "weight": 1,
+          "quality": 1
+        }
+      ]
     }
   ],
   "random_sequence": "alpha_darkworld:chests/abandoned_house_2"

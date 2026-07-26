@@ -383,7 +383,25 @@
     },
     {
       "rolls": 0,
-      "entries": []
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "alpha_darkworld:random_wool",
+          "weight": 1,
+          "quality": 1
+        }
+      ]
+    },
+    {
+      "rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "alpha_darkworld:random_carpet",
+          "weight": 1,
+          "quality": 1
+        }
+      ]
     }
   ],
   "random_sequence": "alpha_darkworld:chests/abandoned_house_3"

@@ -15,13 +15,14 @@ public class TagRegistry {
     public static class Blocks {
         public static final TagKey<Block> NEEDS_MITHRIL_TOOL = tag("needs_mithril_tool");
         public static final TagKey<Block> NEEDS_RUBY_TOOL = tag("needs_ruby_tool");
-
         private static TagKey<Block> tag(String name) {
             return BlockTags.create(new ResourceLocation(AlphaDarkworld.MOD_ID, name));
         }
     }
 
     public static class Items {
+
+        public static final TagKey<Item> DARKWORLD_STICKS = tag("darkworld_sticks");
 
         private static TagKey<Item> tag(String name) {
             return ItemTags.create(new ResourceLocation(AlphaDarkworld.MOD_ID, name));
