@@ -2,6 +2,7 @@ package net.res.alphadarkworld.server.registry;
 
 
 import net.res.alphadarkworld.AlphaDarkworld;
+import net.res.alphadarkworld.server.block.*;
 import net.res.alphadarkworld.server.world.worldgen.tree.*;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -31,9 +32,9 @@ public class BlockRegistry {
 
     //Nature
     public static final RegistryObject<Block> ALPHA_GRASS_BLOCK
-    = registerBlock("alpha_grass", () -> new Block(BlockBehaviour.Properties.copy(Blocks.GRASS_BLOCK)));
+    = registerBlock("alpha_grass", () -> new AlphaGrassBlock(BlockBehaviour.Properties.copy(Blocks.GRASS_BLOCK)));
     public static final RegistryObject<Block> ALPHA_DIRT
-    = registerBlock("alpha_dirt", () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIRT)));
+    = registerBlock("alpha_dirt", () -> new SnowyDirtBlock(BlockBehaviour.Properties.copy(Blocks.DIRT)));
     public static final RegistryObject<Block> LIMESTONE
     = registerBlock("limestone", () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE)));
 
