@@ -11,6 +11,7 @@ import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraft.world.level.levelgen.feature.configurations.FeatureConfiguration;
+import net.minecraft.world.level.levelgen.feature.configurations.NoneFeatureConfiguration;
 import net.minecraft.world.level.levelgen.feature.configurations.OreConfiguration;
 import net.minecraft.world.level.levelgen.feature.configurations.TreeConfiguration;
 import net.minecraft.world.level.levelgen.feature.featuresize.TwoLayersFeatureSize;
@@ -27,7 +28,6 @@ import net.minecraft.world.level.levelgen.structure.templatesystem.RuleTest;
 import net.minecraft.world.level.levelgen.structure.templatesystem.TagMatchTest;
 import net.res.alphadarkworld.AlphaDarkworld;
 import net.res.alphadarkworld.server.registry.BlockRegistry;
-
 public class AlphaConfiguredFeatures {
 
     public static final ResourceKey<ConfiguredFeature<?, ?>> ALPHA_OAK_TREE_KEY = registerKey("alpha_oak");
@@ -73,7 +73,8 @@ public class AlphaConfiguredFeatures {
                 BlockStateProvider.simple(BlockRegistry.ALPHA_BIRCH_LEAVES.get()),
                 new FancyFoliagePlacer(ConstantInt.of(2), ConstantInt.of(4), 4),
 
-                new TwoLayersFeatureSize(1, 0, 1)).build());   
+                new TwoLayersFeatureSize(1, 0, 1)).build());
+                        
 
     }
 
