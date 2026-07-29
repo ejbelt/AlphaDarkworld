@@ -34,9 +34,9 @@ public class BlockRegistry {
     public static final RegistryObject<Block> ALPHA_GRASS_BLOCK
     = registerBlock("alpha_grass", () -> new AlphaGrassBlock(BlockBehaviour.Properties.copy(Blocks.GRASS_BLOCK)));
     public static final RegistryObject<Block> ALPHA_DIRT
-    = registerBlock("alpha_dirt", () -> new SnowyDirtBlock(BlockBehaviour.Properties.copy(Blocks.DIRT)));
+    = registerBlock("alpha_dirt", () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIRT)));
     public static final RegistryObject<Block> LIMESTONE
-    = registerBlock("limestone", () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE)));
+    = registerBlock("darkner_stone", () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE)));
 
     //Building Blocks
     public static final RegistryObject<Block> ALPHA_COBBLESTONE

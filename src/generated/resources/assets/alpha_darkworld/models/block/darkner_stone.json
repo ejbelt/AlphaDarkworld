@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "alpha_darkworld:block/limestone"
+    "all": "alpha_darkworld:block/darkner_stone"
   }
 }

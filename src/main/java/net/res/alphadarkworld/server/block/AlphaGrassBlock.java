@@ -54,7 +54,7 @@ public class AlphaGrassBlock extends GrassBlock{
 
             for(int i = 0; i < 4; ++i) {
                BlockPos blockpos = pPos.offset(pRandom.nextInt(3) - 1, pRandom.nextInt(5) - 3, pRandom.nextInt(3) - 1);
-               if (pLevel.getBlockState(blockpos).is(Blocks.DIRT) && canPropagate(blockstate, pLevel, blockpos)) {
+               if (pLevel.getBlockState(blockpos).is(BlockRegistry.ALPHA_DIRT.get()) && canPropagate(blockstate, pLevel, blockpos)) {
                   pLevel.setBlockAndUpdate(blockpos, blockstate.setValue(SNOWY, Boolean.valueOf(pLevel.getBlockState(blockpos.above()).is(Blocks.SNOW))));
                }
             }

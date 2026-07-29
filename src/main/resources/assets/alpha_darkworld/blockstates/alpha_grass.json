@@ -1,6 +1,6 @@
 {
 "variants": {
-        "": [
+        "snowy=false": [
         {
             "model": "alpha_darkworld:block/alpha_grass"
         },
@@ -18,7 +18,7 @@
         }
         ],
         "snowy=true": {
-            "model": "minecraft:block/grass_block_snow"
+            "model": "alpha_darkworld:block/alpha_grass_snow"
         }
     }
 }

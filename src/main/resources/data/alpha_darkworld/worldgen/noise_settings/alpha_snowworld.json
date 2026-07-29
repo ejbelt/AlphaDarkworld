@@ -1,7 +1,7 @@
 {
   "aquifers_enabled": true,
   "default_block": {
-    "Name": "alpha_darkworld:limestone"
+    "Name": "alpha_darkworld:darkner_stone"
   },
   "default_fluid": {
     "Name": "minecraft:water",
@@ -818,7 +818,7 @@
                               "then_run": {
                                 "type": "minecraft:block",
                                 "result_state": {
-                                  "Name": "alpha_darkworld:limestone"
+                                  "Name": "alpha_darkworld:darkner_stone"
                                 }
                               }
                             },
@@ -1081,7 +1081,7 @@
                                 "then_run": {
                                   "type": "minecraft:block",
                                   "result_state": {
-                                    "Name": "alpha_darkworld:limestone"
+                                    "Name": "alpha_darkworld:darkner_stone"
                                   }
                                 }
                               },
@@ -1146,7 +1146,7 @@
                                 "then_run": {
                                   "type": "minecraft:block",
                                   "result_state": {
-                                    "Name": "alpha_darkworld:limestone"
+                                    "Name": "alpha_darkworld:darkner_stone"
                                   }
                                 }
                               },
@@ -1253,7 +1253,7 @@
                                   {
                                     "type": "minecraft:block",
                                     "result_state": {
-                                      "Name": "alpha_darkworld:limestone"
+                                      "Name": "alpha_darkworld:darkner_stone"
                                     }
                                   }
                                 ]
@@ -1293,7 +1293,7 @@
                                           "then_run": {
                                             "type": "minecraft:block",
                                             "result_state": {
-                                              "Name": "alpha_darkworld:limestone"
+                                              "Name": "alpha_darkworld:darkner_stone"
                                             }
                                           }
                                         },
@@ -1309,7 +1309,7 @@
                                   {
                                     "type": "minecraft:block",
                                     "result_state": {
-                                      "Name": "alpha_darkworld:limestone"
+                                      "Name": "alpha_darkworld:darkner_stone"
                                     }
                                   }
                                 ]
@@ -1334,7 +1334,7 @@
                                 "then_run": {
                                   "type": "minecraft:block",
                                   "result_state": {
-                                    "Name": "alpha_darkworld:limestone"
+                                    "Name": "alpha_darkworld:darkner_stone"
                                   }
                                 }
                               }
@@ -1424,7 +1424,7 @@
                               "then_run": {
                                 "type": "minecraft:block",
                                 "result_state": {
-                                  "Name": "alpha_darkworld:limestone"
+                                  "Name": "alpha_darkworld:darkner_stone"
                                 }
                               }
                             }
@@ -1452,7 +1452,7 @@
                                 "then_run": {
                                   "type": "minecraft:block",
                                   "result_state": {
-                                    "Name": "alpha_darkworld:limestone"
+                                    "Name": "alpha_darkworld:darkner_stone"
                                   }
                                 }
                               },
@@ -1508,7 +1508,7 @@
                                       "then_run": {
                                         "type": "minecraft:block",
                                         "result_state": {
-                                          "Name": "alpha_darkworld:limestone"
+                                          "Name": "alpha_darkworld:darkner_stone"
                                         }
                                       }
                                     },
@@ -1532,7 +1532,7 @@
                                 "then_run": {
                                   "type": "minecraft:block",
                                   "result_state": {
-                                    "Name": "alpha_darkworld:limestone"
+                                    "Name": "alpha_darkworld:darkner_stone"
                                   }
                                 }
                               },
@@ -1589,7 +1589,7 @@
                                     "then_run": {
                                       "type": "minecraft:block",
                                       "result_state": {
-                                        "Name": "alpha_darkworld:limestone"
+                                        "Name": "alpha_darkworld:darkner_stone"
                                       }
                                     }
                                   },
@@ -1892,7 +1892,7 @@
                                 "then_run": {
                                   "type": "minecraft:block",
                                   "result_state": {
-                                    "Name": "alpha_darkworld:limestone"
+                                    "Name": "alpha_darkworld:darkner_stone"
                                   }
                                 }
                               },
@@ -1949,7 +1949,7 @@
                           "then_run": {
                             "type": "minecraft:block",
                             "result_state": {
-                              "Name": "alpha_darkworld:limestone"
+                              "Name": "alpha_darkworld:darkner_stone"
                             }
                           }
                         },
@@ -2029,7 +2029,7 @@
                                   {
                                     "type": "minecraft:block",
                                     "result_state": {
-                                      "Name": "alpha_darkworld:limestone"
+                                      "Name": "alpha_darkworld:darkner_stone"
                                     }
                                   }
                                 ]
@@ -2069,7 +2069,7 @@
                                           "then_run": {
                                             "type": "minecraft:block",
                                             "result_state": {
-                                              "Name": "alpha_darkworld:limestone"
+                                              "Name": "alpha_darkworld:darkner_stone"
                                             }
                                           }
                                         },
@@ -2085,7 +2085,7 @@
                                   {
                                     "type": "minecraft:block",
                                     "result_state": {
-                                      "Name": "alpha_darkworld:limestone"
+                                      "Name": "alpha_darkworld:darkner_stone"
                                     }
                                   }
                                 ]
@@ -2110,7 +2110,7 @@
                                 "then_run": {
                                   "type": "minecraft:block",
                                   "result_state": {
-                                    "Name": "alpha_darkworld:limestone"
+                                    "Name": "alpha_darkworld:darkner_stone"
                                   }
                                 }
                               }
@@ -2200,7 +2200,7 @@
                               "then_run": {
                                 "type": "minecraft:block",
                                 "result_state": {
-                                  "Name": "alpha_darkworld:limestone"
+                                  "Name": "alpha_darkworld:darkner_stone"
                                 }
                               }
                             }
@@ -2225,7 +2225,7 @@
                             "then_run": {
                               "type": "minecraft:block",
                               "result_state": {
-                                "Name": "alpha_darkworld:limestone"
+                                "Name": "alpha_darkworld:darkner_stone"
                               }
                             }
                           }
@@ -2264,7 +2264,7 @@
                                       "then_run": {
                                         "type": "minecraft:block",
                                         "result_state": {
-                                          "Name": "alpha_darkworld:limestone"
+                                          "Name": "alpha_darkworld:darkner_stone"
                                         }
                                       }
                                     },
@@ -2288,7 +2288,7 @@
                                 "then_run": {
                                   "type": "minecraft:block",
                                   "result_state": {
-                                    "Name": "alpha_darkworld:limestone"
+                                    "Name": "alpha_darkworld:darkner_stone"
                                   }
                                 }
                               },
@@ -2322,7 +2322,7 @@
                                     "then_run": {
                                       "type": "minecraft:block",
                                       "result_state": {
-                                        "Name": "alpha_darkworld:limestone"
+                                        "Name": "alpha_darkworld:darkner_stone"
                                       }
                                     }
                                   },
@@ -2440,7 +2440,7 @@
                     "then_run": {
                       "type": "minecraft:block",
                       "result_state": {
-                        "Name": "alpha_darkworld:limestone"
+                        "Name": "alpha_darkworld:darkner_stone"
                       }
                     }
                   },
@@ -2497,7 +2497,7 @@
                         "then_run": {
                           "type": "minecraft:block",
                           "result_state": {
-                            "Name": "alpha_darkworld:limestone"
+                            "Name": "alpha_darkworld:darkner_stone"
                           }
                         }
                       },
@@ -2522,7 +2522,7 @@
           "false_at_and_above": {
             "absolute": 8
           },
-          "random_name": "alpha_darkworld:limestone",
+          "random_name": "alpha_darkworld:darkner_stone",
           "true_at_and_below": {
             "absolute": 0
           }
@@ -2530,7 +2530,7 @@
         "then_run": {
           "type": "minecraft:block",
           "result_state": {
-            "Name": "alpha_darkworld:limestone",
+            "Name": "alpha_darkworld:darkner_stone",
             "Properties": {
               "axis": "y"
             }

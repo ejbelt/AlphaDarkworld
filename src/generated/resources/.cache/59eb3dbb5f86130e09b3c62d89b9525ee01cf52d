@@ -1,4 +1,4 @@
-// 1.20.1	2026-07-26T16:15:01.9108691	Loot Tables
+// 1.20.1	2026-07-29T00:47:59.0620117	Loot Tables
 995da572d27d6769a7ff8d5620a5c4fe9bffc922 data/alpha_darkworld/loot_tables/blocks/alpha_birch_leaves.json
 cfc6e98ae32ce66211bbff241d2bd79b9a28bfb0 data/alpha_darkworld/loot_tables/blocks/alpha_birch_log.json
 a0a693a5a646fb5115867cbb8b72df034293d39d data/alpha_darkworld/loot_tables/blocks/alpha_birch_sapling.json
@@ -15,7 +15,7 @@ b624463cbe073acff882a954319ac0a237d7b4e8 data/alpha_darkworld/loot_tables/blocks
 43643f92553f5950bc585edb311065f8efe27455 data/alpha_darkworld/loot_tables/blocks/capri_wool.json
 f3644d98be1ae28f72a1ae4decf578ec0a23fe1c data/alpha_darkworld/loot_tables/blocks/chartreuse_carpet.json
 dcd4cdc6e112733c9b1ccf2d9fc6e94248d9df44 data/alpha_darkworld/loot_tables/blocks/chartreuse_wool.json
-5d2839e84e8511599048f6359df34486e59b0450 data/alpha_darkworld/loot_tables/blocks/limestone.json
+3b22443c90dbdd12beb357618a780051f280431d data/alpha_darkworld/loot_tables/blocks/darkner_stone.json
 249e76419ac98797b41bdcac733fd62172a5e96c data/alpha_darkworld/loot_tables/blocks/mithril_block.json
 bd689797111154cf86c7d8b1b39617bf30db6a6f data/alpha_darkworld/loot_tables/blocks/mithril_ore.json
 bb91ed9480da3845ed13e8ad33c322b0fb1bfb14 data/alpha_darkworld/loot_tables/blocks/raw_mithril_block.json

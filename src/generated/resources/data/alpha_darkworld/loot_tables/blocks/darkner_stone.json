@@ -24,7 +24,7 @@
                   }
                 }
               ],
-              "name": "alpha_darkworld:limestone"
+              "name": "alpha_darkworld:darkner_stone"
             },
             {
               "type": "minecraft:item",
@@ -41,5 +41,5 @@
       "rolls": 1.0
     }
   ],
-  "random_sequence": "alpha_darkworld:blocks/limestone"
+  "random_sequence": "alpha_darkworld:blocks/darkner_stone"
 }
