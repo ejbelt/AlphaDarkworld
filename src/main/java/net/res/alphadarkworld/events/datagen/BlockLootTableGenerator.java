@@ -66,6 +66,14 @@ public class BlockLootTableGenerator extends BlockLootSubProvider {
         this.dropSelf(BlockRegistry.ALPHA_MOSSY_COBBLESTONE.get());
         this.dropSelf(BlockRegistry.ALPHA_BRICKS.get());
         this.dropSelf(BlockRegistry.ALPHA_DIRT.get());
+        this.dropSelf(BlockRegistry.ALPHA_COBBLESTONE_SLAB.get());
+        this.dropSelf(BlockRegistry.ALPHA_MOSSY_COBBLESTONE_SLAB.get());
+        this.dropSelf(BlockRegistry.ALPHA_BRICK_SLAB.get());
+        this.dropSelf(BlockRegistry.ALPHA_COBBLESTONE_STAIRS.get());
+        this.dropSelf(BlockRegistry.ALPHA_MOSSY_COBBLESTONE_STAIRS.get());
+        this.dropSelf(BlockRegistry.ALPHA_BRICK_STAIRS.get());
+        this.dropSelf(BlockRegistry.ALPHA_WOODEN_SLAB.get());
+        this.dropSelf(BlockRegistry.ALPHA_WOODEN_STAIRS.get());
 
         this.add(BlockRegistry.LIMESTONE.get(), block ->
             createSingleItemTableWithSilkTouch(block, BlockRegistry.ALPHA_COBBLESTONE.get())

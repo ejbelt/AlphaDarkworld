@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "alpha_darkworld:block/alpha_wooden_slab"
+    },
+    "type=double": {
+      "model": "alpha_darkworld:block/alpha_planks"
+    },
+    "type=top": {
+      "model": "alpha_darkworld:block/alpha_wooden_slab_top"
+    }
+  }
+}

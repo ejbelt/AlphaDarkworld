@@ -20,10 +20,18 @@ public class CreativeTabRegistry {
             .title(Component.translatable("itemGroup.alpha_darkworld.main"))
             .displayItems((parameters, output) -> {
                 output.accept(BlockRegistry.ALPHA_PLANKS.get());
+                output.accept(BlockRegistry.ALPHA_WOODEN_SLAB.get());
+                output.accept(BlockRegistry.ALPHA_WOODEN_STAIRS.get());
                 output.accept(BlockRegistry.LIMESTONE.get());
                 output.accept(BlockRegistry.ALPHA_COBBLESTONE.get());
+                output.accept(BlockRegistry.ALPHA_COBBLESTONE_SLAB.get());
+                output.accept(BlockRegistry.ALPHA_COBBLESTONE_STAIRS.get());
                 output.accept(BlockRegistry.ALPHA_MOSSY_COBBLESTONE.get());
+                output.accept(BlockRegistry.ALPHA_MOSSY_COBBLESTONE_SLAB.get());
+                output.accept(BlockRegistry.ALPHA_MOSSY_COBBLESTONE_STAIRS.get());
                 output.accept(BlockRegistry.ALPHA_BRICKS.get());
+                output.accept(BlockRegistry.ALPHA_BRICK_SLAB.get());
+                output.accept(BlockRegistry.ALPHA_BRICK_STAIRS.get());
                 output.accept(BlockRegistry.ALPHA_LOG.get());
                 output.accept(BlockRegistry.ALPHA_BIRCH_LOG.get());
                 output.accept(BlockRegistry.ALPHA_LEAVES.get());

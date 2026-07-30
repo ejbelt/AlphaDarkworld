@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "alpha_darkworld:block/alpha_brick_slab"
+    },
+    "type=double": {
+      "model": "alpha_darkworld:block/alpha_bricks"
+    },
+    "type=top": {
+      "model": "alpha_darkworld:block/alpha_brick_slab_top"
+    }
+  }
+}

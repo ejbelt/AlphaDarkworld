@@ -8,6 +8,7 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -30,6 +31,13 @@ public class BlockRegistry {
     public static final BlockBehaviour.Properties LOG_PROPERTIES = BlockBehaviour.Properties.copy(Blocks.OAK_WOOD);
     public static final BlockBehaviour.Properties LEAF_PROPERTIES = BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES);
 
+
+    public static final BlockSetType ALPHA_WOOD_BLOCKSET = new BlockSetType("alpha_wood");
+    public static final BlockSetType ALPHA_COBBLESTONE_BLOCKSET = new BlockSetType("alpha_cobblestone");
+    public static final BlockSetType ALPHA_MOSSY_COBBLESTONE_BLOCKSET = new BlockSetType("alpha_mossy_cobblestone");
+    public static final BlockSetType ALPHA_BRICK_BLOCKSET = new BlockSetType("alpha_brick");
+
+
     //Nature
     public static final RegistryObject<Block> ALPHA_GRASS_BLOCK
     = registerBlock("alpha_grass", () -> new AlphaGrassBlock(BlockBehaviour.Properties.copy(Blocks.GRASS_BLOCK)));
@@ -41,10 +49,29 @@ public class BlockRegistry {
     //Building Blocks
     public static final RegistryObject<Block> ALPHA_COBBLESTONE
     = registerBlock("alpha_cobblestone", () -> new Block(BlockBehaviour.Properties.copy(Blocks.COBBLESTONE)));
+    public static final RegistryObject<SlabBlock> ALPHA_COBBLESTONE_SLAB
+    = registerBlock("alpha_cobblestone_slab", () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.COBBLESTONE_SLAB)));
+    public static final RegistryObject<StairBlock> ALPHA_COBBLESTONE_STAIRS
+    = registerBlock("alpha_cobblestone_stairs", () -> new StairBlock(ALPHA_COBBLESTONE.get().defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.COBBLESTONE_STAIRS)));
+    //public static final RegistryObject<Block> ALPHA_COBBLESTONE_WALL
+    //= registerBlock("alpha_cobblestone_wall", () -> new Block(BlockBehaviour.Properties.copy(Blocks.COBBLESTONE_WALL)));
     public static final RegistryObject<Block> ALPHA_MOSSY_COBBLESTONE
     = registerBlock("alpha_mossy_cobblestone", () -> new Block(BlockBehaviour.Properties.copy(Blocks.MOSSY_COBBLESTONE)));
+    public static final RegistryObject<SlabBlock> ALPHA_MOSSY_COBBLESTONE_SLAB
+    = registerBlock("alpha_mossy_cobblestone_slab", () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.COBBLESTONE_SLAB)));
+    public static final RegistryObject<StairBlock> ALPHA_MOSSY_COBBLESTONE_STAIRS
+    = registerBlock("alpha_mossy_cobblestone_stairs", () -> new StairBlock(ALPHA_MOSSY_COBBLESTONE.get().defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.COBBLESTONE_STAIRS)));
+    //public static final RegistryObject<Block> ALPHA_MOSSY_COBBLESTONE_WALL
+    //= registerBlock("alpha_mossy_cobblestone_wall", () -> new Block(BlockBehaviour.Properties.copy(Blocks.COBBLESTONE_WALL)));
+    
     public static final RegistryObject<Block> ALPHA_BRICKS
     = registerBlock("alpha_bricks", () -> new Block(BlockBehaviour.Properties.copy(Blocks.BRICKS)));
+    public static final RegistryObject<SlabBlock> ALPHA_BRICK_SLAB
+    = registerBlock("alpha_brick_slab", () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.BRICK_SLAB)));
+    public static final RegistryObject<StairBlock> ALPHA_BRICK_STAIRS
+    = registerBlock("alpha_brick_stairs", () -> new StairBlock(ALPHA_BRICKS.get().defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.COBBLESTONE_STAIRS)));
+    //public static final RegistryObject<Block> ALPHA_BRICK_WALL
+    //= registerBlock("alpha_brick_wall", () -> new Block(BlockBehaviour.Properties.copy(Blocks.BRICK_WALL)));
 
     //Ruby
     public static final RegistryObject<Block> RUBY_ORE 
@@ -91,6 +118,10 @@ public class BlockRegistry {
     //Woodstuff.
     public static final RegistryObject<Block> ALPHA_PLANKS
     = registerBlock("alpha_planks", () -> new Block(WOOD_PROPERTIES));
+    public static final RegistryObject<SlabBlock> ALPHA_WOODEN_SLAB
+    = registerBlock("alpha_wooden_slab", () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.COBBLESTONE_SLAB)));
+    public static final RegistryObject<StairBlock> ALPHA_WOODEN_STAIRS
+    = registerBlock("alpha_wooden_stairs", () -> new StairBlock(ALPHA_MOSSY_COBBLESTONE.get().defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.OAK_STAIRS)));
     public static final RegistryObject<RotatedPillarBlock> ALPHA_LOG
     = registerBlock("alpha_log", () -> new RotatedPillarBlock(LOG_PROPERTIES));
     public static final RegistryObject<RotatedPillarBlock> ALPHA_BIRCH_LOG

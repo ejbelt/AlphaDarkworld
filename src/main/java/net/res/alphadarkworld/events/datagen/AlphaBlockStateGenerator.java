@@ -11,6 +11,8 @@ import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.RotatedPillarBlock;
+import net.minecraft.world.level.block.SlabBlock;
+import net.minecraft.world.level.block.StairBlock;
 
 public class AlphaBlockStateGenerator extends BlockStateProvider {
     public AlphaBlockStateGenerator(PackOutput output, ExistingFileHelper exFileHelper) {
@@ -19,6 +21,7 @@ public class AlphaBlockStateGenerator extends BlockStateProvider {
 
     @Override
     protected void registerStatesAndModels(){
+
         blockWithItem(BlockRegistry.MITHRIL_ORE);
         blockWithItem(BlockRegistry.RUBY_ORE);
         blockWithItem(BlockRegistry.RUBY_BLOCK);
@@ -49,9 +52,19 @@ public class AlphaBlockStateGenerator extends BlockStateProvider {
         carpetBlock("rose_carpet", BlockRegistry.ROSE_CARPET, BlockRegistry.ROSE_WOOL);
         carpetBlock("spring_carpet", BlockRegistry.SPRING_CARPET, BlockRegistry.SPRING_WOOL);
         carpetBlock("violet_carpet", BlockRegistry.VIOLET_CARPET, BlockRegistry.VIOLET_WOOL);
-
         //Do this manually.
         //grassBlockModel(BlockRegistry.ALPHA_GRASS_BLOCK);
+
+        
+        stairsWithItem(BlockRegistry.ALPHA_COBBLESTONE_STAIRS, blockTexture(BlockRegistry.ALPHA_COBBLESTONE.get()));
+        stairsWithItem(BlockRegistry.ALPHA_MOSSY_COBBLESTONE_STAIRS, blockTexture(BlockRegistry.ALPHA_MOSSY_COBBLESTONE.get()));
+        stairsWithItem(BlockRegistry.ALPHA_BRICK_STAIRS, blockTexture(BlockRegistry.ALPHA_BRICKS.get()));
+        stairsWithItem(BlockRegistry.ALPHA_WOODEN_STAIRS, blockTexture(BlockRegistry.ALPHA_PLANKS.get()));
+
+        slabWithItem(BlockRegistry.ALPHA_COBBLESTONE_SLAB, blockTexture(BlockRegistry.ALPHA_COBBLESTONE.get()), blockTexture(BlockRegistry.ALPHA_COBBLESTONE.get()));
+        slabWithItem(BlockRegistry.ALPHA_MOSSY_COBBLESTONE_SLAB, blockTexture(BlockRegistry.ALPHA_MOSSY_COBBLESTONE.get()), blockTexture(BlockRegistry.ALPHA_MOSSY_COBBLESTONE.get()));
+        slabWithItem(BlockRegistry.ALPHA_BRICK_SLAB, blockTexture(BlockRegistry.ALPHA_BRICKS.get()), blockTexture(BlockRegistry.ALPHA_BRICKS.get()));
+        slabWithItem(BlockRegistry.ALPHA_WOODEN_SLAB, blockTexture(BlockRegistry.ALPHA_PLANKS.get()), blockTexture(BlockRegistry.ALPHA_PLANKS.get()));
 
         leavesBlock(BlockRegistry.ALPHA_LEAVES);
         leavesBlock(BlockRegistry.ALPHA_BIRCH_LEAVES);
@@ -81,6 +94,18 @@ public class AlphaBlockStateGenerator extends BlockStateProvider {
     private void saplingModel(RegistryObject<Block> blockRegistryObject){
         simpleBlock(blockRegistryObject.get(),
                 models().cross(ForgeRegistries.BLOCKS.getKey(blockRegistryObject.get()).getPath(), blockTexture(blockRegistryObject.get())).renderType("cutout"));
+    }
+
+    private void slabWithItem(RegistryObject<SlabBlock> blockRegistryObject, ResourceLocation doubleSlab, ResourceLocation texture){
+        String path = blockRegistryObject.getId().getPath();
+        slabBlock(blockRegistryObject.get(), doubleSlab, texture);
+        simpleBlockItem(blockRegistryObject.get(), models().slab(path, texture, texture, texture));
+    }
+
+    private void stairsWithItem(RegistryObject<StairBlock> blockRegistryObject, ResourceLocation texture){
+        String path = blockRegistryObject.getId().getPath();
+        stairsBlock(blockRegistryObject.get(), texture);
+        simpleBlockItem(blockRegistryObject.get(), models().stairs(path, texture, texture, texture));
     }
 
     private void fourSidedBlock(RegistryObject<Block> blockRegistryObject){
