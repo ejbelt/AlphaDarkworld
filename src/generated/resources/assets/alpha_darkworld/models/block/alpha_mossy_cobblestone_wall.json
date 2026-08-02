@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/wall_inventory",
+  "textures": {
+    "wall": "alpha_darkworld:block/alpha_mossy_cobblestone"
+  }
+}

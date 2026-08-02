@@ -13,6 +13,7 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.RotatedPillarBlock;
 import net.minecraft.world.level.block.SlabBlock;
 import net.minecraft.world.level.block.StairBlock;
+import net.minecraft.world.level.block.WallBlock;
 
 public class AlphaBlockStateGenerator extends BlockStateProvider {
     public AlphaBlockStateGenerator(PackOutput output, ExistingFileHelper exFileHelper) {
@@ -66,6 +67,10 @@ public class AlphaBlockStateGenerator extends BlockStateProvider {
         slabWithItem(BlockRegistry.ALPHA_BRICK_SLAB, blockTexture(BlockRegistry.ALPHA_BRICKS.get()), blockTexture(BlockRegistry.ALPHA_BRICKS.get()));
         slabWithItem(BlockRegistry.ALPHA_WOODEN_SLAB, blockTexture(BlockRegistry.ALPHA_PLANKS.get()), blockTexture(BlockRegistry.ALPHA_PLANKS.get()));
 
+        wallWithItem(BlockRegistry.ALPHA_COBBLESTONE_WALL, blockTexture(BlockRegistry.ALPHA_COBBLESTONE.get()));
+        wallWithItem(BlockRegistry.ALPHA_MOSSY_COBBLESTONE_WALL, blockTexture(BlockRegistry.ALPHA_MOSSY_COBBLESTONE.get()));
+        wallWithItem(BlockRegistry.ALPHA_BRICK_WALL, blockTexture(BlockRegistry.ALPHA_BRICKS.get()));
+
         leavesBlock(BlockRegistry.ALPHA_LEAVES);
         leavesBlock(BlockRegistry.ALPHA_BIRCH_LEAVES);
     }
@@ -106,6 +111,12 @@ public class AlphaBlockStateGenerator extends BlockStateProvider {
         String path = blockRegistryObject.getId().getPath();
         stairsBlock(blockRegistryObject.get(), texture);
         simpleBlockItem(blockRegistryObject.get(), models().stairs(path, texture, texture, texture));
+    }
+
+    private void wallWithItem(RegistryObject<WallBlock> blockRegistryObject, ResourceLocation texture){
+        String path = blockRegistryObject.getId().getPath();
+        wallBlock(blockRegistryObject.get(), texture);
+        simpleBlockItem(blockRegistryObject.get(), models().wallInventory(path, texture));
     }
 
     private void fourSidedBlock(RegistryObject<Block> blockRegistryObject){

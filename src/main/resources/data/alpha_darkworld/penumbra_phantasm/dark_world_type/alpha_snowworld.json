@@ -1,7 +1,7 @@
 {
   "block_tag": "alpha_darkworld:influences_alpha_snowworld",
   "block_amount": 9,
-  "noise_settings": "alpha_darkworld:alpha_snowworld",
+  "noise_settings": "alpha_darkworld:alpha_darkworld",
   "dimension_type": "alpha_darkworld:alpha_snowworld_dimension_type",
   "biome_source": {
     "type": "minecraft:multi_noise",

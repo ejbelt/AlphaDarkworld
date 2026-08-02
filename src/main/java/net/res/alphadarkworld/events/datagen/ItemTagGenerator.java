@@ -34,6 +34,17 @@ public class ItemTagGenerator extends ItemTagsProvider{
                 ItemRegistry.RUBY_CHESTPLATE.get(),
                 ItemRegistry.RUBY_LEGGINGS.get()
             );
+
+        this.tag(ItemTags.MUSIC_DISCS)
+            .add(
+                ItemRegistry.DROOPY_DISC_ITEM.get()
+            );
+
+        this.tag(ItemTags.CREEPER_DROP_MUSIC_DISCS)
+            .add(
+                ItemRegistry.DROOPY_DISC_ITEM.get()
+            );
+
     }
     
 }

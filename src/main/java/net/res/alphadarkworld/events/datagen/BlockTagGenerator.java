@@ -28,5 +28,12 @@ public class BlockTagGenerator extends BlockTagsProvider {
                 BlockRegistry.RUBY_ORE.get(),
                 BlockRegistry.RUBY_BLOCK.get()
             );
+
+        this.tag(BlockTags.WALLS)
+            .add(
+                BlockRegistry.ALPHA_COBBLESTONE_WALL.get(),
+                BlockRegistry.ALPHA_MOSSY_COBBLESTONE_WALL.get(),
+                BlockRegistry.ALPHA_BRICK_WALL.get()
+            );
     }
 }

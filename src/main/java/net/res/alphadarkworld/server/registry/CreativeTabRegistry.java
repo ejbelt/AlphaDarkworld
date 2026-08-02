@@ -26,12 +26,15 @@ public class CreativeTabRegistry {
                 output.accept(BlockRegistry.ALPHA_COBBLESTONE.get());
                 output.accept(BlockRegistry.ALPHA_COBBLESTONE_SLAB.get());
                 output.accept(BlockRegistry.ALPHA_COBBLESTONE_STAIRS.get());
+                output.accept(BlockRegistry.ALPHA_COBBLESTONE_WALL.get());
                 output.accept(BlockRegistry.ALPHA_MOSSY_COBBLESTONE.get());
                 output.accept(BlockRegistry.ALPHA_MOSSY_COBBLESTONE_SLAB.get());
                 output.accept(BlockRegistry.ALPHA_MOSSY_COBBLESTONE_STAIRS.get());
+                output.accept(BlockRegistry.ALPHA_MOSSY_COBBLESTONE_WALL.get());
                 output.accept(BlockRegistry.ALPHA_BRICKS.get());
                 output.accept(BlockRegistry.ALPHA_BRICK_SLAB.get());
                 output.accept(BlockRegistry.ALPHA_BRICK_STAIRS.get());
+                output.accept(BlockRegistry.ALPHA_BRICK_WALL.get());
                 output.accept(BlockRegistry.ALPHA_LOG.get());
                 output.accept(BlockRegistry.ALPHA_BIRCH_LOG.get());
                 output.accept(BlockRegistry.ALPHA_LEAVES.get());
@@ -79,6 +82,7 @@ public class CreativeTabRegistry {
                 output.accept(ItemRegistry.RUBY_CHESTPLATE.get());
                 output.accept(ItemRegistry.RUBY_LEGGINGS.get());
                 output.accept(ItemRegistry.RUBY_BOOTS.get());
+                output.accept(ItemRegistry.DROOPY_DISC_ITEM.get());
             })
             .build()
     );

@@ -86,4 +86,8 @@ public class ItemRegistry {
     public static final RegistryObject<Item> RUBY_KNIFE = ITEMS.register("ruby_knife",
             () -> new KnifeItem(TierRegistry.RUBY, 4, 4f, false, new Item.Properties()));*/
 
+
+    //Misc
+    public static final RegistryObject<RecordItem> DROOPY_DISC_ITEM = ITEMS.register("disc_droopy",
+            () -> new RecordItem(12, SoundRegistry.DROOPY_DISC, (new Item.Properties()).stacksTo(1).rarity(Rarity.RARE), 2336));
 }

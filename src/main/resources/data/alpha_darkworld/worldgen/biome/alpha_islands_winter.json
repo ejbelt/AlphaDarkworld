@@ -1,8 +1,8 @@
 {
   "carvers": {
     "air": [
-      "minecraft:cave",
-      "cave_extra_underground"
+      "alpha_darkworld:alpha_caves",
+      "alpha_darkworld:alpha_caves_extra"
     ]
   },
   "downfall": 0.75,
@@ -32,8 +32,8 @@
   "features": [
     [],
     [
-      "minecraft:lake_lava_underground",
-      "minecraft:lake_lava_surface",
+      "alpha_darkworld:lava_lake_underground",
+      "alpha_darkworld:lava_lake",
       "alpha_darkworld:water_lake",
       "alpha_darkworld:ice_lake",
       "minecraft:ice_patch"

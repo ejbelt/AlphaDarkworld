@@ -56,6 +56,8 @@ private static LinkedHashMap<ResourceKey<TrimMaterial>, Float> trimMaterials = n
         genHandheldItemModel(ItemRegistry.RUBY_SWORD);
 
         
+        genRecordItemModel(ItemRegistry.DROOPY_DISC_ITEM);
+        
         genHandheldItemModel(ItemRegistry.DARK_STICK);
 
         trimmedArmorItem(ItemRegistry.MITHRIL_HELMET);
@@ -86,6 +88,13 @@ private static LinkedHashMap<ResourceKey<TrimMaterial>, Float> trimMaterials = n
     }
 
     private ItemModelBuilder genSimpleItemModel(RegistryObject<Item> item){
+        return withExistingParent(item.getId().getPath(),
+            new ResourceLocation("item/generated")).texture("layer0",
+            new ResourceLocation(AlphaDarkworld.MOD_ID, "item/" + item.getId().getPath()));
+    }
+
+    
+    private ItemModelBuilder genRecordItemModel(RegistryObject<RecordItem> item){
         return withExistingParent(item.getId().getPath(),
             new ResourceLocation("item/generated")).texture("layer0",
             new ResourceLocation(AlphaDarkworld.MOD_ID, "item/" + item.getId().getPath()));

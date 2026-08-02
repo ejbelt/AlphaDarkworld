@@ -2,9 +2,8 @@
   "temperature": 0.7,
   "carvers": {
     "air": [
-      "penumbra_phantasm:dark_world_cave",
-      "penumbra_phantasm:dark_world_cave_extra_underground",
-      "penumbra_phantasm:dark_world_canyon"
+      "alpha_darkworld:alpha_caves",
+      "alpha_darkworld:alpha_caves_extra"
     ]
   },
   "downfall": 0.8,
@@ -28,14 +27,14 @@
       }
     },
     "sky_color": 0,
-    "water_color": 0,
+    "water_color": 5615822,
     "water_fog_color": 329011
   },
   "features": [
     [],
     [
-      "minecraft:lake_lava_underground",
-      "minecraft:lake_lava_surface",
+      "alpha_darkworld:lava_lake_underground",
+      "alpha_darkworld:lava_lake",
       "alpha_darkworld:water_lake"
     ],
     [],

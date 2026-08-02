@@ -20,6 +20,7 @@ public class SoundRegistry {
     public static RegistryObject<SoundEvent> MOSS_CAVE_LOOP = registerSoundEvent("caveland_loop");
     public static RegistryObject<SoundEvent> SILENCE = registerSoundEvent("silent");
 
+    public static RegistryObject<SoundEvent> DROOPY_DISC = registerSoundEvent("record.droopy_likes_your_face");
 
     private static RegistryObject<SoundEvent> registerSoundEvent(String sound)
     {
