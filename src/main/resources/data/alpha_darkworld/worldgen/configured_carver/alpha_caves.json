@@ -1,5 +1,5 @@
 {
-  "type": "minecraft:nether_cave",
+  "type": "minecraft:cave",
   "config": {
     "floor_level": -0.7,
     "horizontal_radius_multiplier": 1,

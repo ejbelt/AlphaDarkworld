@@ -1,10 +1,9 @@
 {
   "values": [
-    "#alpha_darkworld:alpha_cave_replacables",
-    "alpha_darkworld:alpha_dirt",
-    "alpha_darkworld:alpha_grass",
+    "#alpha_darkworld:darkworld_ore_replacables",
+    "#alpha_darkworld:darkworld_ores",
     "minecraft:water",
     "minecraft:gravel",
-    "minecraft:sand"
+    "#minecraft:dirt"
   ]
 }
