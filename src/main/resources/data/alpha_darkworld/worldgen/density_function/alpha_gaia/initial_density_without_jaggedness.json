@@ -1,0 +1,5 @@
+{
+  "type": "minecraft:add",
+  "argument1": "alpha_darkworld:alpha_gaia/final_density",
+  "argument2": 0.3
+}

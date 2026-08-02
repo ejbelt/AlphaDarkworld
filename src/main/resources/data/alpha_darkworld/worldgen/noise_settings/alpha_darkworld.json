@@ -29,9 +29,9 @@
         "from_value": 1.5,
         "to_value": -1.5
       },
-      "argument2": "minecraft:overworld/offset"
+      "argument2": "alpha_darkworld:alpha_gaia/offset"
     },
-    "erosion": "minecraft:overworld/erosion",
+    "erosion": "alpha_darkworld:alpha_gaia/erosion",
     "final_density": {
       "type": "minecraft:min",
       "argument1": {
@@ -75,12 +75,12 @@
                           "argument1": 0.078125,
                           "argument2": {
                             "type": "minecraft:range_choice",
-                            "input": "minecraft:overworld/sloped_cheese",
+                            "input": "alpha_darkworld:alpha_gaia/sloped_cheese",
                             "max_exclusive": 1.5625,
                             "min_inclusive": -1000000,
                             "when_in_range": {
                               "type": "minecraft:min",
-                              "argument1": "minecraft:overworld/sloped_cheese",
+                              "argument1": "alpha_darkworld:alpha_gaia/sloped_cheese",
                               "argument2": {
                                 "type": "minecraft:mul",
                                 "argument1": 5,
@@ -133,7 +133,7 @@
                                           "argument2": {
                                             "type": "minecraft:mul",
                                             "argument1": -0.64,
-                                            "argument2": "minecraft:overworld/sloped_cheese"
+                                            "argument2": "alpha_darkworld:alpha_gaia/sloped_cheese"
                                           }
                                         },
                                         "max": 0.5,
@@ -234,25 +234,9 @@
       }
     },
     "lava": 1,
-    "ridges": "minecraft:overworld/ridges",
-    "temperature": {
-      "type": "minecraft:shifted_noise",
-      "noise": "minecraft:temperature",
-      "shift_x": "minecraft:shift_x",
-      "shift_y": 0,
-      "shift_z": "minecraft:shift_z",
-      "xz_scale": 0.25,
-      "y_scale": 0
-    },
-    "vegetation": {
-      "type": "minecraft:shifted_noise",
-      "noise": "minecraft:vegetation",
-      "shift_x": "minecraft:shift_x",
-      "shift_y": 0,
-      "shift_z": "minecraft:shift_z",
-      "xz_scale": 0.25,
-      "y_scale": 0
-    },
+    "ridges": "alpha_darkworld:alpha_gaia/ridges",
+    "temperature": "alpha_darkworld:alpha_gaia/temperature",
+    "vegetation": "alpha_darkworld:alpha_gaia/vegetation",
     "vein_gap": 1,
     "vein_ridged": 0,
     "vein_toggle": 0
@@ -321,7 +305,7 @@
           },
           "random_name": "minecraft:bedrock_floor",
           "true_at_and_below": {
-            "above_bottom": 0
+            "above_bottom": 2
           }
         },
         "then_run": {
@@ -383,7 +367,7 @@
                             "then_run": {
                               "type": "minecraft:block",
                               "result_state": {
-                                "Name": "minecraft:coarse_dirt"
+                                "Name": "alpha_darkworld:alpha_dirt"
                               }
                             }
                           },
@@ -398,7 +382,7 @@
                             "then_run": {
                               "type": "minecraft:block",
                               "result_state": {
-                                "Name": "minecraft:coarse_dirt"
+                                "Name": "alpha_darkworld:alpha_dirt"
                               }
                             }
                           },
@@ -413,7 +397,7 @@
                             "then_run": {
                               "type": "minecraft:block",
                               "result_state": {
-                                "Name": "minecraft:coarse_dirt"
+                                "Name": "alpha_darkworld:alpha_dirt"
                               }
                             }
                           },
@@ -492,7 +476,7 @@
                           "then_run": {
                             "type": "minecraft:block",
                             "result_state": {
-                              "Name": "penumbra_phantasm:luminescent_water",
+                              "Name": "minecraft:water",
                               "Properties": {
                                 "level": "0"
                               }
@@ -544,7 +528,7 @@
                           "then_run": {
                             "type": "minecraft:block",
                             "result_state": {
-                              "Name": "penumbra_phantasm:luminescent_water",
+                              "Name": "minecraft:water",
                               "Properties": {
                                 "level": "0"
                               }
@@ -588,7 +572,7 @@
                             "type": "minecraft:y_above",
                             "add_stone_depth": false,
                             "anchor": {
-                              "absolute": 256
+                              "absolute": 228
                             },
                             "surface_depth_multiplier": 0
                           },
@@ -862,7 +846,7 @@
                       "if_true": {
                         "type": "minecraft:biome",
                         "biome_is": [
-                          "minecraft:frozen_ocean",
+                          "alpha_darkworld:icey_ocean",
                           "minecraft:deep_frozen_ocean"
                         ]
                       },
@@ -904,7 +888,7 @@
                             {
                               "type": "minecraft:block",
                               "result_state": {
-                                "Name": "penumbra_phantasm:luminescent_water",
+                                "Name": "minecraft:water",
                                 "Properties": {
                                   "level": "0"
                                 }
@@ -1246,7 +1230,7 @@
                               "if_true": {
                                 "type": "minecraft:biome",
                                 "biome_is": [
-                                  "minecraft:windswept_hills"
+                                  "alpha_darkworld:alpha_islands"
                                 ]
                               },
                               "then_run": {
@@ -1272,7 +1256,8 @@
                                 "biome_is": [
                                   "minecraft:warm_ocean",
                                   "minecraft:beach",
-                                  "minecraft:snowy_beach"
+                                  "minecraft:snowy_beach",
+                                  "alpha_darkworld:icey_ocean"
                                 ]
                               },
                               "then_run": {
@@ -1290,7 +1275,7 @@
                                     "then_run": {
                                       "type": "minecraft:block",
                                       "result_state": {
-                                        "Name": "minecraft:sandstone"
+                                        "Name": "alpha_darkworld:darkner_stone"
                                       }
                                     }
                                   },
@@ -1326,7 +1311,7 @@
                                     "then_run": {
                                       "type": "minecraft:block",
                                       "result_state": {
-                                        "Name": "minecraft:sandstone"
+                                        "Name": "alpha_darkworld:darkner_stone"
                                       }
                                     }
                                   },
@@ -1393,7 +1378,7 @@
                                 "then_run": {
                                   "type": "minecraft:block",
                                   "result_state": {
-                                    "Name": "minecraft:coarse_dirt"
+                                    "Name": "alpha_darkworld:alpha_dirt"
                                   }
                                 }
                               }
@@ -1553,7 +1538,7 @@
                                 "then_run": {
                                   "type": "minecraft:block",
                                   "result_state": {
-                                    "Name": "minecraft:coarse_dirt"
+                                    "Name": "alpha_darkworld:alpha_dirt"
                                   }
                                 }
                               },
@@ -1695,7 +1680,7 @@
                       "if_true": {
                         "type": "minecraft:biome",
                         "biome_is": [
-                          "minecraft:frozen_ocean",
+                          "alpha_darkworld:icey_ocean",
                           "minecraft:deep_frozen_ocean"
                         ]
                       },
@@ -1707,7 +1692,7 @@
                         "then_run": {
                           "type": "minecraft:block",
                           "result_state": {
-                            "Name": "penumbra_phantasm:luminescent_water",
+                            "Name": "minecraft:water",
                             "Properties": {
                               "level": "0"
                             }
@@ -2022,7 +2007,7 @@
                               "if_true": {
                                 "type": "minecraft:biome",
                                 "biome_is": [
-                                  "minecraft:windswept_hills"
+                                  "alpha_darkworld:alpha_islands"
                                 ]
                               },
                               "then_run": {
@@ -2066,7 +2051,7 @@
                                     "then_run": {
                                       "type": "minecraft:block",
                                       "result_state": {
-                                        "Name": "minecraft:sandstone"
+                                        "Name": "alpha_darkworld:darkner_stone"
                                       }
                                     }
                                   },
@@ -2102,7 +2087,7 @@
                                     "then_run": {
                                       "type": "minecraft:block",
                                       "result_state": {
-                                        "Name": "minecraft:sandstone"
+                                        "Name": "alpha_darkworld:darkner_stone"
                                       }
                                     }
                                   },
@@ -2309,7 +2294,7 @@
                       "then_run": {
                         "type": "minecraft:block",
                         "result_state": {
-                          "Name": "minecraft:sandstone"
+                          "Name": "alpha_darkworld:darkner_stone"
                         }
                       }
                     }
@@ -2334,7 +2319,7 @@
                       "then_run": {
                         "type": "minecraft:block",
                         "result_state": {
-                          "Name": "minecraft:sandstone"
+                          "Name": "alpha_darkworld:darkner_stone"
                         }
                       }
                     }
@@ -2395,7 +2380,7 @@
                           "then_run": {
                             "type": "minecraft:block",
                             "result_state": {
-                              "Name": "minecraft:sandstone"
+                              "Name": "alpha_darkworld:darkner_stone"
                             }
                           }
                         },
@@ -2450,7 +2435,7 @@
           },
           "random_name": "alpha_darkworld:darkner_stone",
           "true_at_and_below": {
-            "absolute": 0
+            "absolute": 2
           }
         },
         "then_run": {
