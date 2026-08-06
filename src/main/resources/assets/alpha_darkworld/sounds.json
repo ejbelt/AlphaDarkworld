@@ -98,6 +98,16 @@
       }
     ]
   },
+  "ambient.wormhole": {
+    "subtitle": "sound.alpha_darkworld.ambient.wormhole",
+    "sounds": [
+      {
+        "name": "alpha_darkworld:ambient/darkness/wormhole",
+        "preload": true,
+        "stream": true
+      }
+    ]
+  },
   "silent": {
     "subtitle": "sound.alpha_darkworld.silence",
     "sounds": [

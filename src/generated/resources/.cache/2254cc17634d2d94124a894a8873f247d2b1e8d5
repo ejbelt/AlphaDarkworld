@@ -1,6 +1,9 @@
-// 1.20.1	2026-08-01T20:00:27.2131186	Item Models: alpha_darkworld
+// 1.20.1	2026-08-03T17:11:33.6276157	Item Models: alpha_darkworld
 48ba1cb73b64c594f8ef9e3fc3e33c585192be4d assets/alpha_darkworld/models/item/alpha_birch_sapling.json
+e90d44d01b4e5a4a26fe943e8ab3dc499c6a639d assets/alpha_darkworld/models/item/alpha_flower.json
+511bac635d542638565210af9fa04b8e9b43192d assets/alpha_darkworld/models/item/alpha_rose.json
 305232d77614f7604bf0cd28861a87208e236523 assets/alpha_darkworld/models/item/alpha_sapling.json
+5be39b005249fae5356ce2a81db1342f9493269f assets/alpha_darkworld/models/item/cyan_flower.json
 1f1d17394a79bd2ea79cddd22009672c53ffb7d9 assets/alpha_darkworld/models/item/dark_stick.json
 eb5830da5986b1d6ccd738ea19deb779c3723a0a assets/alpha_darkworld/models/item/disc_droopy.json
 5849c679de195d704a94babf01e7d42d9e657208 assets/alpha_darkworld/models/item/mithril_axe.json
@@ -53,6 +56,7 @@ f25910cc95a722ee465530e7818c4ee55e72e1aa assets/alpha_darkworld/models/item/mith
 5f951b7719447675259bbd421d04757e2d17fd5e assets/alpha_darkworld/models/item/mithril_pickaxe.json
 dadb8d912edad5e4efc63abad5730c3fa9fce257 assets/alpha_darkworld/models/item/mithril_shovel.json
 d25b8fbbb24e825de6a36cc86dc0b853f2915371 assets/alpha_darkworld/models/item/mithril_sword.json
+20c7745aee2e0b78219f86fb001e4e1727e5e87a assets/alpha_darkworld/models/item/paeonia.json
 381e419c6d3a9c03a64c1a7d91d0939644394678 assets/alpha_darkworld/models/item/raw_mithril.json
 f90cbc3285a5a55c9e869dd12a9817741406e607 assets/alpha_darkworld/models/item/ruby.json
 691e5ca8d5f5fcd15ecbe63432ed9654e6981c8b assets/alpha_darkworld/models/item/ruby_axe.json

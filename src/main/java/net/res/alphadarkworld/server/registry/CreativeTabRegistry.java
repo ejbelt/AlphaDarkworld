@@ -19,6 +19,8 @@ public class CreativeTabRegistry {
             .icon(() -> ItemRegistry.RUBY.get().getDefaultInstance())
             .title(Component.translatable("itemGroup.alpha_darkworld.main"))
             .displayItems((parameters, output) -> {
+                output.accept(BlockRegistry.ALPHA_GRASS_BLOCK.get());
+                output.accept(BlockRegistry.ALPHA_DIRT.get());
                 output.accept(BlockRegistry.ALPHA_PLANKS.get());
                 output.accept(BlockRegistry.ALPHA_WOODEN_SLAB.get());
                 output.accept(BlockRegistry.ALPHA_WOODEN_STAIRS.get());
@@ -39,6 +41,7 @@ public class CreativeTabRegistry {
                 output.accept(BlockRegistry.ALPHA_BIRCH_LOG.get());
                 output.accept(BlockRegistry.ALPHA_LEAVES.get());
                 output.accept(BlockRegistry.ALPHA_BIRCH_LEAVES.get());
+                output.accept(BlockRegistry.BRIMSTONE.get());
                 output.accept(BlockRegistry.ULTRAMARINE_WOOL.get());
                 output.accept(BlockRegistry.CAPRI_WOOL.get());
                 output.accept(BlockRegistry.CHARTREUSE_WOOL.get());
@@ -58,6 +61,10 @@ public class CreativeTabRegistry {
                 output.accept(BlockRegistry.RUBY_BLOCK.get());
                 output.accept(BlockRegistry.MITHRIL_BLOCK.get());
                 output.accept(BlockRegistry.RAW_MITHRIL_BLOCK.get());
+                output.accept(BlockRegistry.ALPHA_ROSE.get());
+                output.accept(BlockRegistry.ALPHA_FLOWER.get());
+                output.accept(BlockRegistry.CYAN_FLOWER.get());
+                output.accept(BlockRegistry.PAEONIA.get());
                 output.accept(ItemRegistry.DARK_STICK.get());
                 output.accept(ItemRegistry.RUBY.get());
                 output.accept(ItemRegistry.RAW_MITHRIL.get());

@@ -9,7 +9,7 @@
   "downfall": 0.8,
   "effects": {
     "fog_color": 16777215,
-    "foliage_color": 7929657,
+    "foliage_color": 3634702,
     "grass_color": 11599739,
     "mood_sound": {
       "block_search_extent": 8,
@@ -61,7 +61,6 @@
     [
       "alpha_darkworld:trees_plains",
       "alpha_darkworld:flower_plain",
-      "minecraft:flower_default",
       "minecraft:brown_mushroom_normal",
       "minecraft:red_mushroom_normal",
       "minecraft:patch_sugar_cane",

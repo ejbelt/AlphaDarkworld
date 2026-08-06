@@ -40,12 +40,19 @@ public class AlphaBlockStateGenerator extends BlockStateProvider {
         blockWithItem(BlockRegistry.ALPHA_MOSSY_COBBLESTONE);
         blockWithItem(BlockRegistry.ALPHA_BRICKS);
         blockWithItem(BlockRegistry.ALPHA_DIRT);
+        blockWithItem(BlockRegistry.BRIMSTONE);
+        blockWithItem(BlockRegistry.SULFUR_ORE);
 
         logWithItem(BlockRegistry.ALPHA_LOG);
         logWithItem(BlockRegistry.ALPHA_BIRCH_LOG);
 
         saplingModel(BlockRegistry.ALPHA_SAPLING);
         saplingModel(BlockRegistry.ALPHA_BIRCH_SAPLING);
+
+        saplingModel(BlockRegistry.ALPHA_FLOWER);
+        saplingModel(BlockRegistry.ALPHA_ROSE);
+        saplingModel(BlockRegistry.CYAN_FLOWER);
+        saplingModel(BlockRegistry.PAEONIA);
 
         carpetBlock("ultramarine_carpet", BlockRegistry.ULTRAMARINE_CARPET, BlockRegistry.ULTRAMARINE_WOOL);
         carpetBlock("capri_carpet", BlockRegistry.CAPRI_CARPET, BlockRegistry.CAPRI_WOOL);

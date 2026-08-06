@@ -72,6 +72,12 @@ private static LinkedHashMap<ResourceKey<TrimMaterial>, Float> trimMaterials = n
         
         saplingItem(BlockRegistry.ALPHA_SAPLING);
         saplingItem(BlockRegistry.ALPHA_BIRCH_SAPLING);
+        saplingItem(BlockRegistry.ALPHA_ROSE);
+        saplingItem(BlockRegistry.ALPHA_FLOWER);
+        saplingItem(BlockRegistry.CYAN_FLOWER);
+        saplingItem(BlockRegistry.PAEONIA);
+
+
 
     }
     

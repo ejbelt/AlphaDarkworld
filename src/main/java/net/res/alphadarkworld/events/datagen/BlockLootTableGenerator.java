@@ -77,6 +77,11 @@ public class BlockLootTableGenerator extends BlockLootSubProvider {
         this.dropSelf(BlockRegistry.ALPHA_COBBLESTONE_WALL.get());
         this.dropSelf(BlockRegistry.ALPHA_MOSSY_COBBLESTONE_WALL.get());
         this.dropSelf(BlockRegistry.ALPHA_BRICK_WALL.get());
+        this.dropSelf(BlockRegistry.ALPHA_ROSE.get());
+        this.dropSelf(BlockRegistry.ALPHA_FLOWER.get());
+        this.dropSelf(BlockRegistry.CYAN_FLOWER.get());
+        this.dropSelf(BlockRegistry.PAEONIA.get());
+        this.dropSelf(BlockRegistry.BRIMSTONE.get());
 
         this.add(BlockRegistry.LIMESTONE.get(), block ->
             createSingleItemTableWithSilkTouch(block, BlockRegistry.ALPHA_COBBLESTONE.get())
@@ -91,6 +96,10 @@ public class BlockLootTableGenerator extends BlockLootSubProvider {
         );
         this.add(BlockRegistry.ALPHA_BIRCH_LEAVES.get(), block ->
             createDarkWorldLeavesDrop(block, BlockRegistry.ALPHA_BIRCH_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES)
+        );
+
+        this.add(BlockRegistry.SULFUR_ORE.get(), 
+            block -> createOreDrop(block, Items.COAL)
         );
 
         this.add(BlockRegistry.RUBY_ORE.get(), 

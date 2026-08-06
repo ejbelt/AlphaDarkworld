@@ -35,5 +35,20 @@ public class BlockTagGenerator extends BlockTagsProvider {
                 BlockRegistry.ALPHA_MOSSY_COBBLESTONE_WALL.get(),
                 BlockRegistry.ALPHA_BRICK_WALL.get()
             );
+        
+        this.tag(BlockTags.NETHER_CARVER_REPLACEABLES)
+            .add(
+                BlockRegistry.BRIMSTONE.get()  
+            );
+
+        this.tag(BlockTags.INFINIBURN_NETHER)
+            .add(
+                BlockRegistry.BRIMSTONE.get()
+            );
+
+        this.tag(BlockTags.MUSHROOM_GROW_BLOCK)
+            .add(
+                BlockRegistry.BRIMSTONE.get()
+            );
     }
 }

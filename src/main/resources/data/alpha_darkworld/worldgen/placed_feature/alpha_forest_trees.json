@@ -1,0 +1,68 @@
+{
+  "feature": {
+    "config": {
+      "features": [
+        {
+          "chance": 0.33333334,
+          "feature": {
+            "feature": "alpha_darkworld:giant_alpha_oak",
+            "placement": []
+          }
+        },
+        {
+          "chance": 0.67,
+          "feature": {
+            "feature": "alpha_darkworld:alpha_birch",
+            "placement": []
+          }
+        }
+      ],
+      "default": "alpha_darkworld:alpha_oak"
+    },
+    "type": "minecraft:random_selector"
+  },
+  "placement": [
+    {
+      "type": "minecraft:count",
+      "count": {
+        "type": "minecraft:weighted_list",
+        "distribution": [
+          {
+            "data": 6,
+            "weight": 6
+          },
+          {
+            "data": 7,
+            "weight": 1
+          }
+        ]
+      }
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:surface_water_depth_filter",
+      "max_water_depth": 0
+    },
+    {
+      "type": "minecraft:heightmap",
+      "heightmap": "OCEAN_FLOOR"
+    },
+    {
+      "type": "minecraft:block_predicate_filter",
+      "predicate": {
+        "type": "minecraft:would_survive",
+        "state": {
+          "Name": "alpha_darkworld:alpha_sapling",
+          "Properties": {
+            "stage": "0"
+          }
+        }
+      }
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

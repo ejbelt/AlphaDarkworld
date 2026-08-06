@@ -45,10 +45,14 @@ public class BlockRegistry {
     = registerBlock("alpha_dirt", () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIRT)));
     public static final RegistryObject<Block> LIMESTONE
     = registerBlock("darkner_stone", () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<Block> BRIMSTONE
+    = registerBlock("brimstone", () -> new Block(BlockBehaviour.Properties.copy(Blocks.NETHERRACK).sound(SoundType.STONE)));
     public static final RegistryObject<Block> RUBY_ORE 
     = registerBlock("ruby_ore", () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DIAMOND_ORE), UniformInt.of(0, 1)));
     public static final RegistryObject<Block> MITHRIL_ORE
     = registerBlock("mithril_ore", () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> SULFUR_ORE
+    = registerBlock("darkner_coal_ore", () -> new Block(BlockBehaviour.Properties.copy(Blocks.COAL_ORE).requiresCorrectToolForDrops()));
 
     /*
     
@@ -153,8 +157,17 @@ public class BlockRegistry {
     = registerBlock("alpha_birch_leaves", () -> new LeavesBlock(BlockBehaviour.Properties.copy(Blocks.BIRCH_LEAVES)));
     public static final RegistryObject<Block> ALPHA_SAPLING
     = registerBlock("alpha_sapling", () -> new SaplingBlock(new AlphaOakTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
-        public static final RegistryObject<Block> ALPHA_BIRCH_SAPLING
+    public static final RegistryObject<Block> ALPHA_BIRCH_SAPLING
     = registerBlock("alpha_birch_sapling", () -> new SaplingBlock(new AlphaBirchTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
+    public static final RegistryObject<Block> CYAN_FLOWER
+    = registerBlock("cyan_flower", () -> new SaplingBlock(new AlphaBirchTreeGrower(), BlockBehaviour.Properties.copy(Blocks.DANDELION).mapColor(MapColor.COLOR_CYAN)));
+    public static final RegistryObject<Block> PAEONIA
+    = registerBlock("paeonia", () -> new SaplingBlock(new AlphaBirchTreeGrower(), BlockBehaviour.Properties.copy(Blocks.DANDELION).mapColor(MapColor.COLOR_PURPLE)));
+    public static final RegistryObject<Block> ALPHA_ROSE
+    = registerBlock("alpha_rose", () -> new SaplingBlock(new AlphaBirchTreeGrower(), BlockBehaviour.Properties.copy(Blocks.DANDELION).mapColor(MapColor.COLOR_RED)));
+    public static final RegistryObject<Block> ALPHA_FLOWER
+    = registerBlock("alpha_flower", () -> new SaplingBlock(new AlphaBirchTreeGrower(), BlockBehaviour.Properties.copy(Blocks.DANDELION)));
+
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

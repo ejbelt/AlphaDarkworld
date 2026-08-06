@@ -6,33 +6,33 @@
         "type": "minecraft:simple_block",
         "config": {
           "to_place": {
-            "type": "minecraft:noise_threshold_provider",
-            "default_state": {
-              "Name": "minecraft:dandelion"
-            },
-            "high_chance": 0.33333334,
-            "high_states": [
+            "type": "minecraft:weighted_state_provider",
+            "entries": [
               {
-                "Name": "minecraft:poppy"
-              }
-            ],
-            "low_states": [
-              {
-                "Name": "penumbra_phantasm:echo_flower"
+                "data": {
+                  "Name": "alpha_darkworld:alpha_rose"
+                },
+                "weight": 2
               },
               {
-                "Name": "penumbra_phantasm:scarlet_rose"
+                "data": {
+                  "Name": "alpha_darkworld:cyan_flower"
+                },
+                "weight": 2
+              },
+              {
+                "data": {
+                  "Name": "alpha_darkworld:alpha_flower"
+                },
+                "weight": 1
+              },
+              {
+                "data": {
+                  "Name": "alpha_darkworld:paeonia"
+                },
+                "weight": 1
               }
-            ],
-            "noise": {
-              "amplitudes": [
-                1.0
-              ],
-              "firstOctave": 0
-            },
-            "scale": 0.005,
-            "seed": 2345,
-            "threshold": -0.8
+            ]
           }
         }
       },
@@ -47,7 +47,7 @@
       ]
     },
     "tries": 64,
-    "xz_spread": 6,
-    "y_spread": 2
+    "xz_spread": 7,
+    "y_spread": 3
   }
 }
