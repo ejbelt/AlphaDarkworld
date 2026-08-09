@@ -24,13 +24,13 @@
         },
         {
           "data": {
-            "Name": "minecraft:moss_carpet"
+            "Name": "alpha_darkworld:alpha_moss_carpet"
           },
           "weight": 25
         },
         {
           "data": {
-            "Name": "minecraft:grass"
+            "Name": "alpha_darkworld:alpha_moss"
           },
           "weight": 50
         },

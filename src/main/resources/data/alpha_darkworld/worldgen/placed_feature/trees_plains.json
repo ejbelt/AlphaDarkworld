@@ -63,6 +63,16 @@
     },
     {
       "type": "minecraft:biome"
+    },
+    {
+      "type": "minecraft:block_predicate_filter",
+      "predicate": {
+        "type": "minecraft:not",
+        "predicate": {
+          "type": "minecraft:matching_block_tag",
+          "tag": "minecraft:leaves"
+        }
+      }
     }
   ]
 }

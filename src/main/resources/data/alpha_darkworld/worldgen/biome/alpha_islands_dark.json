@@ -58,9 +58,9 @@
       "minecraft:red_mushroom_nether",
       "minecraft:ore_magma",
       "minecraft:spring_closed",
-      "minecraft:ore_gravel_nether",
       "minecraft:ore_ancient_debris_large",
-      "minecraft:ore_debris_small"
+      "minecraft:ore_debris_small",
+      "alpha_darkworld:alpha_coal_lower"
     ],
     [],
     [

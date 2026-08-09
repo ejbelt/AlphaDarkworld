@@ -1,20 +1,27 @@
 package net.res.alphadarkworld.server.block;
 
+import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.tags.FluidTags;
 import net.minecraft.util.RandomSource;
+import net.minecraft.world.item.context.UseOnContext;
+import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.block.GrassBlock;
 import net.minecraft.world.level.block.SnowLayerBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.lighting.LightEngine;
+import net.minecraftforge.common.IPlantable;
+import net.minecraftforge.common.PlantType;
+import net.minecraftforge.common.ToolAction;
+import net.minecraftforge.common.ToolActions;
 import net.res.alphadarkworld.server.registry.BlockRegistry;
 import net.minecraft.core.Direction;
 
-public class AlphaGrassBlock extends GrassBlock{
+public class AlphaGrassBlock extends GrassBlock {
 
     public AlphaGrassBlock(Properties properties) {
         super(properties);
@@ -61,6 +68,29 @@ public class AlphaGrassBlock extends GrassBlock{
          }
 
       }
+   }
+
+   public BlockState getToolModifiedState(BlockState state, UseOnContext context, ToolAction toolAction, boolean simulate){
+
+      Block block = state.getBlock();
+
+      if (toolAction == ToolActions.HOE_TILL) {
+         if (block == BlockRegistry.ALPHA_GRASS_BLOCK.get()) {
+            return BlockRegistry.ALPHA_FARMLAND.get().defaultBlockState();
+         }
+      }
+      
+
+      return super.getToolModifiedState(state, context, toolAction, simulate);
+   }
+
+   public boolean canSustainPlant(BlockGetter level, BlockPos pos, Direction facing, IPlantable plantable){
+         
+         if (plantable.getPlantType(level, pos) == PlantType.PLAINS){
+               return true;
+         }
+
+         return false;
    }
 
 }

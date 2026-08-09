@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/template_farmland",
+  "textures": {
+    "dirt": "alpha_darkworld:block/alpha_dirt",
+    "top": "alpha_darkworld:block/alpha_farmland"
+  }
+}

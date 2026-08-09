@@ -42,6 +42,13 @@ public class AlphaBlockStateGenerator extends BlockStateProvider {
         blockWithItem(BlockRegistry.ALPHA_DIRT);
         blockWithItem(BlockRegistry.BRIMSTONE);
         blockWithItem(BlockRegistry.SULFUR_ORE);
+        blockWithItem(BlockRegistry.ALPHA_SAND);
+        blockWithItem(BlockRegistry.ALPHA_GRAVEL);
+        blockWithItem(BlockRegistry.ALPHA_MOSS);
+
+        translucentBlockWithItem(BlockRegistry.MITHRIL_GLASS);
+        
+        transparentBlockWithItem(BlockRegistry.ALPHA_GLASS);
 
         logWithItem(BlockRegistry.ALPHA_LOG);
         logWithItem(BlockRegistry.ALPHA_BIRCH_LOG);
@@ -60,6 +67,7 @@ public class AlphaBlockStateGenerator extends BlockStateProvider {
         carpetBlock("rose_carpet", BlockRegistry.ROSE_CARPET, BlockRegistry.ROSE_WOOL);
         carpetBlock("spring_carpet", BlockRegistry.SPRING_CARPET, BlockRegistry.SPRING_WOOL);
         carpetBlock("violet_carpet", BlockRegistry.VIOLET_CARPET, BlockRegistry.VIOLET_WOOL);
+        carpetBlock("alpha_moss_carpet", BlockRegistry.ALPHA_MOSS_CARPET, BlockRegistry.ALPHA_MOSS);
         //Do this manually.
         //grassBlockModel(BlockRegistry.ALPHA_GRASS_BLOCK);
 
@@ -89,6 +97,18 @@ public class AlphaBlockStateGenerator extends BlockStateProvider {
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {
         simpleBlockWithItem(blockRegistryObject.get(), cubeAll(blockRegistryObject.get()));
+    }
+
+    private void translucentBlockWithItem(RegistryObject<Block> blockRegistryObject){
+        simpleBlockWithItem(blockRegistryObject.get(),
+                models().singleTexture(ForgeRegistries.BLOCKS.getKey(blockRegistryObject.get()).getPath(), new ResourceLocation("minecraft:block/cube_all"),
+                        "all", blockTexture(blockRegistryObject.get())).renderType("translucent"));
+    }
+
+    private void transparentBlockWithItem(RegistryObject<Block> blockRegistryObject){
+        simpleBlockWithItem(blockRegistryObject.get(),
+                models().singleTexture(ForgeRegistries.BLOCKS.getKey(blockRegistryObject.get()).getPath(), new ResourceLocation("minecraft:block/glass"),
+                        "all", blockTexture(blockRegistryObject.get())).renderType("cutout"));
     }
 
     private void logWithItem(RegistryObject<RotatedPillarBlock> blockRegistryObject){

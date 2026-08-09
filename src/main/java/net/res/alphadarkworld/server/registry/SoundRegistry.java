@@ -19,9 +19,11 @@ public class SoundRegistry {
     public static RegistryObject<SoundEvent> ICEY_OCEAN_AMBIENT = registerSoundEvent("icey_ocean_ambient_loop");
     public static RegistryObject<SoundEvent> MOSS_CAVE_LOOP = registerSoundEvent("caveland_loop");
     public static RegistryObject<SoundEvent> DARKNESS_LOOP = registerSoundEvent("ambient.wormhole");
+    public static RegistryObject<SoundEvent> DARK_LAND_MUSIC = registerSoundEvent("music.darklands");
     public static RegistryObject<SoundEvent> SILENCE = registerSoundEvent("silent");
 
     public static RegistryObject<SoundEvent> DROOPY_DISC = registerSoundEvent("record.droopy_likes_your_face");
+
 
     private static RegistryObject<SoundEvent> registerSoundEvent(String sound)
     {

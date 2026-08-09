@@ -45,6 +45,8 @@
         "alpha_darkworld:blocks/raw_mithril_block",
         "alpha_darkworld:blocks/ruby_block",
         
+        "minecraft:torch",
+
         "minecraft:bone_meal",
         "minecraft:bone_block",
         "minecraft:bone_meal_from_bone_block",

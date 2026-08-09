@@ -1,17 +1,17 @@
 {
   "placement": {
     "type": "minecraft:random_spread",
+    "spread_type": "triangular",
     "salt": 76044880,
     "spacing": 34,
-    "separation": 8,
+    "separation": 20,
     "frequency_reduction_method": "default",
-    "frequency": 1
+    "frequency": 0.6
   },
-
   "structures": [
     {
       "structure": "alpha_darkworld:abandoned_house_1",
-      "weight": 5
+      "weight": 3
     },
     {
       "structure": "alpha_darkworld:abandoned_house_2",
@@ -19,7 +19,15 @@
     },
     {
       "structure": "alpha_darkworld:abandoned_house_3",
-      "weight": 2
+      "weight": 1
+    },
+    {
+      "structure": "alpha_darkworld:spawn_house_1",
+      "weight": 3
+    },
+    {
+      "structure": "alpha_darkworld:spawn_house_2",
+      "weight": 3
     }
   ]
 }

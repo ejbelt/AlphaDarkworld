@@ -14,6 +14,15 @@
       }
     ]
   },
+  "music.darklands": {
+    "subtitle": "sound.alpha_darkworld.music.darklands",
+    "sounds": [
+      {
+        "name": "alpha_darkworld:music/psychonemesis/under_the_magus",
+        "stream": true
+      }
+    ]
+  },
   "record.droopy_likes_your_face": {
     "subtitle": "sound.alpha_darkworld.record.droopy_likes_your_face",
     "sounds": [
@@ -27,51 +36,43 @@
     "subtitle": "sound.alpha_darkworld.music.alphalands",
     "sounds": [
       {
-        "name": "minecraft:music/game/calm1",
+        "name": "alpha_darkworld:music/psychonemesis/blota_hander",
         "stream": true
       },
       {
-        "name": "minecraft:music/game/calm2",
+        "name": "alpha_darkworld:music/psychonemesis/intimate_cabin",
         "stream": true
       },
       {
-        "name": "minecraft:music/game/calm3",
+        "name": "alpha_darkworld:music/psychonemesis/korsbarsdalen",
         "stream": true
       },
       {
-        "name": "minecraft:music/game/hal1",
+        "name": "alpha_darkworld:music/psychonemesis/lugne",
         "stream": true
       },
       {
-        "name": "minecraft:music/game/hal2",
+        "name": "alpha_darkworld:music/psychonemesis/lufe_matte",
         "stream": true
       },
       {
-        "name": "minecraft:music/game/hal3",
+        "name": "alpha_darkworld:music/psychonemesis/minimoog_stag",
         "stream": true
       },
       {
-        "name": "minecraft:music/game/hal4",
+        "name": "alpha_darkworld:music/psychonemesis/torra_hander",
         "stream": true
       },
       {
-        "name": "minecraft:music/game/nuance1",
+        "name": "alpha_darkworld:music/psychonemesis/larka",
         "stream": true
       },
       {
-        "name": "minecraft:music/game/nuance2",
+        "name": "alpha_darkworld:music/psychonemesis/sverige",
         "stream": true
       },
       {
-        "name": "minecraft:music/game/piano1",
-        "stream": true
-      },
-      {
-        "name": "minecraft:music/game/piano2",
-        "stream": true
-      },
-      {
-        "name": "minecraft:music/game/piano3",
+        "name": "alpha_darkworld:music/psychonemesis/memories_of_zephyrs",
         "stream": true
       },
       {
@@ -103,6 +104,7 @@
     "sounds": [
       {
         "name": "alpha_darkworld:ambient/darkness/wormhole",
+        "volume": 0.2,
         "preload": true,
         "stream": true
       }

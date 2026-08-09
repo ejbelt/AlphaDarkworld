@@ -1,21 +1,21 @@
 {
   "placement": {
     "type": "minecraft:random_spread",
+    "spread_type": "triangular",
     "salt": 19011220,
     "spacing": 70,
     "separation": 50,
     "frequency_reduction_method": "default",
-    "frequency": 0.6
+    "frequency": 0.4
   },
-
   "structures": [
     {
       "structure": "alpha_darkworld:shrine",
-      "weight": 7
+      "weight": 4
     },
     {
       "structure": "alpha_darkworld:not_abandoned_house_1",
-      "weight": 3
+      "weight": 2
     },
     {
       "structure": "alpha_darkworld:not_abandoned_house_2",

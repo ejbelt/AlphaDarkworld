@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/carpet",
+  "textures": {
+    "wool": "alpha_darkworld:block/alpha_moss"
+  }
+}

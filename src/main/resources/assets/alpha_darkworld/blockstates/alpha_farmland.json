@@ -1,0 +1,28 @@
+{
+  "variants": {
+    "moisture=0": {
+      "model": "alpha_darkworld:block/alpha_farmland"
+    },
+    "moisture=1": {
+      "model": "alpha_darkworld:block/alpha_farmland"
+    },
+    "moisture=2": {
+      "model": "alpha_darkworld:block/alpha_farmland"
+    },
+    "moisture=3": {
+      "model": "alpha_darkworld:block/alpha_farmland"
+    },
+    "moisture=4": {
+      "model": "alpha_darkworld:block/alpha_farmland"
+    },
+    "moisture=5": {
+      "model": "alpha_darkworld:block/alpha_farmland"
+    },
+    "moisture=6": {
+      "model": "alpha_darkworld:block/alpha_farmland"
+    },
+    "moisture=7": {
+      "model": "alpha_darkworld:block/alpha_farmland_moist"
+    }
+  }
+}

@@ -42,7 +42,7 @@ public class BlockRegistry {
     public static final RegistryObject<Block> ALPHA_GRASS_BLOCK
     = registerBlock("alpha_grass", () -> new AlphaGrassBlock(BlockBehaviour.Properties.copy(Blocks.GRASS_BLOCK)));
     public static final RegistryObject<Block> ALPHA_DIRT
-    = registerBlock("alpha_dirt", () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIRT)));
+    = registerBlock("alpha_dirt", () -> new AlphaDirt(BlockBehaviour.Properties.copy(Blocks.DIRT)));
     public static final RegistryObject<Block> LIMESTONE
     = registerBlock("darkner_stone", () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE)));
     public static final RegistryObject<Block> BRIMSTONE
@@ -53,6 +53,14 @@ public class BlockRegistry {
     = registerBlock("mithril_ore", () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> SULFUR_ORE
     = registerBlock("darkner_coal_ore", () -> new Block(BlockBehaviour.Properties.copy(Blocks.COAL_ORE).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> ALPHA_SAND
+    = registerBlock("alpha_sand", () -> new SandBlock(14406560, BlockBehaviour.Properties.copy(Blocks.SAND)));
+    public static final RegistryObject<Block> ALPHA_GRAVEL 
+    = registerBlock("alpha_gravel", () -> new GravelBlock(BlockBehaviour.Properties.copy(Blocks.GRAVEL)));
+    public static final RegistryObject<Block> ALPHA_MOSS
+    = registerBlock("alpha_moss", () -> new MossBlock(BlockBehaviour.Properties.copy(Blocks.MOSS_BLOCK)));
+    public static final RegistryObject<Block> ALPHA_MOSS_CARPET
+    = registerBlock("alpha_moss_carpet", () -> new CarpetBlock(BlockBehaviour.Properties.copy(Blocks.MOSS_CARPET)));
 
     /*
     
@@ -99,7 +107,10 @@ public class BlockRegistry {
     = registerBlock("mithril_block", () -> new Block(MITHRIL_PROPERTIES));
     public static final RegistryObject<Block> RAW_MITHRIL_BLOCK 
     = registerBlock("raw_mithril_block", () -> new Block(MITHRIL_PROPERTIES));
-
+    public static final RegistryObject<Block> MITHRIL_GLASS
+    = registerBlock("mithril_glass", () -> new GlassBlock(BlockBehaviour.Properties.copy(Blocks.GLASS)));
+    //public static final RegistryObject<Block> MITHRIL_GLASS_PANE
+    //= registerBlock("mithril_glass_pane", () -> new GlassBlock(BlockBehaviour.Properties.copy(Blocks.GLASS)));
     
     //Wood
     public static final RegistryObject<Block> ALPHA_PLANKS
@@ -141,6 +152,11 @@ public class BlockRegistry {
     public static final RegistryObject<Block> VIOLET_CARPET 
     = registerBlock("violet_carpet", () -> new CarpetBlock(CARPET_PROPERTIES.mapColor(MapColor.COLOR_PURPLE)));
 
+    //Misc.
+    
+    public static final RegistryObject<Block> ALPHA_GLASS
+    = registerBlock("alpha_glass", () -> new GlassBlock(BlockBehaviour.Properties.copy(Blocks.GLASS)));
+
 
     ///
     /// NEVERMIND YOU DON'T GET TO DECAY
@@ -167,6 +183,9 @@ public class BlockRegistry {
     = registerBlock("alpha_rose", () -> new SaplingBlock(new AlphaBirchTreeGrower(), BlockBehaviour.Properties.copy(Blocks.DANDELION).mapColor(MapColor.COLOR_RED)));
     public static final RegistryObject<Block> ALPHA_FLOWER
     = registerBlock("alpha_flower", () -> new SaplingBlock(new AlphaBirchTreeGrower(), BlockBehaviour.Properties.copy(Blocks.DANDELION)));
+
+    public static final RegistryObject<Block> ALPHA_FARMLAND 
+    = registerBlock("alpha_farmland", () -> new AlphaFarmland(BlockBehaviour.Properties.copy(Blocks.FARMLAND)));
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {

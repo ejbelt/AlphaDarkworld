@@ -38,18 +38,19 @@
       "alpha_darkworld:ice_lake",
       "minecraft:ice_patch"
     ],
-    [],
+    [
+      "alpha_darkworld:alpha_coal_upper"
+    ],
     [],
     [],
     [],
     [
-      "minecraft:ore_dirt",
-      "minecraft:ore_gravel",
       "alpha_darkworld:ore_mithril_small",
       "alpha_darkworld:ore_mithril_mid",
       "alpha_darkworld:ore_mithril_upper",
       "alpha_darkworld:ore_ruby",
-      "alpha_darkworld:ore_ruby_large"
+      "alpha_darkworld:ore_ruby_large",
+      "alpha_darkworld:alpha_coal_lower"
     ],
     [],
     [
@@ -66,9 +67,7 @@
       "alpha_darkworld:alpha_oak",
       "alpha_darkworld:alpha_birch",
       "alpha_darkworld:trees_water",
-      "minecraft:disk_sand",
       "minecraft:disk_clay",
-      "minecraft:disk_gravel",
       "minecraft:patch_pumpkin"
     ],
     [

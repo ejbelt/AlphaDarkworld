@@ -1,6 +1,10 @@
-// 1.20.1	2026-08-03T17:11:33.639641	Tags for minecraft:block mod id alpha_darkworld
+// 1.20.1	2026-08-09T00:06:11.3934838	Tags for minecraft:block mod id alpha_darkworld
 dbe05708cc65050db2aeebf1eba3571dafc5a8fd data/alpha_darkworld/tags/blocks/needs_mithril_tool.json
+8bb1e8f0791025be11677ffc5bf2c0919b711d9a data/minecraft/tags/blocks/infiniburn_end.json
 8bb1e8f0791025be11677ffc5bf2c0919b711d9a data/minecraft/tags/blocks/infiniburn_nether.json
+8bb1e8f0791025be11677ffc5bf2c0919b711d9a data/minecraft/tags/blocks/infiniburn_overworld.json
+6d90c3ec863f29a447722e859a14ade1298790bf data/minecraft/tags/blocks/leaves.json
 8bb1e8f0791025be11677ffc5bf2c0919b711d9a data/minecraft/tags/blocks/mushroom_grow_block.json
 8bb1e8f0791025be11677ffc5bf2c0919b711d9a data/minecraft/tags/blocks/nether_carver_replaceables.json
+a36de9f042707fc5ad65b39ca7ae5f508e3097d0 data/minecraft/tags/blocks/valid_spawn.json
 52fb6cd730a057dc51a5b04bb098c1616e8e99a9 data/minecraft/tags/blocks/walls.json

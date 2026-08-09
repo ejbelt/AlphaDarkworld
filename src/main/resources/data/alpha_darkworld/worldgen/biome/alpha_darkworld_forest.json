@@ -37,13 +37,13 @@
       "alpha_darkworld:lava_lake",
       "alpha_darkworld:water_lake"
     ],
-    [],
+    [
+      "alpha_darkworld:alpha_coal_upper"
+    ],
     [],
     [],
     [],
     [
-      "minecraft:ore_dirt",
-      "minecraft:ore_gravel",
       "minecraft:ore_coal_upper",
       "minecraft:ore_coal_lower",
       "alpha_darkworld:ore_mithril_small",
@@ -51,7 +51,8 @@
       "alpha_darkworld:ore_mithril_upper",
       "minecraft:ore_gold",
       "alpha_darkworld:ore_ruby",
-      "alpha_darkworld:ore_ruby_large"
+      "alpha_darkworld:ore_ruby_large",
+      "alpha_darkworld:alpha_coal_lower"
     ],
     [],
     [
@@ -67,9 +68,7 @@
       "minecraft:spring_water",
       "alpha_darkworld:alpha_forest_trees",
       "alpha_darkworld:trees_water",
-      "minecraft:disk_sand",
       "minecraft:disk_clay",
-      "minecraft:disk_gravel",
       "minecraft:patch_pumpkin"
     ],
     [

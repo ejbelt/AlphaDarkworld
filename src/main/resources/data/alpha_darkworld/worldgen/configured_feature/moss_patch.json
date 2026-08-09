@@ -7,10 +7,10 @@
     "ground_state": {
       "type": "minecraft:simple_state_provider",
       "state": {
-        "Name": "minecraft:moss_block"
+        "Name": "alpha_darkworld:alpha_moss"
       }
     },
-    "replaceable": "#minecraft:moss_replaceable",
+    "replaceable": "#alpha_darkworld:moss_replaceable",
     "surface": "floor",
     "vegetation_chance": 0.8,
     "vegetation_feature": {

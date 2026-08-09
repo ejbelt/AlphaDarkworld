@@ -38,7 +38,9 @@
       "alpha_darkworld:water_lake_underground",
       "alpha_darkworld:lava_lake_underground"
     ],
-    [],
+    [
+      "alpha_darkworld:alpha_coal_upper"
+    ],
     [],
     [
       "minecraft:amethyst_geode",
@@ -47,21 +49,19 @@
       "minecraft:glow_lichen"
     ],
     [
-      "minecraft:lush_caves_ceiling_vegetation",
-      "minecraft:lush_caves_clay",
+      "alpha_darkworld:alpha_caveland_ceiling_vegetation",
+      "alpha_darkworld:alpha_caveland_clay",
       "alpha_darkworld:alpha_caveland_vegetation"
     ],
     [
-      "minecraft:ore_dirt",
-      "minecraft:ore_gravel",
       "minecraft:ore_coal_upper",
       "minecraft:ore_coal_lower",
       "alpha_darkworld:ore_mithril_small",
       "alpha_darkworld:ore_mithril_mid",
       "alpha_darkworld:ore_mithril_upper",
-      "minecraft:ore_gold",
       "alpha_darkworld:ore_ruby",
-      "alpha_darkworld:ore_ruby_large"
+      "alpha_darkworld:ore_ruby_large",
+      "alpha_darkworld:alpha_coal_lower"
     ],
     [],
     [

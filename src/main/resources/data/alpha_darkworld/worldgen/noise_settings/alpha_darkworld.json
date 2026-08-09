@@ -142,7 +142,7 @@
                     "then_run": {
                       "type": "minecraft:block",
                       "result_state": {
-                        "Name": "minecraft:sand"
+                        "Name": "alpha_darkworld:alpha_sand"
                       }
                     }
                   }
@@ -206,7 +206,7 @@
                         "then_run": {
                           "type": "minecraft:block",
                           "result_state": {
-                            "Name": "minecraft:gravel"
+                            "Name": "alpha_darkworld:alpha_gravel"
                           }
                         }
                       },
@@ -221,7 +221,7 @@
                         "then_run": {
                           "type": "minecraft:block",
                           "result_state": {
-                            "Name": "minecraft:gravel"
+                            "Name": "alpha_darkworld:alpha_gravel"
                           }
                         }
                       }

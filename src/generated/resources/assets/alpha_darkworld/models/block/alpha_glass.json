@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/glass",
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "all": "alpha_darkworld:block/alpha_glass"
+  }
+}

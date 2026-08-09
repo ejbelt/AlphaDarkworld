@@ -21,6 +21,8 @@ public class CreativeTabRegistry {
             .displayItems((parameters, output) -> {
                 output.accept(BlockRegistry.ALPHA_GRASS_BLOCK.get());
                 output.accept(BlockRegistry.ALPHA_DIRT.get());
+                output.accept(BlockRegistry.ALPHA_SAND.get());
+                output.accept(BlockRegistry.ALPHA_GRAVEL.get());
                 output.accept(BlockRegistry.ALPHA_PLANKS.get());
                 output.accept(BlockRegistry.ALPHA_WOODEN_SLAB.get());
                 output.accept(BlockRegistry.ALPHA_WOODEN_STAIRS.get());
@@ -39,6 +41,7 @@ public class CreativeTabRegistry {
                 output.accept(BlockRegistry.ALPHA_BRICK_WALL.get());
                 output.accept(BlockRegistry.ALPHA_LOG.get());
                 output.accept(BlockRegistry.ALPHA_BIRCH_LOG.get());
+                output.accept(BlockRegistry.ALPHA_GLASS.get());
                 output.accept(BlockRegistry.ALPHA_LEAVES.get());
                 output.accept(BlockRegistry.ALPHA_BIRCH_LEAVES.get());
                 output.accept(BlockRegistry.BRIMSTONE.get());
@@ -61,6 +64,7 @@ public class CreativeTabRegistry {
                 output.accept(BlockRegistry.RUBY_BLOCK.get());
                 output.accept(BlockRegistry.MITHRIL_BLOCK.get());
                 output.accept(BlockRegistry.RAW_MITHRIL_BLOCK.get());
+                output.accept(BlockRegistry.MITHRIL_GLASS.get());
                 output.accept(BlockRegistry.ALPHA_ROSE.get());
                 output.accept(BlockRegistry.ALPHA_FLOWER.get());
                 output.accept(BlockRegistry.CYAN_FLOWER.get());
