@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "alpha_darkworld:alpha_rose"
+          "name": "alpha_darkworld:love_flower"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "alpha_darkworld:blocks/alpha_rose"
+  "random_sequence": "alpha_darkworld:blocks/love_flower"
 }

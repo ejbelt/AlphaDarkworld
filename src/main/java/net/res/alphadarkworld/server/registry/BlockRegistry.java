@@ -180,7 +180,7 @@ public class BlockRegistry {
     public static final RegistryObject<Block> PAEONIA
     = registerBlock("paeonia", () -> new SaplingBlock(new AlphaBirchTreeGrower(), BlockBehaviour.Properties.copy(Blocks.DANDELION).mapColor(MapColor.COLOR_PURPLE)));
     public static final RegistryObject<Block> ALPHA_ROSE
-    = registerBlock("alpha_rose", () -> new SaplingBlock(new AlphaBirchTreeGrower(), BlockBehaviour.Properties.copy(Blocks.DANDELION).mapColor(MapColor.COLOR_RED)));
+    = registerBlock("love_flower", () -> new SaplingBlock(new AlphaBirchTreeGrower(), BlockBehaviour.Properties.copy(Blocks.DANDELION).mapColor(MapColor.COLOR_RED)));
     public static final RegistryObject<Block> ALPHA_FLOWER
     = registerBlock("alpha_flower", () -> new SaplingBlock(new AlphaBirchTreeGrower(), BlockBehaviour.Properties.copy(Blocks.DANDELION)));
 
