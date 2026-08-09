@@ -1,0 +1,23 @@
+{
+  "block_tag": "alpha_darkworld:influences_alpha_skylands",
+  "block_amount": 9,
+  "noise_settings": "alpha_darkworld:alpha_skylands",
+  "dimension_type": "alpha_darkworld:alpha_skylands_dimension_type",
+  "biome_source": {
+    "type": "minecraft:multi_noise",
+    "biomes": [
+      {
+        "biome": "alpha_darkworld:alpha_skylands",
+        "parameters": {
+          "temperature": -0.45,
+          "humidity": -0.25,
+          "continentalness": 0,
+          "erosion": 0.42,
+          "weirdness": 0.45,
+          "depth": 0.3,
+          "offset": 0.12
+        }
+      }
+    ]
+  }
+}

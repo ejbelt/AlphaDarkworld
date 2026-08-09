@@ -1,11 +1,11 @@
-// 1.20.1	2026-08-06T21:17:27.5642429	Item Models: alpha_darkworld
+// 1.20.1	2026-08-09T11:42:35.2448745	Item Models: alpha_darkworld
 48ba1cb73b64c594f8ef9e3fc3e33c585192be4d assets/alpha_darkworld/models/item/alpha_birch_sapling.json
 e90d44d01b4e5a4a26fe943e8ab3dc499c6a639d assets/alpha_darkworld/models/item/alpha_flower.json
-511bac635d542638565210af9fa04b8e9b43192d assets/alpha_darkworld/models/item/love_flower.json
 305232d77614f7604bf0cd28861a87208e236523 assets/alpha_darkworld/models/item/alpha_sapling.json
 5be39b005249fae5356ce2a81db1342f9493269f assets/alpha_darkworld/models/item/cyan_flower.json
 1f1d17394a79bd2ea79cddd22009672c53ffb7d9 assets/alpha_darkworld/models/item/dark_stick.json
 eb5830da5986b1d6ccd738ea19deb779c3723a0a assets/alpha_darkworld/models/item/disc_droopy.json
+b9171335d4101d689dcb65879476e2094f2a36c4 assets/alpha_darkworld/models/item/love_flower.json
 5849c679de195d704a94babf01e7d42d9e657208 assets/alpha_darkworld/models/item/mithril_axe.json
 374d7fd69b5971f9c00d00837e1fd62aa93b342d assets/alpha_darkworld/models/item/mithril_boots.json
 2e6f4d789ca388b9b8ce431a43a471a1daa79f04 assets/alpha_darkworld/models/item/mithril_boots_amethyst_trim.json

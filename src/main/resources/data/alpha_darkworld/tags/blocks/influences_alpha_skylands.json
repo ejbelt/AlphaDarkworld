@@ -1,0 +1,11 @@
+{
+    "values": [
+        "minecraft:quartz_block",
+        "minecraft:quartz_slab",
+        "minecraft:quartz_stairs",
+        "minecraft:calcite",
+        "minecraft:diorite",
+        "minecraft:polished_diorite",
+        "minecraft:red_bed"
+    ]
+}

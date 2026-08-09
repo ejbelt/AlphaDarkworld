@@ -4,6 +4,8 @@ package net.res.alphadarkworld.server.registry;
 import net.res.alphadarkworld.AlphaDarkworld;
 import net.res.alphadarkworld.server.block.*;
 import net.res.alphadarkworld.server.world.worldgen.tree.*;
+import net.minecraft.world.effect.MobEffect;
+import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
@@ -167,6 +169,9 @@ public class BlockRegistry {
     /// Anyways, leaves....
     /// 
     /// ...nevermind this rant. I fixed it.
+    
+    
+    
     public static final RegistryObject<Block> ALPHA_LEAVES
     = registerBlock("alpha_leaves", () -> new LeavesBlock(LEAF_PROPERTIES));
     public static final RegistryObject<Block> ALPHA_BIRCH_LEAVES
@@ -176,13 +181,13 @@ public class BlockRegistry {
     public static final RegistryObject<Block> ALPHA_BIRCH_SAPLING
     = registerBlock("alpha_birch_sapling", () -> new SaplingBlock(new AlphaBirchTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
     public static final RegistryObject<Block> CYAN_FLOWER
-    = registerBlock("cyan_flower", () -> new SaplingBlock(new AlphaBirchTreeGrower(), BlockBehaviour.Properties.copy(Blocks.DANDELION).mapColor(MapColor.COLOR_CYAN)));
+    = registerBlock("cyan_flower", () -> new FlowerBlock(MobEffects.LEVITATION, 30, BlockBehaviour.Properties.copy(Blocks.DANDELION).mapColor(MapColor.COLOR_CYAN)));
     public static final RegistryObject<Block> PAEONIA
-    = registerBlock("paeonia", () -> new SaplingBlock(new AlphaBirchTreeGrower(), BlockBehaviour.Properties.copy(Blocks.DANDELION).mapColor(MapColor.COLOR_PURPLE)));
+    = registerBlock("paeonia", () -> new FlowerBlock(MobEffects.DAMAGE_BOOST, 32, BlockBehaviour.Properties.copy(Blocks.DANDELION).mapColor(MapColor.COLOR_PURPLE)));
     public static final RegistryObject<Block> ALPHA_ROSE
-    = registerBlock("love_flower", () -> new SaplingBlock(new AlphaBirchTreeGrower(), BlockBehaviour.Properties.copy(Blocks.DANDELION).mapColor(MapColor.COLOR_RED)));
+    = registerBlock("love_flower", () -> new LoveFlower(MobEffects.LUCK, 40, BlockBehaviour.Properties.copy(Blocks.DANDELION).mapColor(MapColor.COLOR_RED)));
     public static final RegistryObject<Block> ALPHA_FLOWER
-    = registerBlock("alpha_flower", () -> new SaplingBlock(new AlphaBirchTreeGrower(), BlockBehaviour.Properties.copy(Blocks.DANDELION)));
+    = registerBlock("alpha_flower", () -> new FlowerBlock(MobEffects.SATURATION, 8, BlockBehaviour.Properties.copy(Blocks.DANDELION)));
 
     public static final RegistryObject<Block> ALPHA_FARMLAND 
     = registerBlock("alpha_farmland", () -> new AlphaFarmland(BlockBehaviour.Properties.copy(Blocks.FARMLAND)));
