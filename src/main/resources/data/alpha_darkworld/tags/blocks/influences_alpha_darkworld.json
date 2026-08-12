@@ -2,6 +2,10 @@
   "values": [
     "minecraft:grass_block",
     "minecraft:green_wool",
-    "minecraft:green_carpet"
+    "minecraft:green_carpet",
+    "minecraft:oak_wood",
+    "minecraft:birch_wood",
+    "minecraft:oak_log",
+    "minecraft:birch_log"
   ]
 }

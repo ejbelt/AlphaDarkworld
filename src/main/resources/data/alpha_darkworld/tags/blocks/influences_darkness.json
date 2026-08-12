@@ -1,5 +1,8 @@
 {
   "values": [
-    "minecraft:netherrack"
+    "minecraft:netherrack",
+    "minecraft:soul_sand",
+    "minecraft:soul_soil",
+    "minecraft:wither_skeleton_skull"
   ]
 }

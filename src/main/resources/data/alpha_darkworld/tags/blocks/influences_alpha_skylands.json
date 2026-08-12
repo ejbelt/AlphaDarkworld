@@ -1,11 +1,9 @@
 {
     "values": [
-        "minecraft:quartz_block",
-        "minecraft:quartz_slab",
-        "minecraft:quartz_stairs",
-        "minecraft:calcite",
-        "minecraft:diorite",
         "minecraft:polished_diorite",
-        "minecraft:red_bed"
+        "minecraft:red_bed",
+        "minecraft:white_terracotta",
+        "minecraft:lime_terracotta",
+        "minecraft:green_terracotta"
     ]
 }
