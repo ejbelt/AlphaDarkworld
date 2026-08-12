@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:stone_axe",
+          "name": "penumbra_phantasm:umbrastone_axe",
           "functions": [
             {
               "function": "minecraft:set_damage",
@@ -26,7 +26,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:stone_pickaxe",
+          "name": "penumbra_phantasm:umbrastone_pickaxe",
           "functions": [
             {
               "function": "minecraft:set_damage",
@@ -172,7 +172,7 @@
               }
             }
           ],
-          "name": "minecraft:stone_shovel",
+          "name": "penumbra_phantasm:umbrastone_shovel",
           "weight": 3
         },
         {
@@ -220,7 +220,7 @@
               "function": "minecraft:set_damage"
             }
           ],
-          "name": "minecraft:stone_hoe",
+          "name": "penumbra_phantasm:umbrastone_hoe",
           "weight": 3
         },
         {

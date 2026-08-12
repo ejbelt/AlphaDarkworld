@@ -30,7 +30,6 @@ public class ItemRegistry {
                 () -> new Item(new Item.Properties()));
 
 
-
         public static final RegistryObject<Item> MITHRIL_SWORD = ITEMS.register("mithril_sword",
                 () -> new SwordItem(TierRegistry.MITHRIL, 3, -2, new Item.Properties()));
         public static final RegistryObject<Item> MITHRIL_AXE = ITEMS.register("mithril_axe",

@@ -89,8 +89,8 @@
       }
     ]
   },
-  "caveland_loop": {
-    "subtitle": "sound.alpha_darkworld.caveland_loop",
+  "ambient.caveland_loop": {
+    "subtitle": "sound.alpha_darkworld.ambient.caveland_loop",
     "sounds": [
       {
         "name": "alpha_darkworld:ambient/mossland/loop/night_ambience",
@@ -110,6 +110,200 @@
       }
     ]
   },
+  "blocks.alpha_door.open": {
+    "sounds": [
+      "alpha_darkworld:random/door_open"
+    ]
+  },
+  "blocks.alpha_door.close": {
+    "sounds": [
+      "alpha_darkworld:random/door_close"
+    ]
+  },
+  "blocks.alpha_button.up": {
+    "sounds": [
+      "alpha_darkworld:blank"
+    ]
+  },
+  "blocks.alpha_button.down": {
+    "sounds": [
+      "alpha_darkworld:blank"
+    ]
+  },
+
+  "blocks.alpha_grass.step": {
+    "sounds": [
+      "alpha_darkworld:step/grass1",
+      "alpha_darkworld:step/grass2",
+      "alpha_darkworld:step/grass3",
+      "alpha_darkworld:step/grass4"
+    ]
+  },
+  "blocks.alpha_grass.hit": {
+    "sounds": [
+      "alpha_darkworld:step/grass1",
+      "alpha_darkworld:step/grass2",
+      "alpha_darkworld:step/grass3",
+      "alpha_darkworld:step/grass4"
+    ]
+  },
+  "blocks.alpha_grass.break": {
+    "sounds": [
+      "alpha_darkworld:dig/grass1",
+      "alpha_darkworld:dig/grass2",
+      "alpha_darkworld:dig/grass3",
+      "alpha_darkworld:dig/grass4"
+    ]
+  },
+  "blocks.alpha_grass.place": {
+    "sounds": [
+      "alpha_darkworld:dig/grass1",
+      "alpha_darkworld:dig/grass2",
+      "alpha_darkworld:dig/grass3",
+      "alpha_darkworld:dig/grass4"
+    ]
+  },
+
+  "blocks.alpha_dirt.step": {
+    "sounds": [
+      "alpha_darkworld:step/gravel1",
+      "alpha_darkworld:step/gravel2",
+      "alpha_darkworld:step/gravel3",
+      "alpha_darkworld:step/gravel4"
+    ]
+  },
+  "blocks.alpha_dirt.hit": {
+    "sounds": [
+      "alpha_darkworld:step/gravel1",
+      "alpha_darkworld:step/gravel2",
+      "alpha_darkworld:step/gravel3",
+      "alpha_darkworld:step/gravel4"
+    ]
+  },
+  "blocks.alpha_dirt.break": {
+    "sounds": [
+      "alpha_darkworld:dig/gravel1",
+      "alpha_darkworld:dig/gravel2",
+      "alpha_darkworld:dig/gravel3",
+      "alpha_darkworld:dig/gravel4"
+    ]
+  },
+  "blocks.alpha_dirt.place": {
+    "sounds": [
+      "alpha_darkworld:dig/gravel1",
+      "alpha_darkworld:dig/gravel2",
+      "alpha_darkworld:dig/gravel3",
+      "alpha_darkworld:dig/gravel4"
+    ]
+  },
+
+  "blocks.alpha_sand.step": {
+    "sounds": [
+      "alpha_darkworld:step/sand1",
+      "alpha_darkworld:step/sand2",
+      "alpha_darkworld:step/sand3",
+      "alpha_darkworld:step/sand4"
+    ]
+  },
+  "blocks.alpha_sand.hit": {
+    "sounds": [
+      "alpha_darkworld:step/sand1",
+      "alpha_darkworld:step/sand2",
+      "alpha_darkworld:step/sand3",
+      "alpha_darkworld:step/sand4"
+    ]
+  },
+  "blocks.alpha_sand.break": {
+    "sounds": [
+      "alpha_darkworld:dig/gravel1",
+      "alpha_darkworld:dig/gravel2",
+      "alpha_darkworld:dig/gravel3",
+      "alpha_darkworld:dig/gravel4"
+    ]
+  },
+  "blocks.alpha_sand.place": {
+    "sounds": [
+      "alpha_darkworld:step/sand1",
+      "alpha_darkworld:step/sand2",
+      "alpha_darkworld:step/sand3",
+      "alpha_darkworld:step/sand4"
+    ]
+  },
+
+  "blocks.alpha_stone.step": {
+    "sounds": [
+      "alpha_darkworld:step/stone1",
+      "alpha_darkworld:step/stone2",
+      "alpha_darkworld:step/stone3",
+      "alpha_darkworld:step/stone4"
+    ]
+  },
+  "blocks.alpha_stone.hit": {
+    "sounds": [
+      "alpha_darkworld:step/stone1",
+      "alpha_darkworld:step/stone2",
+      "alpha_darkworld:step/stone3",
+      "alpha_darkworld:step/stone4"
+    ]
+  },
+  "blocks.alpha_stone.break": {
+    "sounds": [
+      "alpha_darkworld:dig/stone1",
+      "alpha_darkworld:dig/stone2",
+      "alpha_darkworld:dig/stone3",
+      "alpha_darkworld:dig/stone4"
+    ]
+  },
+  "blocks.alpha_stone.place": {
+    "sounds": [
+      "alpha_darkworld:dig/stone1",
+      "alpha_darkworld:dig/stone2",
+      "alpha_darkworld:dig/stone3",
+      "alpha_darkworld:dig/stone4"
+    ]
+  },
+
+  "blocks.alpha_wood.step": {
+    "sounds": [
+      "alpha_darkworld:step/wood1",
+      "alpha_darkworld:step/wood2",
+      "alpha_darkworld:step/wood3",
+      "alpha_darkworld:step/wood4"
+    ]
+  },
+  "blocks.alpha_wood.hit": {
+    "sounds": [
+      "alpha_darkworld:step/wood1",
+      "alpha_darkworld:step/wood2",
+      "alpha_darkworld:step/wood3",
+      "alpha_darkworld:step/wood4"
+    ]
+  },
+  "blocks.alpha_wood.break": {
+    "sounds": [
+      "alpha_darkworld:dig/wood1",
+      "alpha_darkworld:dig/wood2",
+      "alpha_darkworld:dig/wood3",
+      "alpha_darkworld:dig/wood4"
+    ]
+  },
+  "blocks.alpha_wood.place": {
+    "sounds": [
+      "alpha_darkworld:dig/wood1",
+      "alpha_darkworld:dig/wood2",
+      "alpha_darkworld:dig/wood3",
+      "alpha_darkworld:dig/wood4"
+    ]
+  },
+
+  "blocks.alpha_glass.break": {
+    "sounds": [
+      "alpha_darkworld:random/glass1",
+      "alpha_darkworld:random/glass2",
+      "alpha_darkworld:random/glass3"
+    ]
+  },
+
   "silent": {
     "subtitle": "sound.alpha_darkworld.silence",
     "sounds": [

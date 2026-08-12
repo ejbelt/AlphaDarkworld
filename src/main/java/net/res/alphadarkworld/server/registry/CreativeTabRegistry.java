@@ -26,6 +26,7 @@ public class CreativeTabRegistry {
                 output.accept(BlockRegistry.ALPHA_PLANKS.get());
                 output.accept(BlockRegistry.ALPHA_WOODEN_SLAB.get());
                 output.accept(BlockRegistry.ALPHA_WOODEN_STAIRS.get());
+                output.accept(BlockRegistry.ALPHA_DOOR.get());
                 output.accept(BlockRegistry.LIMESTONE.get());
                 output.accept(BlockRegistry.ALPHA_COBBLESTONE.get());
                 output.accept(BlockRegistry.ALPHA_COBBLESTONE_SLAB.get());

@@ -15,6 +15,7 @@ import net.minecraft.world.level.material.MapColor;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+import net.minecraft.sounds.SoundEvents;
 import net.minecraft.util.valueproviders.UniformInt;
 
 import java.util.function.Supplier;
@@ -23,46 +24,40 @@ public class BlockRegistry {
     
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, AlphaDarkworld.MOD_ID);
 
-    public static final BlockBehaviour.Properties MITHRIL_PROPERTIES = BlockBehaviour.Properties.copy(Blocks.GOLD_BLOCK).mapColor(MapColor.COLOR_CYAN).requiresCorrectToolForDrops().sound(SoundType.METAL);
-    public static final BlockBehaviour.Properties RUBY_PROPERTIES = BlockBehaviour.Properties.copy(Blocks.EMERALD_BLOCK).mapColor(MapColor.COLOR_RED).requiresCorrectToolForDrops().sound(SoundType.METAL);
-    public static final BlockBehaviour.Properties RAW_BLOCK_PROPERTIES = BlockBehaviour.Properties.copy(Blocks.RAW_IRON_BLOCK).mapColor(MapColor.COLOR_RED).requiresCorrectToolForDrops();
+    public static final BlockBehaviour.Properties MITHRIL_PROPERTIES = BlockBehaviour.Properties.copy(Blocks.GOLD_BLOCK).mapColor(MapColor.COLOR_CYAN).requiresCorrectToolForDrops().sound(SoundTypeRegistry.ALPHA_DENSE_STONE);
+    public static final BlockBehaviour.Properties RUBY_PROPERTIES = BlockBehaviour.Properties.copy(Blocks.EMERALD_BLOCK).mapColor(MapColor.COLOR_RED).requiresCorrectToolForDrops().sound(SoundTypeRegistry.ALPHA_DENSE_STONE);
+    public static final BlockBehaviour.Properties RAW_BLOCK_PROPERTIES = BlockBehaviour.Properties.copy(Blocks.RAW_IRON_BLOCK).mapColor(MapColor.COLOR_RED).requiresCorrectToolForDrops().sound(SoundTypeRegistry.ALPHA_STONE);
     public static final BlockBehaviour.Properties CLOTH_PROPERTIES = BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL);
     public static final BlockBehaviour.Properties CARPET_PROPERTIES = BlockBehaviour.Properties.copy(Blocks.WHITE_CARPET);
 
-    public static final BlockBehaviour.Properties WOOD_PROPERTIES = BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS);
-    public static final BlockBehaviour.Properties LOG_PROPERTIES = BlockBehaviour.Properties.copy(Blocks.OAK_WOOD);
-    public static final BlockBehaviour.Properties LEAF_PROPERTIES = BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES);
-
-
-    public static final BlockSetType ALPHA_WOOD_BLOCKSET = new BlockSetType("alpha_wood");
-    public static final BlockSetType ALPHA_COBBLESTONE_BLOCKSET = new BlockSetType("alpha_cobblestone");
-    public static final BlockSetType ALPHA_MOSSY_COBBLESTONE_BLOCKSET = new BlockSetType("alpha_mossy_cobblestone");
-    public static final BlockSetType ALPHA_BRICK_BLOCKSET = new BlockSetType("alpha_brick");
+    public static final BlockBehaviour.Properties WOOD_PROPERTIES = BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).sound(SoundTypeRegistry.ALPHA_WOOD);
+    public static final BlockBehaviour.Properties LOG_PROPERTIES = BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).sound(SoundTypeRegistry.ALPHA_WOOD);
+    public static final BlockBehaviour.Properties LEAF_PROPERTIES = BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES).sound(SoundTypeRegistry.ALPHA_GRASS);
 
 
     //Nature
     public static final RegistryObject<Block> ALPHA_GRASS_BLOCK
-    = registerBlock("alpha_grass", () -> new AlphaGrassBlock(BlockBehaviour.Properties.copy(Blocks.GRASS_BLOCK)));
+    = registerBlock("alpha_grass", () -> new AlphaGrassBlock(BlockBehaviour.Properties.copy(Blocks.GRASS_BLOCK).sound(SoundTypeRegistry.ALPHA_GRASS)));
     public static final RegistryObject<Block> ALPHA_DIRT
-    = registerBlock("alpha_dirt", () -> new AlphaDirt(BlockBehaviour.Properties.copy(Blocks.DIRT)));
+    = registerBlock("alpha_dirt", () -> new AlphaDirt(BlockBehaviour.Properties.copy(Blocks.DIRT).sound(SoundTypeRegistry.ALPHA_DIRT)));
     public static final RegistryObject<Block> LIMESTONE
-    = registerBlock("darkner_stone", () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE)));
+    = registerBlock("darkner_stone", () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundTypeRegistry.ALPHA_STONE)));
     public static final RegistryObject<Block> BRIMSTONE
-    = registerBlock("brimstone", () -> new Block(BlockBehaviour.Properties.copy(Blocks.NETHERRACK).sound(SoundType.STONE)));
+    = registerBlock("brimstone", () -> new Block(BlockBehaviour.Properties.copy(Blocks.NETHERRACK).sound(SoundTypeRegistry.ALPHA_STONE)));
     public static final RegistryObject<Block> RUBY_ORE 
-    = registerBlock("ruby_ore", () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DIAMOND_ORE), UniformInt.of(0, 1)));
+    = registerBlock("ruby_ore", () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DIAMOND_ORE).sound(SoundTypeRegistry.ALPHA_STONE), UniformInt.of(0, 1)));
     public static final RegistryObject<Block> MITHRIL_ORE
-    = registerBlock("mithril_ore", () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE).requiresCorrectToolForDrops()));
+    = registerBlock("mithril_ore", () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE).requiresCorrectToolForDrops().sound(SoundTypeRegistry.ALPHA_STONE)));
     public static final RegistryObject<Block> SULFUR_ORE
-    = registerBlock("darkner_coal_ore", () -> new Block(BlockBehaviour.Properties.copy(Blocks.COAL_ORE).requiresCorrectToolForDrops()));
+    = registerBlock("darkner_coal_ore", () -> new Block(BlockBehaviour.Properties.copy(Blocks.COAL_ORE).requiresCorrectToolForDrops().sound(SoundTypeRegistry.ALPHA_STONE)));
     public static final RegistryObject<Block> ALPHA_SAND
-    = registerBlock("alpha_sand", () -> new SandBlock(14406560, BlockBehaviour.Properties.copy(Blocks.SAND)));
+    = registerBlock("alpha_sand", () -> new SandBlock(14406560, BlockBehaviour.Properties.copy(Blocks.SAND).sound(SoundTypeRegistry.ALPHA_SAND)));
     public static final RegistryObject<Block> ALPHA_GRAVEL 
-    = registerBlock("alpha_gravel", () -> new GravelBlock(BlockBehaviour.Properties.copy(Blocks.GRAVEL)));
+    = registerBlock("alpha_gravel", () -> new GravelBlock(BlockBehaviour.Properties.copy(Blocks.GRAVEL).sound(SoundTypeRegistry.ALPHA_DIRT)));
     public static final RegistryObject<Block> ALPHA_MOSS
-    = registerBlock("alpha_moss", () -> new MossBlock(BlockBehaviour.Properties.copy(Blocks.MOSS_BLOCK)));
+    = registerBlock("alpha_moss", () -> new MossBlock(BlockBehaviour.Properties.copy(Blocks.MOSS_BLOCK).sound(SoundTypeRegistry.ALPHA_GRASS)));
     public static final RegistryObject<Block> ALPHA_MOSS_CARPET
-    = registerBlock("alpha_moss_carpet", () -> new CarpetBlock(BlockBehaviour.Properties.copy(Blocks.MOSS_CARPET)));
+    = registerBlock("alpha_moss_carpet", () -> new CarpetBlock(BlockBehaviour.Properties.copy(Blocks.MOSS_CARPET).sound(SoundTypeRegistry.ALPHA_GRASS)));
 
     /*
     
@@ -72,33 +67,33 @@ public class BlockRegistry {
     
     //Alpha Cobble
     public static final RegistryObject<Block> ALPHA_COBBLESTONE
-    = registerBlock("alpha_cobblestone", () -> new Block(BlockBehaviour.Properties.copy(Blocks.COBBLESTONE)));
+    = registerBlock("alpha_cobblestone", () -> new Block(BlockBehaviour.Properties.copy(Blocks.COBBLESTONE).sound(SoundTypeRegistry.ALPHA_STONE)));
     public static final RegistryObject<SlabBlock> ALPHA_COBBLESTONE_SLAB
-    = registerBlock("alpha_cobblestone_slab", () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.COBBLESTONE_SLAB)));
+    = registerBlock("alpha_cobblestone_slab", () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.COBBLESTONE_SLAB).sound(SoundTypeRegistry.ALPHA_STONE)));
     public static final RegistryObject<StairBlock> ALPHA_COBBLESTONE_STAIRS
-    = registerBlock("alpha_cobblestone_stairs", () -> new StairBlock(ALPHA_COBBLESTONE.get().defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.COBBLESTONE_STAIRS)));
+    = registerBlock("alpha_cobblestone_stairs", () -> new StairBlock(ALPHA_COBBLESTONE.get().defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.COBBLESTONE_STAIRS).sound(SoundTypeRegistry.ALPHA_STONE)));
     public static final RegistryObject<WallBlock> ALPHA_COBBLESTONE_WALL
-    = registerBlock("alpha_cobblestone_wall", () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.COBBLESTONE_WALL)));
+    = registerBlock("alpha_cobblestone_wall", () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.COBBLESTONE_WALL).sound(SoundTypeRegistry.ALPHA_STONE)));
 
     //Alpha Mossy Cobble
     public static final RegistryObject<Block> ALPHA_MOSSY_COBBLESTONE
-    = registerBlock("alpha_mossy_cobblestone", () -> new Block(BlockBehaviour.Properties.copy(Blocks.MOSSY_COBBLESTONE)));
+    = registerBlock("alpha_mossy_cobblestone", () -> new Block(BlockBehaviour.Properties.copy(Blocks.MOSSY_COBBLESTONE).sound(SoundTypeRegistry.ALPHA_STONE)));
     public static final RegistryObject<SlabBlock> ALPHA_MOSSY_COBBLESTONE_SLAB
-    = registerBlock("alpha_mossy_cobblestone_slab", () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.COBBLESTONE_SLAB)));
+    = registerBlock("alpha_mossy_cobblestone_slab", () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.COBBLESTONE_SLAB).sound(SoundTypeRegistry.ALPHA_STONE)));
     public static final RegistryObject<StairBlock> ALPHA_MOSSY_COBBLESTONE_STAIRS
-    = registerBlock("alpha_mossy_cobblestone_stairs", () -> new StairBlock(ALPHA_MOSSY_COBBLESTONE.get().defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.COBBLESTONE_STAIRS)));
+    = registerBlock("alpha_mossy_cobblestone_stairs", () -> new StairBlock(ALPHA_MOSSY_COBBLESTONE.get().defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.COBBLESTONE_STAIRS).sound(SoundTypeRegistry.ALPHA_STONE)));
     public static final RegistryObject<WallBlock> ALPHA_MOSSY_COBBLESTONE_WALL
-    = registerBlock("alpha_mossy_cobblestone_wall", () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.COBBLESTONE_WALL)));
+    = registerBlock("alpha_mossy_cobblestone_wall", () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.COBBLESTONE_WALL).sound(SoundTypeRegistry.ALPHA_STONE)));
     
     //Alpha Bricks
     public static final RegistryObject<Block> ALPHA_BRICKS
-    = registerBlock("alpha_bricks", () -> new Block(BlockBehaviour.Properties.copy(Blocks.BRICKS)));
+    = registerBlock("alpha_bricks", () -> new Block(BlockBehaviour.Properties.copy(Blocks.BRICKS).sound(SoundTypeRegistry.ALPHA_STONE)));
     public static final RegistryObject<SlabBlock> ALPHA_BRICK_SLAB
-    = registerBlock("alpha_brick_slab", () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.BRICK_SLAB)));
+    = registerBlock("alpha_brick_slab", () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.BRICK_SLAB).sound(SoundTypeRegistry.ALPHA_STONE)));
     public static final RegistryObject<StairBlock> ALPHA_BRICK_STAIRS
-    = registerBlock("alpha_brick_stairs", () -> new StairBlock(ALPHA_BRICKS.get().defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.COBBLESTONE_STAIRS)));
+    = registerBlock("alpha_brick_stairs", () -> new StairBlock(ALPHA_BRICKS.get().defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.COBBLESTONE_STAIRS).sound(SoundTypeRegistry.ALPHA_STONE)));
     public static final RegistryObject<WallBlock> ALPHA_BRICK_WALL
-    = registerBlock("alpha_brick_wall", () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.BRICK_WALL)));
+    = registerBlock("alpha_brick_wall", () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.BRICK_WALL).sound(SoundTypeRegistry.ALPHA_STONE)));
 
     //Ruby
     public static final RegistryObject<Block> RUBY_BLOCK 
@@ -110,7 +105,7 @@ public class BlockRegistry {
     public static final RegistryObject<Block> RAW_MITHRIL_BLOCK 
     = registerBlock("raw_mithril_block", () -> new Block(MITHRIL_PROPERTIES));
     public static final RegistryObject<Block> MITHRIL_GLASS
-    = registerBlock("mithril_glass", () -> new GlassBlock(BlockBehaviour.Properties.copy(Blocks.GLASS)));
+    = registerBlock("mithril_glass", () -> new GlassBlock(BlockBehaviour.Properties.copy(Blocks.GLASS).sound(SoundTypeRegistry.ALPHA_GLASS)));
     //public static final RegistryObject<Block> MITHRIL_GLASS_PANE
     //= registerBlock("mithril_glass_pane", () -> new GlassBlock(BlockBehaviour.Properties.copy(Blocks.GLASS)));
     
@@ -118,13 +113,15 @@ public class BlockRegistry {
     public static final RegistryObject<Block> ALPHA_PLANKS
     = registerBlock("alpha_planks", () -> new Block(WOOD_PROPERTIES));
     public static final RegistryObject<SlabBlock> ALPHA_WOODEN_SLAB
-    = registerBlock("alpha_wooden_slab", () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.COBBLESTONE_SLAB)));
+    = registerBlock("alpha_wooden_slab", () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.COBBLESTONE_SLAB).sound(SoundTypeRegistry.ALPHA_STONE)));
     public static final RegistryObject<StairBlock> ALPHA_WOODEN_STAIRS
-    = registerBlock("alpha_wooden_stairs", () -> new StairBlock(ALPHA_MOSSY_COBBLESTONE.get().defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.OAK_STAIRS)));
+    = registerBlock("alpha_wooden_stairs", () -> new StairBlock(ALPHA_MOSSY_COBBLESTONE.get().defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.OAK_STAIRS).sound(SoundTypeRegistry.ALPHA_WOOD)));
     public static final RegistryObject<RotatedPillarBlock> ALPHA_LOG
     = registerBlock("alpha_log", () -> new RotatedPillarBlock(LOG_PROPERTIES));
     public static final RegistryObject<RotatedPillarBlock> ALPHA_BIRCH_LOG
     = registerBlock("alpha_birch_log", () -> new RotatedPillarBlock(LOG_PROPERTIES));
+    public static final RegistryObject<DoorBlock> ALPHA_DOOR
+    = registerBlock("alpha_door", () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR).sound(SoundTypeRegistry.ALPHA_WOOD), BlockSetRegistry.ALPHA_WOOD_BLOCKSET));
 
     //Wool
     public static final RegistryObject<Block> ULTRAMARINE_WOOL 
@@ -157,7 +154,7 @@ public class BlockRegistry {
     //Misc.
     
     public static final RegistryObject<Block> ALPHA_GLASS
-    = registerBlock("alpha_glass", () -> new GlassBlock(BlockBehaviour.Properties.copy(Blocks.GLASS)));
+    = registerBlock("alpha_glass", () -> new GlassBlock(BlockBehaviour.Properties.copy(Blocks.GLASS).sound(SoundTypeRegistry.ALPHA_GLASS)));
 
 
     ///
@@ -190,7 +187,7 @@ public class BlockRegistry {
     = registerBlock("alpha_flower", () -> new FlowerBlock(MobEffects.SATURATION, 8, BlockBehaviour.Properties.copy(Blocks.DANDELION)));
 
     public static final RegistryObject<Block> ALPHA_FARMLAND 
-    = registerBlock("alpha_farmland", () -> new AlphaFarmland(BlockBehaviour.Properties.copy(Blocks.FARMLAND)));
+    = registerBlock("alpha_farmland", () -> new AlphaFarmland(BlockBehaviour.Properties.copy(Blocks.FARMLAND).sound(SoundTypeRegistry.ALPHA_DIRT)));
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {

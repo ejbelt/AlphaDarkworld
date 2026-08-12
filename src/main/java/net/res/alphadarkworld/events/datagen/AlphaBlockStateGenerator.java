@@ -10,6 +10,7 @@ import net.minecraftforge.registries.RegistryObject;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.DoorBlock;
 import net.minecraft.world.level.block.RotatedPillarBlock;
 import net.minecraft.world.level.block.SlabBlock;
 import net.minecraft.world.level.block.StairBlock;
@@ -26,7 +27,6 @@ public class AlphaBlockStateGenerator extends BlockStateProvider {
         blockWithItem(BlockRegistry.MITHRIL_ORE);
         blockWithItem(BlockRegistry.RUBY_ORE);
         blockWithItem(BlockRegistry.RUBY_BLOCK);
-        blockWithItem(BlockRegistry.MITHRIL_BLOCK);
         blockWithItem(BlockRegistry.RAW_MITHRIL_BLOCK);
         blockWithItem(BlockRegistry.ULTRAMARINE_WOOL);
         blockWithItem(BlockRegistry.CAPRI_WOOL);
@@ -45,6 +45,9 @@ public class AlphaBlockStateGenerator extends BlockStateProvider {
         blockWithItem(BlockRegistry.ALPHA_SAND);
         blockWithItem(BlockRegistry.ALPHA_GRAVEL);
         blockWithItem(BlockRegistry.ALPHA_MOSS);
+
+        
+        sideBottomTopWithItem(BlockRegistry.MITHRIL_BLOCK);
 
         translucentBlockWithItem(BlockRegistry.MITHRIL_GLASS);
         
@@ -71,6 +74,7 @@ public class AlphaBlockStateGenerator extends BlockStateProvider {
         //Do this manually.
         //grassBlockModel(BlockRegistry.ALPHA_GRASS_BLOCK);
 
+        doDoorBlock(BlockRegistry.ALPHA_DOOR);
         
         stairsWithItem(BlockRegistry.ALPHA_COBBLESTONE_STAIRS, blockTexture(BlockRegistry.ALPHA_COBBLESTONE.get()));
         stairsWithItem(BlockRegistry.ALPHA_MOSSY_COBBLESTONE_STAIRS, blockTexture(BlockRegistry.ALPHA_MOSSY_COBBLESTONE.get()));
@@ -97,6 +101,23 @@ public class AlphaBlockStateGenerator extends BlockStateProvider {
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {
         simpleBlockWithItem(blockRegistryObject.get(), cubeAll(blockRegistryObject.get()));
+    }
+
+    private void sideBottomTopWithItem(RegistryObject<Block> blockRegistryObject) {
+        String path = blockRegistryObject.getId().getPath();
+        simpleBlockWithItem(blockRegistryObject.get(),
+            models().cubeBottomTop(ForgeRegistries.BLOCKS.getKey(blockRegistryObject.get()).getPath(),
+                
+                new ResourceLocation(AlphaDarkworld.MOD_ID, "block/" + path +"_side"),
+                new ResourceLocation(AlphaDarkworld.MOD_ID, "block/" + path +"_bottom"),
+                new ResourceLocation(AlphaDarkworld.MOD_ID, "block/" + path +"_top")));
+    }
+
+    private void doDoorBlock(RegistryObject<DoorBlock> blockRegistryObject){
+        String path = blockRegistryObject.getId().getPath();
+        doorBlockWithRenderType(blockRegistryObject.get(), 
+            new ResourceLocation(AlphaDarkworld.MOD_ID, "block/" + path + "_bottom"),
+            new ResourceLocation(AlphaDarkworld.MOD_ID, "block/" + path + "_top"), "cutout");
     }
 
     private void translucentBlockWithItem(RegistryObject<Block> blockRegistryObject){

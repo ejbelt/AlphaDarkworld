@@ -13,7 +13,7 @@
               "function": "minecraft:set_count"
             }
           ],
-          "name": "minecraft:iron_block"
+          "name": "alpha_darkworld:mithril_block"
         }
       ],
       "rolls": 1
@@ -67,7 +67,7 @@
               "function": "minecraft:set_count"
             }
           ],
-          "name": "minecraft:diamond"
+          "name": "alpha_darkworld:ruby"
         },
         {
           "type": "minecraft:item",
@@ -83,36 +83,15 @@
                 "max": 1
               },
               "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 8,
+                "min": 3
+              },
               "function": "minecraft:set_damage"
             }
           ],
           "name": "penumbra_phantasm:rosegold_sword"
-        },
-        {
-          "type": "minecraft:item",
-          "functions": [
-            {
-              "add": false,
-              "count": 1,
-              "function": "minecraft:set_count"
-            }
-          ],
-          "name": "minecraft:gold_block"
-        },
-        {
-          "type": "minecraft:item",
-          "functions": [
-            {
-              "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 9,
-                "min": 2
-              },
-              "function": "minecraft:set_count"
-            }
-          ],
-          "name": "minecraft:gold_ingot"
         },
         {
           "type": "minecraft:item",
@@ -127,7 +106,7 @@
               "function": "minecraft:set_count"
             }
           ],
-          "name": "minecraft:iron_ingot"
+          "name": "alpha_darkworld:mithril_ingot"
         },
         {
           "type": "minecraft:item",
@@ -142,7 +121,12 @@
             },
             {
               "function": "minecraft:enchant_randomly",
-              "enchantments": [],
+              "enchantments": [
+                "minecraft:mending",
+                "minecraft:sharpness",
+                "minecraft:fire_aspect",
+                "minecraft:looting"
+              ],
               "only_compatible": true
             },
             {
@@ -151,7 +135,7 @@
               "function": "minecraft:set_count"
             }
           ],
-          "name": "penumbra_phantasm:rosegold_pickaxe"
+          "name": "alpha_darkworld:mithril_sword"
         },
         {
           "type": "minecraft:item",
@@ -165,7 +149,7 @@
               "function": "minecraft:enchant_randomly"
             }
           ],
-          "name": "minecraft:chainmail_chestplate"
+          "name": "alpha_darkworld:mithril_chestplate"
         },
         {
           "type": "minecraft:item",
@@ -187,7 +171,7 @@
               "function": "minecraft:enchant_randomly"
             }
           ],
-          "name": "minecraft:chainmail_helmet"
+          "name": "alpha_darkworld:mithril_helmet"
         },
         {
           "type": "minecraft:item",
@@ -209,25 +193,7 @@
               "function": "minecraft:enchant_randomly"
             }
           ],
-          "name": "minecraft:chainmail_leggings"
-        },
-        {
-          "type": "minecraft:item",
-          "functions": [
-            {
-              "damage": {
-                "type": "minecraft:uniform",
-                "min": 0.1,
-                "max": 1
-              },
-              "add": false,
-              "function": "minecraft:set_damage"
-            },
-            {
-              "function": "minecraft:enchant_randomly"
-            }
-          ],
-          "name": "minecraft:chainmail_boots"
+          "name": "alpha_darkworld:mithril_leggings"
         },
         {
           "type": "minecraft:item",
@@ -246,22 +212,31 @@
               "function": "minecraft:enchant_randomly"
             }
           ],
-          "name": "minecraft:iron_axe"
+          "name": "alpha_darkworld:mithril_leggings"
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:clay_ball",
-          "quality": 5,
           "functions": [
             {
-              "function": "minecraft:set_count",
-              "count": {
+              "damage": {
                 "type": "minecraft:uniform",
-                "min": 1,
-                "max": 12
-              }
+                "min": 0.1,
+                "max": 1
+              },
+              "add": false,
+              "count": 1,
+              "function": "minecraft:set_damage"
+            },
+            {
+              "function": "minecraft:enchant_randomly"
             }
-          ]
+          ],
+          "name": "alpha_darkworld:mithril_axe"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "penumbra_phantasm:rosegold_lighter",
+          "quality": 5
         },
         {
           "type": "minecraft:item",
@@ -314,7 +289,7 @@
               "function": "minecraft:set_count"
             }
           ],
-          "name": "minecraft:cooked_porkchop"
+          "name": "minecraft:string"
         },
         {
           "type": "minecraft:item",
@@ -329,7 +304,7 @@
               "function": "minecraft:set_count"
             }
           ],
-          "name": "minecraft:cocoa_beans"
+          "name": "minecraft:leather"
         },
         {
           "type": "minecraft:item",
@@ -362,7 +337,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "penumbra_phantasm:dark_candy_sapling",
+          "name": "alpha_darkworld:alpha_birch_sapling",
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -397,7 +372,18 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "name": "alpha_darkworld:random_carpet",
+          "name": "alpha_darkworld:random_wool",
+          "weight": 1,
+          "quality": 1
+        }
+      ]
+    },
+    {
+      "rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "alpha_darkworld:random_wool",
           "weight": 1,
           "quality": 1
         }

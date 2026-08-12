@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "category": "blocks",
+  "cookingtime": 200,
+  "ingredient": {
+    "item": "alpha_darkworld:alpha_sand"
+  },
+  "result": "alpha_darkworld:alpha_glass",
+  "experience": 0.2
+}

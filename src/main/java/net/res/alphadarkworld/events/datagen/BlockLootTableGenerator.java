@@ -66,13 +66,9 @@ public class BlockLootTableGenerator extends BlockLootSubProvider {
         this.dropSelf(BlockRegistry.ALPHA_MOSSY_COBBLESTONE.get());
         this.dropSelf(BlockRegistry.ALPHA_BRICKS.get());
         this.dropSelf(BlockRegistry.ALPHA_DIRT.get());
-        this.dropSelf(BlockRegistry.ALPHA_COBBLESTONE_SLAB.get());
-        this.dropSelf(BlockRegistry.ALPHA_MOSSY_COBBLESTONE_SLAB.get());
-        this.dropSelf(BlockRegistry.ALPHA_BRICK_SLAB.get());
         this.dropSelf(BlockRegistry.ALPHA_COBBLESTONE_STAIRS.get());
         this.dropSelf(BlockRegistry.ALPHA_MOSSY_COBBLESTONE_STAIRS.get());
         this.dropSelf(BlockRegistry.ALPHA_BRICK_STAIRS.get());
-        this.dropSelf(BlockRegistry.ALPHA_WOODEN_SLAB.get());
         this.dropSelf(BlockRegistry.ALPHA_WOODEN_STAIRS.get());
         this.dropSelf(BlockRegistry.ALPHA_COBBLESTONE_WALL.get());
         this.dropSelf(BlockRegistry.ALPHA_MOSSY_COBBLESTONE_WALL.get());
@@ -87,6 +83,21 @@ public class BlockLootTableGenerator extends BlockLootSubProvider {
         this.dropSelf(BlockRegistry.ALPHA_MOSS.get());
         this.dropSelf(BlockRegistry.ALPHA_MOSS_CARPET.get());
 
+
+        this.add(BlockRegistry.ALPHA_DOOR.get(),
+                block -> createDoorTable(BlockRegistry.ALPHA_DOOR.get()));
+
+
+        this.add(BlockRegistry.ALPHA_WOODEN_SLAB.get(),
+                block -> createSlabItemTable(BlockRegistry.ALPHA_WOODEN_SLAB.get()));
+        this.add(BlockRegistry.ALPHA_COBBLESTONE_SLAB.get(),
+                block -> createSlabItemTable(BlockRegistry.ALPHA_COBBLESTONE_SLAB.get()));
+        this.add(BlockRegistry.ALPHA_MOSSY_COBBLESTONE_SLAB.get(),
+                block -> createSlabItemTable(BlockRegistry.ALPHA_MOSSY_COBBLESTONE_SLAB.get()));
+        this.add(BlockRegistry.ALPHA_BRICK_SLAB.get(),
+                block -> createSlabItemTable(BlockRegistry.ALPHA_BRICK_SLAB.get()));
+
+                
         this.add(BlockRegistry.LIMESTONE.get(), block ->
             createSingleItemTableWithSilkTouch(block, BlockRegistry.ALPHA_COBBLESTONE.get())
         );
