@@ -3,19 +3,19 @@
   "category": "equipment",
   "key": {
     "#": {
-      "item": "alpha_darkworld:dark_stick"
+      "tag": "alpha_darkworld:dark_stick"
     },
     "X": {
-      "tag": "minecraft:stone_tool_materials"
+      "item": "minecraft:coal"
     }
   },
   "pattern": [
     "X",
-    "#",
     "#"
   ],
   "result": {
-    "item": "penumbra_phantasm:umbrastone_shovel"
+    "count": 4,
+    "item": "minecraft:torch"
   },
-  "show_notification": true
+  "show_notification": false
 }

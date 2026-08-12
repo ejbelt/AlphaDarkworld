@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "alpha_darkworld:darkner_stone"
+    },
+    "I": {
+      "item": "alpha_darkworld:mithril_ingot"
+    }
+  },
+  "pattern": [
+    " I ",
+    "###"
+  ],
+  "result": {
+    "item": "minecraft:stonecutter"
+  },
+  "show_notification": true
+}

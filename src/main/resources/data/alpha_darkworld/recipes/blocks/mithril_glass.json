@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "alpha_darkworld:alpha_glass"
+    },
+    "X": {
+      "item": "alpha_darkworld:mithril_ingot"
+    }
+  },
+  "pattern": [
+    " X ",
+    "X#X",
+    " X "
+  ],
+  "result": {
+    "count": 4,
+    "item": "alpha_darkworld:mithril_glass"
+  },
+  "show_notification": true
+}

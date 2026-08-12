@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "alpha_darkworld:alpha_cobblestone"
+  },
+  "result": "alpha_darkworld:alpha_cobblestone_stairs"
+}

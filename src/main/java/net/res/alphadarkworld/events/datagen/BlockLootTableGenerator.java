@@ -79,7 +79,6 @@ public class BlockLootTableGenerator extends BlockLootSubProvider {
         this.dropSelf(BlockRegistry.PAEONIA.get());
         this.dropSelf(BlockRegistry.BRIMSTONE.get());
         this.dropSelf(BlockRegistry.ALPHA_SAND.get());
-        this.dropSelf(BlockRegistry.ALPHA_GRAVEL.get());
         this.dropSelf(BlockRegistry.ALPHA_MOSS.get());
         this.dropSelf(BlockRegistry.ALPHA_MOSS_CARPET.get());
 
@@ -97,7 +96,7 @@ public class BlockLootTableGenerator extends BlockLootSubProvider {
         this.add(BlockRegistry.ALPHA_BRICK_SLAB.get(),
                 block -> createSlabItemTable(BlockRegistry.ALPHA_BRICK_SLAB.get()));
 
-                
+
         this.add(BlockRegistry.LIMESTONE.get(), block ->
             createSingleItemTableWithSilkTouch(block, BlockRegistry.ALPHA_COBBLESTONE.get())
         );

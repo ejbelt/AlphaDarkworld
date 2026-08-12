@@ -10,6 +10,17 @@
     "alpha_darkworld:darkner_stone",
     "alpha_darkworld:alpha_mossy_cobblestone",
     "alpha_darkworld:alpha_bricks",
-    "alpha_darkworld:darkner_coal_ore"
+    "alpha_darkworld:darkner_coal_ore",
+    "alpha_darkworld:alpha_cobblestone_slab",
+    "alpha_darkworld:alpha_cobblestone_stairs",
+    "alpha_darkworld:alpha_cobblestone_wall",
+    "alpha_darkworld:alpha_mossy_cobblestone_slab",
+    "alpha_darkworld:alpha_mossy_cobblestone_stairs",
+    "alpha_darkworld:alpha_mossy_cobblestone_wall",
+    "alpha_darkworld:alpha_brick_slab",
+    "alpha_darkworld:alpha_brick_stairs",
+    "alpha_darkworld:alpha_brick_wall",
+    "alpha_darkworld:alpha_wooden_slab",
+    "alpha_darkworld:brimstone"
   ]
 }

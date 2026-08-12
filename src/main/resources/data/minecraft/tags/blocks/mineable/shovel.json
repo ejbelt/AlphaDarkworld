@@ -2,6 +2,8 @@
   "replace": false,
   "values": [
     "alpha_darkworld:alpha_grass",
-    "alpha_darkworld:alpha_dirt"
+    "alpha_darkworld:alpha_dirt",
+    "alpha_darkworld:alpha_sand",
+    "alpha_darkworld:alpha_gravel"
   ]
 }

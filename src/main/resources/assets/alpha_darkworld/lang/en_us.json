@@ -94,5 +94,6 @@
   "block.alpha_darkworld.alpha_flower" : "Placebo Flower",
   "block.alpha_darkworld.cyan_flower" : "Cyan Rose",
   "block.alpha_darkworld.paeonia" : "Paeonia",
-  "block.alpha_darkworld.darkner_coal_ore" : "Darkner-Stone Coal Ore"
+  "block.alpha_darkworld.darkner_coal_ore" : "Darkner-Stone Coal Ore",
+  "block.alpha_darkworld.alpha_door" : "Placebo Door"
 }
