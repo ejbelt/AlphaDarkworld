@@ -47,8 +47,6 @@ public class MithrilBucket extends BucketItem {
     public InteractionResultHolder<ItemStack> use(Level pLevel, Player pPlayer, InteractionHand pHand) {
       ItemStack itemstack = pPlayer.getItemInHand(pHand);
       BlockHitResult blockhitresult = getPlayerPOVHitResult(pLevel, pPlayer, this.content == Fluids.EMPTY ? ClipContext.Fluid.SOURCE_ONLY : ClipContext.Fluid.NONE);
-      InteractionResultHolder<ItemStack> ret = net.minecraftforge.event.ForgeEventFactory.onBucketUse(pPlayer, pLevel, itemstack, blockhitresult);
-      if (ret != null) return ret;
       if (blockhitresult.getType() == HitResult.Type.MISS) {
          return InteractionResultHolder.pass(itemstack);
       } else if (blockhitresult.getType() != HitResult.Type.BLOCK) {
@@ -60,12 +58,16 @@ public class MithrilBucket extends BucketItem {
          if (pLevel.mayInteract(pPlayer, blockpos) && pPlayer.mayUseItemAt(blockpos1, direction, itemstack)) {
             if (this.content == Fluids.EMPTY) {
                BlockState blockstate1 = pLevel.getBlockState(blockpos);
+
+               boolean canPickUp = canPickUpFluid(blockstate1);
+
+               if (!canPickUp) return InteractionResultHolder.fail(itemstack);
+
                if (blockstate1.getBlock() instanceof BucketPickup) {
                   BucketPickup bucketpickup = (BucketPickup)blockstate1.getBlock();
-                  System.out.println("What is the fluid?: " + bucketpickup);
+
                   ItemStack test = bucketpickup.pickupBlock(pLevel, blockpos, blockstate1);
                   ItemStack itemstack1 = determineFluidHack(test);
-                  System.out.println("Item From filling: " + itemstack1);
 
                   if (!itemstack1.isEmpty()) {
                      pPlayer.awardStat(Stats.ITEM_USED.get(this));
@@ -74,7 +76,6 @@ public class MithrilBucket extends BucketItem {
                      });
                      pLevel.gameEvent(pPlayer, GameEvent.FLUID_PICKUP, blockpos);
                      ItemStack itemstack2 = BucketItemUtils.createFilledResult(itemstack, pPlayer, itemstack1);
-                     System.out.println("Item From Filled: " + itemstack2);
                      if (!pLevel.isClientSide) {
                         CriteriaTriggers.FILLED_BUCKET.trigger((ServerPlayer)pPlayer, itemstack1);
                      }
@@ -105,19 +106,33 @@ public class MithrilBucket extends BucketItem {
       }
    }
 
+   public boolean canPickUpFluid(BlockState state) {
+    FluidState fluidState = state.getFluidState();
+
+    if (fluidState.is(Fluids.WATER)){
+        return true;
+    } else if (fluidState.is(Fluids.LAVA)){
+        return true;
+    } else if (fluidState.is(FluidRegistry.SOURCE_LUMINESCENT_WATER.get())) {
+        return true;
+    } else if (fluidState.is(FluidRegistry.SOURCE_PURE_DARKNESS.get())) {
+        return true;
+    }
+ 
+    return false;
+   }
+
    public ItemStack determineFluidHack(ItemStack bucketItem) {
     ItemStack filled_result = new ItemStack(ItemRegistry.MITHRIL_BUCKET.get());
 
     String hackString = bucketItem.getItem().toString();
 
-    System.out.println("Hack Before: " + bucketItem.getItem().toString());
-
-    if (hackString.contains("water_bucket")) {
-        filled_result = new ItemStack(ItemRegistry.MITHRIL_WATER_BUCKET.get());
+    if  (hackString.contains("luminescent_water_bucket")){
+        filled_result = new ItemStack(ItemRegistry.LUMINESCENT_WATER_MITRHIL_BUCKET.get());
     } else if  (hackString.contains("lava_bucket")){
         filled_result = new ItemStack(ItemRegistry.MITHRIL_LAVA_BUCKET.get());
-    } else if  (hackString.contains("luminescent_water_bucket")){
-        filled_result = new ItemStack(ItemRegistry.LUMINESCENT_WATER_MITRHIL_BUCKET.get());
+    } else if (hackString.contains("water_bucket")) {
+        filled_result = new ItemStack(ItemRegistry.MITHRIL_WATER_BUCKET.get());
     } else if  (hackString.contains("pure_darkness_bucket")){
         filled_result = new ItemStack(ItemRegistry.PURE_DARKNESS_MITHRIL_BUCKET.get());
     }
@@ -133,7 +148,7 @@ public class MithrilBucket extends BucketItem {
 
         boolean isWater = fluidState.is(Fluids.WATER);
         boolean isLava = fluidState.is(Fluids.LAVA);
-        boolean isLuminescent = fluidState.is(FluidRegistry.SOURCE_PURE_DARKNESS.get());
+        boolean isLuminescent = fluidState.is(FluidRegistry.SOURCE_LUMINESCENT_WATER.get());
         boolean isDarkness = fluidState.is(FluidRegistry.SOURCE_PURE_DARKNESS.get());
 
         ItemStack filled_result = new ItemStack(ItemRegistry.MITHRIL_BUCKET.get());
