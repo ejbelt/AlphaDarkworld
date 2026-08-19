@@ -116,7 +116,7 @@
         "weight": 100
       },
       {
-        "type": "minecraft:zombie",
+        "type": "alpha_darkworld:darkworld_zombie",
         "maxCount": 4,
         "minCount": 2,
         "weight": 95
@@ -128,7 +128,7 @@
         "weight": 100
       },
       {
-        "type": "minecraft:creeper",
+        "type": "alpha_darkworld:darkworld_creeper",
         "maxCount": 4,
         "minCount": 2,
         "weight": 100

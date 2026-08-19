@@ -1,7 +1,13 @@
 package net.res.alphadarkworld;
 
 import com.mojang.logging.LogUtils;
+
+import net.res.alphadarkworld.client.model.DarkWorldCreeperRenderer;
+import net.res.alphadarkworld.client.model.DarkWorldZombieRenderer;
+import net.res.alphadarkworld.client.model.FrozenZombieRenderer;
 import net.res.alphadarkworld.server.registry.*;
+import net.minecraft.client.renderer.entity.EntityRendererProvider;
+import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -32,6 +38,7 @@ public class AlphaDarkworld
         SoundRegistry.SOUNDS.register(modEventBus);
         BlockRegistry.BLOCKS.register(modEventBus);
         ItemRegistry.ITEMS.register(modEventBus);
+        EntityRegistry.ENTITY_TYPES.register(modEventBus);
         CreativeTabRegistry.DEF_REG.register(modEventBus);
 
         modEventBus.addListener(this::addCreative);
@@ -61,7 +68,9 @@ public class AlphaDarkworld
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event)
         {
-
+            EntityRenderers.register(EntityRegistry.DARKWORLD_CREEPER.get(), DarkWorldCreeperRenderer::new);
+            EntityRenderers.register(EntityRegistry.DARKWORLD_ZOMBIE.get(), DarkWorldZombieRenderer::new);
+            EntityRenderers.register(EntityRegistry.FROZEN_ZOMBIE.get(), FrozenZombieRenderer::new);
         }
     }
 }

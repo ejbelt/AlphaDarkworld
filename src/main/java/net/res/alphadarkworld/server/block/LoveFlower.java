@@ -11,6 +11,7 @@ import net.minecraft.world.level.block.FlowerBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.res.alphadarkworld.server.registry.DamageTypeRegistry;
 
+
 public class LoveFlower extends FlowerBlock {
 
     public LoveFlower(Supplier<MobEffect> effectSupplier, int pEffectDuration, Properties pProperties) {
@@ -21,7 +22,7 @@ public class LoveFlower extends FlowerBlock {
         super(effectSupplier, pEffectDuration, pProperties);
     }
  
-    
+    @Override
     public void entityInside(BlockState pState, Level pLevel, BlockPos pPos, Entity pEntity) {
         pEntity.hurt(DamageTypeRegistry.getSimpleDamageSource(pLevel, DamageTypeRegistry.OTHER_SOUL_DAMAGE), 1.0F);
     }
