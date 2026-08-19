@@ -4,10 +4,10 @@
   "group": "black_dye",
   "ingredients": [
     {
-      "item": "alpha_darkworld:cyan_flower"
+      "item": "alpha_darkworld:paeonia"
     }
   ],
   "result": {
-    "item": "minecraft:cyan_dye"
+    "item": "minecraft:magenta_dye"
   }
 }

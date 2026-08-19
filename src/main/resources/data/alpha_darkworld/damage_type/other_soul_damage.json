@@ -1,0 +1,6 @@
+{
+  "message_id": "alpha_darkworld.other_soul_damage",
+  "exhaustion": 0,
+  "scaling": "always",
+  "effects": "poking"
+}

@@ -74,6 +74,11 @@
         "alpha_darkworld:stonecutting/alpha_mossy_cobblestone_wall",
         "alpha_darkworld:stonecutting/alpha_mossy_cobblestone_slab",
 
+        "alpha_darkworld:dye/magenta_from_flower",
+        "alpha_darkworld:dye/cyan_from_flower",
+        "alpha_darkworld:dye/pink_from_flower",
+        "alpha_darkworld:dye/yellow_from_flower",
+
         "minecraft:bone_meal",
         "minecraft:bone_block",
         "minecraft:bone_meal_from_bone_block",

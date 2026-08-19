@@ -1,6 +1,7 @@
 package net.res.alphadarkworld.server.registry;
 
 import net.res.alphadarkworld.AlphaDarkworld;
+import net.res.alphadarkworld.server.item.MithrilBucket;
 import net.res.alphadarkworld.server.registry.TierRegistry;
 import net.minecraft.core.Direction;
 import net.minecraft.world.food.FoodProperties;
@@ -9,7 +10,9 @@ import net.minecraft.world.level.material.Fluids;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
-//import destiny.penumbra_phantasm.server.item.KnifeItem;
+import destiny.penumbra_phantasm.server.registry.FluidRegistry;
+import destiny.penumbra_phantasm.server.item.KnifeItem;
+import destiny.penumbra_phantasm.server.item.ScarletBucketItem;
 
 public class ItemRegistry {
 
@@ -51,6 +54,16 @@ public class ItemRegistry {
                 () -> new ArmorItem(ArmorMatieralRegistry.MITHRIL, ArmorItem.Type.BOOTS, new Item.Properties()));
 
 
+        public static final RegistryObject<Item> MITHRIL_BUCKET = ITEMS.register("mithril_bucket",
+                () -> new MithrilBucket(Fluids.EMPTY, new Item.Properties().stacksTo(16)) );
+        public static final RegistryObject<Item> LUMINESCENT_WATER_MITRHIL_BUCKET = ITEMS.register("mithril_luminescent_bucket",
+                () -> new MithrilBucket(FluidRegistry.SOURCE_LUMINESCENT_WATER.get(), new Item.Properties().stacksTo(1).craftRemainder(ItemRegistry.MITHRIL_BUCKET.get())));
+        public static final RegistryObject<Item> PURE_DARKNESS_MITHRIL_BUCKET = ITEMS.register("mithril_darkness_bucket",
+                () -> new MithrilBucket(FluidRegistry.SOURCE_PURE_DARKNESS.get(), new Item.Properties().stacksTo(1).craftRemainder(ItemRegistry.MITHRIL_BUCKET.get())));
+        public static final RegistryObject<Item> MITHRIL_WATER_BUCKET = ITEMS.register("mithril_bucket_water",
+                () -> new MithrilBucket(Fluids.WATER, new Item.Properties().stacksTo(1).craftRemainder(ItemRegistry.MITHRIL_BUCKET.get())));
+        public static final RegistryObject<Item> MITHRIL_LAVA_BUCKET = ITEMS.register("mithril_bucket_lava",
+                () -> new MithrilBucket(Fluids.LAVA, new Item.Properties().stacksTo(1).craftRemainder(ItemRegistry.MITHRIL_BUCKET.get())));
 
         //Ruby
         public static final RegistryObject<Item> RUBY = ITEMS.register("ruby",
@@ -80,10 +93,10 @@ public class ItemRegistry {
 
         //Knives
 
-/*      public static final RegistryObject<Item> MITHRIL_KNIFE = ITEMS.register("mithril_knife",
+        public static final RegistryObject<Item> MITHRIL_KNIFE = ITEMS.register("mithril_knife",
                 () -> new KnifeItem(TierRegistry.MITHRIL, 3, 3f, false, new Item.Properties()));
         public static final RegistryObject<Item> RUBY_KNIFE = ITEMS.register("ruby_knife",
-                () -> new KnifeItem(TierRegistry.RUBY, 4, 4f, false, new Item.Properties()));*/
+                () -> new KnifeItem(TierRegistry.RUBY, 4, 4f, false, new Item.Properties()));
 
 
         //Misc

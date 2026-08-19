@@ -1,0 +1,6 @@
+{
+  "message_id": "alpha_darkworld.mob_soul_damage",
+  "exhaustion": 0,
+  "scaling": "always",
+  "effects": "hurt"
+}

@@ -43,6 +43,8 @@
   "item.alpha_darkworld.mithril_boots": "Mithril Plate Sabatons",
   "item.alpha_darkworld.disc_droopy": "Music Disc",
   "item.alpha_darkworld.disc_droopy.desc": "C418 - Droopy Likes Your Face",
+  "item.alpha_darkworld.mithril_knife": "Mithril Knife",
+  "item.alpha_darkworld.ruby_knife": "Ruby Knife",
 
   "block.alpha_darkworld.mithril_ore": "Mithril Ore",
   "block.alpha_darkworld.mithril_block": "Block of Mithril",
@@ -95,5 +97,12 @@
   "block.alpha_darkworld.cyan_flower" : "Cyan Rose",
   "block.alpha_darkworld.paeonia" : "Paeonia",
   "block.alpha_darkworld.darkner_coal_ore" : "Darkner-Stone Coal Ore",
-  "block.alpha_darkworld.alpha_door" : "Placebo Door"
+  "block.alpha_darkworld.alpha_door" : "Placebo Door",
+
+
+  "death.attack.alpha_darkworld.mob_soul_damage" : "%s was done away by the might of %s",
+  "death.attack.alpha_darkworld.mob_soul_damage.item" : "%s was done away by the might of %s using %s",
+  "death.attack.alpha_darkworld.other_soul_damage" : "%s lost their determination.",
+  "death.attack.alpha_darkworld.other_soul_damage.item" : "%s lost their determination by the hands of %s using %s",
+  "death.attack.alpha_darkworld.other_soul_damage.player" : "%s lost their determination whilst trying to escape %s"
 }

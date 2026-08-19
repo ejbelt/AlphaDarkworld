@@ -1,6 +1,6 @@
 {
   "biome": "alpha_darkworld:alpha_skylands",
-  "sound_event": "alpha_darkworld:music.alphalands",
+  "sound_event": "alpha_darkworld:music.skylands",
   "loops": false,
   "min_delay": 60,
   "max_delay": 120

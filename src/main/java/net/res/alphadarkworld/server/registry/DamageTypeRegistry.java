@@ -10,4 +10,9 @@ import net.res.alphadarkworld.AlphaDarkworld;
 
 public class DamageTypeRegistry {
     public static final ResourceKey<DamageType> MOB_SOUL_DAMAGE =  ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation(AlphaDarkworld.MOD_ID, "mob_soul_damage"));
+    public static final ResourceKey<DamageType> OTHER_SOUL_DAMAGE =  ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation(AlphaDarkworld.MOD_ID, "other_soul_damage"));
+
+    public static DamageSource getSimpleDamageSource(Level level, ResourceKey<DamageType> type) {
+        return new DamageSource(level.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(type));
+    }
 }
