@@ -14,11 +14,19 @@ import destiny.penumbra_phantasm.server.registry.SoundRegistry;
 
 @Mixin(Player.class)
 public abstract class DestinyPlayerMixin {
+
     @Inject(method = "getHurtSound", at = @At("HEAD"), cancellable = true)
     private void onGetHurtSound(DamageSource source, CallbackInfoReturnable<SoundEvent> cir) {
-        if (source.is(DamageTypeRegistry.MOB_SOUL_DAMAGE) || source.is(DamageTypeRegistry.OTHER_SOUL_DAMAGE)) {
+        System.out.println("Mixin Test");
+        if (source.is(DamageTypeRegistry.OTHER_SOUL_DAMAGE)) {
+            ((Entity)(Object)this).playSound(SoundRegistry.SOUL_HURT.get(), 1F, 1F);
+            cir.cancel();
+        }
+
+        if (source.is(DamageTypeRegistry.MOB_SOUL_DAMAGE)) {
             ((Entity)(Object)this).playSound(SoundRegistry.SOUL_HURT.get(), 1F, 1F);
             cir.cancel();
         }
     }
+
 }

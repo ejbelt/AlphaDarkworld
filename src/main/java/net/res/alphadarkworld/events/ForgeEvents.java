@@ -22,5 +22,6 @@ import net.res.alphadarkworld.server.registry.ItemRegistry;
 
 @Mod.EventBusSubscriber(modid = AlphaDarkworld.MOD_ID, bus = Mod.EventBusSubscriber.Bus.FORGE)
 public class ForgeEvents {
+
     
 }
