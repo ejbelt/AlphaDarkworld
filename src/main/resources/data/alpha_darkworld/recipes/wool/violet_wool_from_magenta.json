@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "wool",
+  "ingredients": [
+    {
+      "item": "minecraft:white_dye"
+    },
+    [
+      {
+        "item": "minecraft:magenta_dye"
+      }
+    ]
+  ],
+  "result": {
+    "item": "alpha_darkworld:spring_wool"
+  }
+}

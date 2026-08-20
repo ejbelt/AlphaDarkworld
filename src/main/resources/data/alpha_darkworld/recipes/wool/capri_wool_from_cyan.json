@@ -1,0 +1,19 @@
+
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "wool",
+  "ingredients": [
+    {
+      "item": "minecraft:white_dye"
+    },
+    [
+      {
+        "item": "minecraft:cyan_wool"
+      }
+    ]
+  ],
+  "result": {
+    "item": "alpha_darkworld:chartreuse_wool"
+  }
+}

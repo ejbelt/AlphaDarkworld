@@ -1,0 +1,77 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "wool",
+  "ingredients": [
+    {
+      "item": "minecraft:cyan_dye"
+    },
+    [
+      {
+        "item": "minecraft:blue_dye"
+      }
+    ],
+    [
+      {
+        "item": "minecraft:black_wool"
+      },
+      {
+        "item": "minecraft:brown_wool"
+      },
+      {
+        "item": "minecraft:gray_wool"
+      },
+      {
+        "item": "minecraft:green_wool"
+      },
+      {
+        "item": "minecraft:light_blue_wool"
+      },
+      {
+        "item": "minecraft:light_gray_wool"
+      },
+      {
+        "item": "minecraft:lime_wool"
+      },
+      {
+        "item": "minecraft:magenta_wool"
+      },
+      {
+        "item": "minecraft:orange_wool"
+      },
+      {
+        "item": "minecraft:pink_wool"
+      },
+      {
+        "item": "minecraft:purple_wool"
+      },
+      {
+        "item": "minecraft:red_wool"
+      },
+      {
+        "item": "minecraft:yellow_wool"
+      },
+      {
+        "item": "alpha_darkworld:capri_wool"
+      },
+      {
+        "item": "alpha_darkworld:chartreuse_wool"
+      },
+      {
+        "item": "alpha_darkworld:rose_wool"
+      },
+      {
+        "item": "alpha_darkworld:spring_wool"
+      },
+      {
+        "item": "alpha_darkworld:violet_wool"
+      },
+      {
+        "item": "minecraft:white_wool"
+      }
+    ]
+  ],
+  "result": {
+    "item": "alpha_darkworld:ultramarine_wool"
+  }
+}
