@@ -42,6 +42,7 @@ public class DarkWorldZombie extends Zombie {
             .add(Attributes.MOVEMENT_SPEED, (double)0.23F)
             .add(Attributes.ATTACK_DAMAGE, 3.0D)
             .add(Attributes.ARMOR, 2.0D)
+            .add(Attributes.ARMOR_TOUGHNESS, 0.2)
             .add(Attributes.SPAWN_REINFORCEMENTS_CHANCE);
     }
 
@@ -65,8 +66,8 @@ public class DarkWorldZombie extends Zombie {
         return SoundEvents.ZOMBIE_STEP;
     }
 
+    @Override
     protected void populateDefaultEquipmentSlots(RandomSource pRandom, DifficultyInstance pDifficulty) {
-        super.populateDefaultEquipmentSlots(pRandom, pDifficulty);
         if (pRandom.nextFloat() < (this.level().getDifficulty() == Difficulty.HARD ? 0.05F : 0.01F)) {
             int i = pRandom.nextInt(3);
             if (i == 0) {
