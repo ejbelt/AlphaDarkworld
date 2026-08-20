@@ -360,6 +360,30 @@
     ]
   },
 
+  "entity.frozen_zombie.ambient": {
+    "sounds": [
+      "alpha_darkworld:mob/frozen_zombie/say1",
+      "alpha_darkworld:mob/frozen_zombie/say2",
+      "alpha_darkworld:mob/frozen_zombie/say3"
+    ],
+    "subtitle": "subtitles.entity.frozen_zombie.ambient"
+  },
+
+  "entity.frozen_zombie.hurt": {
+    "sounds": [
+      "alpha_darkworld:mob/frozen_zombie/hurt1",
+      "alpha_darkworld:mob/frozen_zombie/hurt2"
+    ],
+    "subtitle": "subtitles.entity.frozen_zombie.hurt"
+  },
+
+  "entity.frozen_zombie.death": {
+    "sounds": [
+      "alpha_darkworld:mob/frozen_zombie/death"
+    ],
+    "subtitle": "subtitles.entity.frozen_zombie.death"
+  },
+
   "silent": {
     "subtitle": "sound.alpha_darkworld.silence",
     "sounds": [

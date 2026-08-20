@@ -65,6 +65,12 @@ public class SoundRegistry {
     public static RegistryObject<SoundEvent> BUTTON_UP = registerSoundEvent("blocks.alpha_button.up");
     public static RegistryObject<SoundEvent> BUTTON_DOWN = registerSoundEvent("blocks.alpha_button.down");
 
+    //Mobs
+
+    public static RegistryObject<SoundEvent> FROZEN_ZOMBIE_AMBIENT = registerSoundEvent("entity.frozen_zombie.ambient");
+    public static RegistryObject<SoundEvent> FROZEN_ZOMBIE_HURT = registerSoundEvent("entity.frozen_zombie.hurt");
+    public static RegistryObject<SoundEvent> FROZEN_ZOMBIE_DEATH = registerSoundEvent("entity.frozen_zombie.death");
+
     private static RegistryObject<SoundEvent> registerSoundEvent(String sound)
     {
         return SOUNDS.register(sound, () -> SoundEvent.createVariableRangeEvent(new ResourceLocation(AlphaDarkworld.MOD_ID, sound)));
