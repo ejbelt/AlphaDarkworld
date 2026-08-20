@@ -47,7 +47,7 @@
                 },
                 {
                   "type": "minecraft:item",
-                  "name": "minecraft:gravel"
+                  "name": "alpha_darkworld:alpha_gravel"
                 }
               ],
               "conditions": [

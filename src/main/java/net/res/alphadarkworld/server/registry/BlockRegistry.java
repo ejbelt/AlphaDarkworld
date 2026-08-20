@@ -2,6 +2,7 @@ package net.res.alphadarkworld.server.registry;
 
 
 import net.res.alphadarkworld.AlphaDarkworld;
+import net.res.alphadarkworld.events.datagen.BlockLootTableGenerator;
 import net.res.alphadarkworld.server.block.*;
 import net.res.alphadarkworld.server.world.worldgen.tree.*;
 import net.minecraft.world.effect.MobEffect;
@@ -156,6 +157,8 @@ public class BlockRegistry {
     public static final RegistryObject<Block> ALPHA_GLASS
     = registerBlock("alpha_glass", () -> new GlassBlock(BlockBehaviour.Properties.copy(Blocks.GLASS).sound(SoundTypeRegistry.ALPHA_GLASS)));
 
+    public static final RegistryObject<Block> MINT_CROP = BLOCKS.register("mint_crop",
+            () -> new MintCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion().noCollission()));
 
     ///
     /// NEVERMIND YOU DON'T GET TO DECAY

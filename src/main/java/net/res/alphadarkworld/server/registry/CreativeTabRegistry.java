@@ -100,6 +100,8 @@ public class CreativeTabRegistry {
                 output.accept(ItemRegistry.RUBY_LEGGINGS.get());
                 output.accept(ItemRegistry.RUBY_BOOTS.get());
                 output.accept(ItemRegistry.DROOPY_DISC_ITEM.get());
+                output.accept(ItemRegistry.MINT_SEED.get());
+                output.accept(ItemRegistry.HEAL_MINT.get());
             })
             .build()
     );

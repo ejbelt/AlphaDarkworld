@@ -1,0 +1,6 @@
+{
+    "parent": "block/crop",
+    "textures": {
+        "crop": "alpha_darkworld:block/mint_crop_stage_3"
+    }
+}

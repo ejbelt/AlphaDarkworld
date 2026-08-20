@@ -3,6 +3,7 @@ package net.res.alphadarkworld.server.registry;
 import net.res.alphadarkworld.AlphaDarkworld;
 import net.res.alphadarkworld.server.item.MithrilBucket;
 import net.res.alphadarkworld.server.registry.TierRegistry;
+import net.minecraft.client.renderer.item.ItemProperties;
 import net.minecraft.core.Direction;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.*;
@@ -25,6 +26,11 @@ public class ItemRegistry {
 
         public static final RegistryObject<Item> DARK_STICK = ITEMS.register("dark_stick",
                 () -> new Item(new Item.Properties()));
+
+
+        //FOOD
+        public static final RegistryObject<Item> HEAL_MINT = ITEMS.register("heal_mint",
+                () -> new Item(new Item.Properties().food(FoodRegistry.HEAL_MINT)));
 
         //Mithril
         public static final RegistryObject<Item> RAW_MITHRIL = ITEMS.register("raw_mithril",
@@ -102,4 +108,7 @@ public class ItemRegistry {
         //Misc
         public static final RegistryObject<RecordItem> DROOPY_DISC_ITEM = ITEMS.register("disc_droopy",
                 () -> new RecordItem(12, SoundRegistry.DROOPY_DISC, (new Item.Properties()).stacksTo(1).rarity(Rarity.RARE), 2336));
+
+        public static final RegistryObject<Item> MINT_SEED = ITEMS.register("mint_seed",
+                () -> new ItemNameBlockItem(BlockRegistry.MINT_CROP.get(), new Item.Properties()));        
 }
