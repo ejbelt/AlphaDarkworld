@@ -1,13 +1,14 @@
 {
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
-  "group": "black_dye",
+  "group": "yellow_dye",
   "ingredients": [
     {
       "item": "alpha_darkworld:alpha_flower"
     }
   ],
   "result": {
-    "item": "minecraft:yellow_dye"
+    "item": "minecraft:yellow_dye",
+    "count": 2
   }
 }

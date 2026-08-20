@@ -1,4 +1,3 @@
-
 {
   "type": "minecraft:crafting_shapeless",
   "category": "building",
@@ -7,13 +6,15 @@
     {
       "item": "minecraft:lime_dye"
     },
-    [
-      {
-        "item": "minecraft:cyan_wool"
-      }
-    ]
+    {
+      "item": "minecraft:cyan_wool"
+    },
+    {
+      "item": "minecraft:cyan_wool"
+    }
   ],
   "result": {
-    "item": "alpha_darkworld:spring_wool"
+    "item": "alpha_darkworld:spring_wool",
+    "count": 2
   }
 }

@@ -6,13 +6,15 @@
     {
       "item": "minecraft:black_dye"
     },
-    [
-      {
-        "item": "minecraft:pink_wool"
-      }
-    ]
+    {
+      "item": "minecraft:pink_wool"
+    },
+    {
+      "item": "minecraft:pink_wool"
+    }
   ],
   "result": {
-    "item": "alpha_darkworld:rose_wool"
+    "item": "alpha_darkworld:rose_wool",
+    "count": 2
   }
 }
