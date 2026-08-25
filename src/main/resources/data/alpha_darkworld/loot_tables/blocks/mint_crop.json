@@ -38,7 +38,7 @@
       "bonus_rolls": 0.0,
       "conditions": [
         {
-          "block": "alpha_darkworld:heal_mint",
+          "block": "alpha_darkworld:mint_crop",
           "condition": "minecraft:block_state_property",
           "properties": {
             "age": "3"

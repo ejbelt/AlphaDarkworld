@@ -9,23 +9,6 @@
           "functions": [
             {
               "add": false,
-              "count": 1,
-              "function": "minecraft:set_count"
-            }
-          ],
-          "name": "alpha_darkworld:mithril_block"
-        }
-      ],
-      "rolls": 1
-    },
-    {
-      "bonus_rolls": 0,
-      "entries": [
-        {
-          "type": "minecraft:item",
-          "functions": [
-            {
-              "add": false,
               "damage": {
                 "type": "minecraft:uniform",
                 "max": 1,
@@ -58,21 +41,6 @@
           "type": "minecraft:item",
           "functions": [
             {
-              "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 4,
-                "min": 1
-              },
-              "function": "minecraft:set_count"
-            }
-          ],
-          "name": "alpha_darkworld:ruby"
-        },
-        {
-          "type": "minecraft:item",
-          "functions": [
-            {
               "function": "minecraft:enchant_randomly",
               "only_compatible": true
             },
@@ -92,21 +60,6 @@
             }
           ],
           "name": "penumbra_phantasm:rosegold_sword"
-        },
-        {
-          "type": "minecraft:item",
-          "functions": [
-            {
-              "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 9,
-                "min": 4
-              },
-              "function": "minecraft:set_count"
-            }
-          ],
-          "name": "alpha_darkworld:mithril_ingot"
         },
         {
           "type": "minecraft:item",
@@ -248,20 +201,6 @@
                 "type": "minecraft:uniform",
                 "min": 1,
                 "max": 6
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "penumbra_phantasm:rosegold_ingot",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "type": "minecraft:uniform",
-                "min": 0,
-                "max": 5
               }
             }
           ]

@@ -3,12 +3,17 @@ package net.res.alphadarkworld.server.block;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 
+import java.util.Random;
+
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.tags.FluidTags;
 import net.minecraft.util.RandomSource;
+import net.minecraft.world.entity.item.ItemEntity;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.BlockGetter;
+import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.block.GrassBlock;
 import net.minecraft.world.level.block.SnowLayerBlock;
@@ -18,7 +23,9 @@ import net.minecraftforge.common.IPlantable;
 import net.minecraftforge.common.PlantType;
 import net.minecraftforge.common.ToolAction;
 import net.minecraftforge.common.ToolActions;
+import net.minecraft.gametest.framework.GameTestHelper;
 import net.res.alphadarkworld.server.registry.BlockRegistry;
+import net.res.alphadarkworld.server.registry.ItemRegistry;
 import net.minecraft.core.Direction;
 
 public class AlphaGrassBlock extends GrassBlock {
@@ -73,9 +80,23 @@ public class AlphaGrassBlock extends GrassBlock {
    public BlockState getToolModifiedState(BlockState state, UseOnContext context, ToolAction toolAction, boolean simulate){
 
       Block block = state.getBlock();
+      Level pLevel = context.getLevel();
+
+      RandomSource rand = pLevel.random;
 
       if (toolAction == ToolActions.HOE_TILL) {
          if (block == BlockRegistry.ALPHA_GRASS_BLOCK.get()) {
+
+            if (rand.nextFloat() < 0.05){
+               //All this to spawn a mint seed when tilling grass sometimes...
+               ItemStack bItem = new ItemStack(ItemRegistry.MINT_SEED.get());
+               ItemEntity iEntity = new ItemEntity(pLevel, 
+                  context.getClickedPos().getX(), context.getClickedPos().getY(), context.getClickedPos().getZ(),
+               bItem);
+               iEntity.setDeltaMovement(0.0D, 0.0D, 0.0D);
+               pLevel.addFreshEntity(iEntity);
+            }
+
             return BlockRegistry.ALPHA_FARMLAND.get().defaultBlockState();
          }
       }

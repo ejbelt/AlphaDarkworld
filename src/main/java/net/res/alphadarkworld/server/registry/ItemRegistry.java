@@ -12,6 +12,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import destiny.penumbra_phantasm.server.registry.FluidRegistry;
+import destiny.penumbra_phantasm.server.item.DeterminationFoodItem;
 import destiny.penumbra_phantasm.server.item.KnifeItem;
 import destiny.penumbra_phantasm.server.item.ScarletBucketItem;
 
@@ -30,7 +31,7 @@ public class ItemRegistry {
 
         //FOOD
         public static final RegistryObject<Item> HEAL_MINT = ITEMS.register("heal_mint",
-                () -> new Item(new Item.Properties().food(FoodRegistry.HEAL_MINT)));
+                () -> new DeterminationFoodItem(new Item.Properties().food(FoodRegistry.HEAL_MINT), 0, destiny.penumbra_phantasm.server.registry.SoundRegistry.HEAL.get())); //Ugly :<
 
         //Mithril
         public static final RegistryObject<Item> RAW_MITHRIL = ITEMS.register("raw_mithril",

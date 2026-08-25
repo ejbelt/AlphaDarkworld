@@ -2,7 +2,7 @@
   "ambient_light": 0.0,
   "bed_works": true,
   "coordinate_scale": 0.8,
-  "fixed_time": 16000,
+  "fixed_time": 13200,
   "has_ceiling": false,
   "has_raids": false,
   "has_skylight": true,
@@ -10,7 +10,7 @@
   "infiniburn": "#minecraft:infiniburn_end",
   "logical_height": 256,
   "min_y": -64,
-  "monster_spawn_block_light_limit": 14,
+  "monster_spawn_block_light_limit": 12,
   "monster_spawn_light_level": {
     "type": "minecraft:uniform",
     "value": {
