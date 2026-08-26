@@ -1,21 +1,22 @@
-
 {
   "type": "minecraft:crafting_shapeless",
   "category": "building",
   "group": "wool",
   "ingredients": [
     {
-      "item": "minecraft:cyan_dye"
-    },
-    {
-      "item": "minecraft:lime_dye"
+      "item": "penumbra_additions:black_neo_dye"
     },
     [
       {
-        "item": "minecraft:black_wool"
-      },
+        "item": "penumbra_additions:pink_neo_dye"
+      }
+    ],
+    [
       {
         "item": "minecraft:brown_wool"
+      },
+      {
+        "item": "minecraft:cyan_wool"
       },
       {
         "item": "minecraft:gray_wool"
@@ -42,9 +43,6 @@
         "item": "minecraft:orange_wool"
       },
       {
-        "item": "minecraft:pink_wool"
-      },
-      {
         "item": "minecraft:purple_wool"
       },
       {
@@ -63,7 +61,7 @@
         "item": "alpha_darkworld:chartreuse_wool"
       },
       {
-        "item": "alpha_darkworld:rose_wool"
+        "item": "alpha_darkworld:spring_wool"
       },
       {
         "item": "alpha_darkworld:violet_wool"
@@ -74,6 +72,6 @@
     ]
   ],
   "result": {
-    "item": "alpha_darkworld:spring_wool"
+    "item": "alpha_darkworld:rose_wool"
   }
 }

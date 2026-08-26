@@ -5,17 +5,22 @@
   "group": "wool",
   "ingredients": [
     {
-      "item": "minecraft:cyan_dye"
+      "item": "penumbra_additions:white_neo_dye"
     },
-    {
-      "item": "minecraft:lime_dye"
-    },
+    [
+      {
+        "item": "penumbra_additions:cyan_neo_dye"
+      }
+    ],
     [
       {
         "item": "minecraft:black_wool"
       },
       {
         "item": "minecraft:brown_wool"
+      },
+      {
+        "item": "minecraft:cyan_wool"
       },
       {
         "item": "minecraft:gray_wool"
@@ -57,13 +62,13 @@
         "item": "alpha_darkworld:ultramarine_wool"
       },
       {
-        "item": "alpha_darkworld:capri_wool"
-      },
-      {
         "item": "alpha_darkworld:chartreuse_wool"
       },
       {
         "item": "alpha_darkworld:rose_wool"
+      },
+      {
+        "item": "alpha_darkworld:spring_wool"
       },
       {
         "item": "alpha_darkworld:violet_wool"
@@ -74,6 +79,6 @@
     ]
   ],
   "result": {
-    "item": "alpha_darkworld:spring_wool"
+    "item": "alpha_darkworld:capri_wool"
   }
 }

@@ -2,8 +2,8 @@ package net.res.alphadarkworld.server.registry;
 
 
 import net.res.alphadarkworld.AlphaDarkworld;
-import net.res.alphadarkworld.events.datagen.BlockLootTableGenerator;
 import net.res.alphadarkworld.server.block.*;
+import net.res.alphadarkworld.server.compatability.PenumbraAdditionsCompat;
 import net.res.alphadarkworld.server.world.worldgen.tree.*;
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffects;
@@ -193,7 +193,21 @@ public class BlockRegistry {
     = registerBlock("alpha_farmland", () -> new AlphaFarmland(BlockBehaviour.Properties.copy(Blocks.FARMLAND).sound(SoundTypeRegistry.ALPHA_DIRT)));
 
 
+    //Test extra mod compatability.
+    public static final RegistryObject<Block> MITHRIL_BRICKS 
+    = registerBlockForPenumbraAdditions("mithril_bricks", () -> new Block(MITHRIL_PROPERTIES));
+
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
+        RegistryObject<T> toReturn = BLOCKS.register(name, block);
+        registerBlockItem(name, toReturn);
+        return toReturn;
+    }
+
+    private static <T extends Block> RegistryObject<T> registerBlockForPenumbraAdditions(String name, Supplier<T> block) {
+        
+        if (PenumbraAdditionsCompat.isInstalledServer == false)
+            return null;
+        
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);
         return toReturn;

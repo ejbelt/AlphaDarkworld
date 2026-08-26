@@ -5,10 +5,10 @@
   "group": "wool",
   "ingredients": [
     {
-      "item": "minecraft:cyan_dye"
+      "item": "penumbra_additions:cyan_neo_dye"
     },
     {
-      "item": "minecraft:lime_dye"
+      "item": "penumbra_additions:lime_neo_dye"
     },
     [
       {

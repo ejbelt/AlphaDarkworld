@@ -1,0 +1,26 @@
+{
+"dark_world_allowed":
+        [
+        "alpha_darkworld:compat/penumbra_plus/wool/capri_wool_from_cyan",
+        "alpha_darkworld:compat/penumbra_plus/wool/capri_wool",
+        "alpha_darkworld:compat/penumbra_plus/wool/chartreuse_wool_from_green",
+        "alpha_darkworld:compat/penumbra_plus/wool/chartreuse_wool_from_lime",
+        "alpha_darkworld:compat/penumbra_plus/wool/chartreuse_wool_from_yellow",
+        "alpha_darkworld:compat/penumbra_plus/wool/chartreuse_wool",
+        "alpha_darkworld:compat/penumbra_plus/wool/rose_wool_from_black",
+        "alpha_darkworld:compat/penumbra_plus/wool/rose_wool_from_pink",
+        "alpha_darkworld:compat/penumbra_plus/wool/rose_wool",
+        "alpha_darkworld:compat/penumbra_plus/wool/spring_wool_from_cyan",
+        "alpha_darkworld:compat/penumbra_plus/wool/spring_wool_from_lime",
+        "alpha_darkworld:compat/penumbra_plus/wool/spring_wool",
+        "alpha_darkworld:compat/penumbra_plus/wool/ultramarine_wool_from_blue",
+        "alpha_darkworld:compat/penumbra_plus/wool/ultramarine_wool_from_cyan",
+        "alpha_darkworld:compat/penumbra_plus/wool/ultramarine_wool",
+        "alpha_darkworld:compat/penumbra_plus/wool/violet_wool_from_magenta",
+        "alpha_darkworld:compat/penumbra_plus/wool/violet_wool"
+        ],
+"dark_world_blocked":
+        [
+
+        ]
+}

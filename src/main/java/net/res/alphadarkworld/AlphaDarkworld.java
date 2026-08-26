@@ -5,6 +5,7 @@ import com.mojang.logging.LogUtils;
 import net.res.alphadarkworld.client.model.DarkWorldCreeperRenderer;
 import net.res.alphadarkworld.client.model.DarkWorldZombieRenderer;
 import net.res.alphadarkworld.client.model.FrozenZombieRenderer;
+import net.res.alphadarkworld.server.compatability.PenumbraAdditionsCompat;
 import net.res.alphadarkworld.server.registry.*;
 import net.minecraft.client.renderer.entity.EntityRendererProvider;
 import net.minecraft.client.renderer.entity.EntityRenderers;
@@ -14,6 +15,7 @@ import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.ModList;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
@@ -34,6 +36,8 @@ public class AlphaDarkworld
         modEventBus.addListener(this::commonSetup);
 
         MinecraftForge.EVENT_BUS.register(this);
+        
+        PenumbraAdditionsCompat.isInstalledServer = ModList.get().isLoaded("penumbra_additions");
 
         SoundRegistry.SOUNDS.register(modEventBus);
         BlockRegistry.BLOCKS.register(modEventBus);
@@ -42,6 +46,7 @@ public class AlphaDarkworld
         CreativeTabRegistry.DEF_REG.register(modEventBus);
 
         modEventBus.addListener(this::addCreative);
+
     }
 
     private void commonSetup(final FMLCommonSetupEvent event)

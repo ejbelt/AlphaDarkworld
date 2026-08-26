@@ -1,0 +1,22 @@
+
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "wool",
+  "ingredients": [
+    {
+      "item": "penumbra_additions:white_neo_dye"
+    },
+    {
+      "item": "penumbra_additions:yellow_neo_dye"
+    },
+    [
+      {
+        "item": "minecraft:green_wool"
+      }
+    ]
+  ],
+  "result": {
+    "item": "alpha_darkworld:chartreuse_wool"
+  }
+}
