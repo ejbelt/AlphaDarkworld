@@ -1,6 +1,7 @@
 package net.res.alphadarkworld.server.registry;
 
 import net.res.alphadarkworld.AlphaDarkworld;
+import net.res.alphadarkworld.server.compatability.PenumbraAdditionsCompat;
 import net.res.alphadarkworld.server.item.MithrilBucket;
 import net.res.alphadarkworld.server.registry.TierRegistry;
 import net.minecraft.client.renderer.item.ItemProperties;
@@ -14,8 +15,8 @@ import net.minecraftforge.registries.RegistryObject;
 import destiny.penumbra_phantasm.server.registry.FluidRegistry;
 import destiny.penumbra_phantasm.server.item.DeterminationFoodItem;
 import destiny.penumbra_phantasm.server.item.KnifeItem;
-import destiny.penumbra_phantasm.server.item.ScarletBucketItem;
 
+import java.util.function.Supplier;
 public class ItemRegistry {
 
         public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, AlphaDarkworld.MOD_ID);
@@ -112,4 +113,14 @@ public class ItemRegistry {
 
         public static final RegistryObject<Item> MINT_SEED = ITEMS.register("mint_seed",
                 () -> new ItemNameBlockItem(BlockRegistry.MINT_CROP.get(), new Item.Properties()));        
+
+        
+        private static <T extends Item> RegistryObject<T> registerBlockForPenumbraAdditions(String name, Supplier<T> block) {
+        
+                if (PenumbraAdditionsCompat.isInstalledServer == false)
+                return null;
+                
+                RegistryObject<T> toReturn = ITEMS.register(name, block);
+                return toReturn;
+        }
 }

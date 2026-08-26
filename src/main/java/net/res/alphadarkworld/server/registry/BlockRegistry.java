@@ -109,6 +109,8 @@ public class BlockRegistry {
     = registerBlock("mithril_glass", () -> new GlassBlock(BlockBehaviour.Properties.copy(Blocks.GLASS).sound(SoundTypeRegistry.ALPHA_GLASS)));
     //public static final RegistryObject<Block> MITHRIL_GLASS_PANE
     //= registerBlock("mithril_glass_pane", () -> new GlassBlock(BlockBehaviour.Properties.copy(Blocks.GLASS)));
+    public static final RegistryObject<Block> MITHRIL_BRICKS 
+    = registerBlock("mithril_bricks", () -> new Block(MITHRIL_PROPERTIES));
     
     //Wood
     public static final RegistryObject<Block> ALPHA_PLANKS
@@ -191,11 +193,6 @@ public class BlockRegistry {
 
     public static final RegistryObject<Block> ALPHA_FARMLAND 
     = registerBlock("alpha_farmland", () -> new AlphaFarmland(BlockBehaviour.Properties.copy(Blocks.FARMLAND).sound(SoundTypeRegistry.ALPHA_DIRT)));
-
-
-    //Test extra mod compatability.
-    public static final RegistryObject<Block> MITHRIL_BRICKS 
-    = registerBlockForPenumbraAdditions("mithril_bricks", () -> new Block(MITHRIL_PROPERTIES));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
