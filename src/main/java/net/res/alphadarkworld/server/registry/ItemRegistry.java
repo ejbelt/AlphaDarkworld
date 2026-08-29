@@ -1,5 +1,6 @@
 package net.res.alphadarkworld.server.registry;
 
+import destiny.penumbra_phantasm.server.item.DarkWorldFoodItem;
 import net.res.alphadarkworld.AlphaDarkworld;
 import net.res.alphadarkworld.server.compatability.PenumbraAdditionsCompat;
 import net.res.alphadarkworld.server.item.MithrilBucket;
@@ -13,7 +14,6 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import destiny.penumbra_phantasm.server.registry.FluidRegistry;
-import destiny.penumbra_phantasm.server.item.DeterminationFoodItem;
 import destiny.penumbra_phantasm.server.item.KnifeItem;
 
 import java.util.function.Supplier;
@@ -32,7 +32,7 @@ public class ItemRegistry {
 
         //FOOD
         public static final RegistryObject<Item> HEAL_MINT = ITEMS.register("heal_mint",
-                () -> new DeterminationFoodItem(new Item.Properties().food(FoodRegistry.HEAL_MINT), 0, destiny.penumbra_phantasm.server.registry.SoundRegistry.HEAL.get())); //Ugly :<
+                () -> new DarkWorldFoodItem(new Item.Properties().food(FoodRegistry.HEAL_MINT), 0, destiny.penumbra_phantasm.server.registry.SoundRegistry.HEAL.get())); //Ugly :<
 
         //Mithril
         public static final RegistryObject<Item> RAW_MITHRIL = ITEMS.register("raw_mithril",
@@ -98,6 +98,11 @@ public class ItemRegistry {
         public static final RegistryObject<Item> RUBY_BOOTS = ITEMS.register("ruby_boots",
                 () -> new ArmorItem(ArmorMatieralRegistry.RUBY, ArmorItem.Type.BOOTS, new Item.Properties()));
 
+        //Dreamstone
+        public static final RegistryObject<Item> DREAMSTONE = ITEMS.register("dreamstone",
+                () -> new Item(new Item.Properties()));
+        
+
 
         //Knives
 
@@ -118,7 +123,7 @@ public class ItemRegistry {
         private static <T extends Item> RegistryObject<T> registerBlockForPenumbraAdditions(String name, Supplier<T> block) {
         
                 if (PenumbraAdditionsCompat.isInstalledServer == false)
-                return null;
+                        return null;
                 
                 RegistryObject<T> toReturn = ITEMS.register(name, block);
                 return toReturn;

@@ -235,8 +235,8 @@ dependencies {
     implementation fg.deobf("maven.modrinth:playeranimatorapi:9E2JcodV")
 
     implementation files(
-            "libs/penumbra_phantasm-1.20.1-1.0-BE16.jar",
-            "libs/penumbra_plus.RELEASE-0.2.2-1.20.1.jar"
+            "libs/penumbra_phantasm-1.20.1-1.0-BE18.jar",
+            "libs/penumbra_additions-0.2.2.PATCH2-1.20.1.jar"
     )
 
     

@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "alpha_darkworld:block/alpha_cobblestone",
+    "side": "alpha_darkworld:block/alpha_cobblestone",
+    "top": "alpha_darkworld:block/alpha_cobblestone"
+  }
+}

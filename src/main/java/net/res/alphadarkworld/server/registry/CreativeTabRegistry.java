@@ -28,7 +28,14 @@ public class CreativeTabRegistry {
                 output.accept(BlockRegistry.ALPHA_WOODEN_SLAB.get());
                 output.accept(BlockRegistry.ALPHA_WOODEN_STAIRS.get());
                 output.accept(BlockRegistry.ALPHA_DOOR.get());
-                output.accept(BlockRegistry.LIMESTONE.get());
+                output.accept(BlockRegistry.DARKNER_STONE.get());
+                output.accept(BlockRegistry.DARKNER_STONE_SLAB.get());
+                output.accept(BlockRegistry.DARKNER_STONE_STAIRS.get());
+                output.accept(BlockRegistry.DARKNER_STONE_WALL.get());
+                output.accept(BlockRegistry.DARKNER_STONE_BRICKS.get());
+                output.accept(BlockRegistry.DARKNER_STONE_BRICK_SLAB.get());
+                output.accept(BlockRegistry.DARKNER_STONE_BRICK_STAIRS.get());
+                output.accept(BlockRegistry.DARKNER_STONE_BRICK_WALL.get());
                 output.accept(BlockRegistry.ALPHA_COBBLESTONE.get());
                 output.accept(BlockRegistry.ALPHA_COBBLESTONE_SLAB.get());
                 output.accept(BlockRegistry.ALPHA_COBBLESTONE_STAIRS.get());
@@ -44,6 +51,7 @@ public class CreativeTabRegistry {
                 output.accept(BlockRegistry.ALPHA_LOG.get());
                 output.accept(BlockRegistry.ALPHA_BIRCH_LOG.get());
                 output.accept(BlockRegistry.ALPHA_GLASS.get());
+                output.accept(BlockRegistry.ALPHA_GLASS_PANE.get());
                 output.accept(BlockRegistry.ALPHA_LEAVES.get());
                 output.accept(BlockRegistry.ALPHA_BIRCH_LEAVES.get());
                 output.accept(BlockRegistry.BRIMSTONE.get());
@@ -66,7 +74,9 @@ public class CreativeTabRegistry {
                 output.accept(BlockRegistry.RUBY_BLOCK.get());
                 output.accept(BlockRegistry.MITHRIL_BLOCK.get());
                 output.accept(BlockRegistry.RAW_MITHRIL_BLOCK.get());
+                output.accept(BlockRegistry.MITHRIL_BRICKS.get());
                 output.accept(BlockRegistry.MITHRIL_GLASS.get());
+                output.accept(BlockRegistry.MITHRIL_GLASS_PANE.get());
                 output.accept(BlockRegistry.ALPHA_ROSE.get());
                 output.accept(BlockRegistry.ALPHA_FLOWER.get());
                 output.accept(BlockRegistry.CYAN_FLOWER.get());
@@ -75,6 +85,7 @@ public class CreativeTabRegistry {
                 output.accept(ItemRegistry.RUBY.get());
                 output.accept(ItemRegistry.RAW_MITHRIL.get());
                 output.accept(ItemRegistry.MITHRIL_INGOT.get());
+                output.accept(ItemRegistry.DREAMSTONE.get());
                 output.accept(ItemRegistry.MITHRIL_AXE.get());
                 output.accept(ItemRegistry.MITHRIL_HOE.get());
                 output.accept(ItemRegistry.MITHRIL_PICKAXE.get());
@@ -105,7 +116,7 @@ public class CreativeTabRegistry {
                 output.accept(ItemRegistry.HEAL_MINT.get());
 
                 if (PenumbraAdditionsCompat.isInstalledServer) {
-                    output.accept(BlockRegistry.MITHRIL_BRICKS.get());
+                    //Nothing rn.
                 }
 
             })

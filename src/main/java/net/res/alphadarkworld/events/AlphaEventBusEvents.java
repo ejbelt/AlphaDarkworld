@@ -1,8 +1,10 @@
 package net.res.alphadarkworld.events;
 
+import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.event.entity.EntityAttributeCreationEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.registries.ForgeRegistries;
 import net.res.alphadarkworld.AlphaDarkworld;
 import net.res.alphadarkworld.server.registry.EntityRegistry;
 import net.res.alphadarkworld.server.world.entity.mob.DarkWorldCreeper;

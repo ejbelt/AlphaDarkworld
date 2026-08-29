@@ -10,6 +10,7 @@ import net.minecraftforge.event.TickEvent.PlayerTickEvent;
 import net.minecraftforge.event.entity.player.PlayerEvent.ItemCraftedEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.registries.RegisterEvent;
 import net.res.alphadarkworld.AlphaDarkworld;
 import net.res.alphadarkworld.server.compatability.PenumbraAdditionsCompat;
 import net.res.alphadarkworld.server.util.AlphaWorldUtil;
@@ -47,5 +48,10 @@ public class ForgeEvents {
 
     }
         */
+
+    @SubscribeEvent
+    public static void register(RegisterEvent event) {
+        System.out.println("alpha_darkworld: " + event.getRegistryKey().toString() + ", " + event.getResult());
+    }
 
 }

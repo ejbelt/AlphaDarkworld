@@ -41,7 +41,7 @@ public class BlockRegistry {
     = registerBlock("alpha_grass", () -> new AlphaGrassBlock(BlockBehaviour.Properties.copy(Blocks.GRASS_BLOCK).sound(SoundTypeRegistry.ALPHA_GRASS)));
     public static final RegistryObject<Block> ALPHA_DIRT
     = registerBlock("alpha_dirt", () -> new AlphaDirt(BlockBehaviour.Properties.copy(Blocks.DIRT).sound(SoundTypeRegistry.ALPHA_DIRT)));
-    public static final RegistryObject<Block> LIMESTONE
+    public static final RegistryObject<Block> DARKNER_STONE
     = registerBlock("darkner_stone", () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundTypeRegistry.ALPHA_STONE)));
     public static final RegistryObject<Block> BRIMSTONE
     = registerBlock("brimstone", () -> new Block(BlockBehaviour.Properties.copy(Blocks.NETHERRACK).sound(SoundTypeRegistry.ALPHA_STONE)));
@@ -75,6 +75,24 @@ public class BlockRegistry {
     = registerBlock("alpha_cobblestone_stairs", () -> new StairBlock(ALPHA_COBBLESTONE.get().defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.COBBLESTONE_STAIRS).sound(SoundTypeRegistry.ALPHA_STONE)));
     public static final RegistryObject<WallBlock> ALPHA_COBBLESTONE_WALL
     = registerBlock("alpha_cobblestone_wall", () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.COBBLESTONE_WALL).sound(SoundTypeRegistry.ALPHA_STONE)));
+    
+    //Darkner stone
+    public static final RegistryObject<SlabBlock> DARKNER_STONE_SLAB
+    = registerBlock("darkner_stone_slab", () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.COBBLESTONE_SLAB).sound(SoundTypeRegistry.ALPHA_STONE)));
+    public static final RegistryObject<StairBlock> DARKNER_STONE_STAIRS
+    = registerBlock("darkner_stone_stairs", () -> new StairBlock(DARKNER_STONE.get().defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.STONE_STAIRS).sound(SoundTypeRegistry.ALPHA_STONE)));
+    public static final RegistryObject<WallBlock> DARKNER_STONE_WALL
+    = registerBlock("darkner_stone_wall", () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.COBBLESTONE_WALL).sound(SoundTypeRegistry.ALPHA_STONE)));
+    
+    public static final RegistryObject<Block> DARKNER_STONE_BRICKS 
+    = registerBlock("darkner_stone_bricks", () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE_BRICKS).sound(SoundTypeRegistry.ALPHA_STONE)));
+    
+    public static final RegistryObject<SlabBlock> DARKNER_STONE_BRICK_SLAB
+    = registerBlock("darkner_stone_brick_slab", () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.COBBLESTONE_SLAB).sound(SoundTypeRegistry.ALPHA_STONE)));
+    public static final RegistryObject<StairBlock> DARKNER_STONE_BRICK_STAIRS
+    = registerBlock("darkner_stone_brick_stairs", () -> new StairBlock(DARKNER_STONE_BRICKS.get().defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_STAIRS).sound(SoundTypeRegistry.ALPHA_STONE)));
+    public static final RegistryObject<WallBlock> DARKNER_STONE_BRICK_WALL
+    = registerBlock("darkner_stone_brick_wall", () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.COBBLESTONE_WALL).sound(SoundTypeRegistry.ALPHA_STONE)));
 
     //Alpha Mossy Cobble
     public static final RegistryObject<Block> ALPHA_MOSSY_COBBLESTONE
@@ -107,8 +125,8 @@ public class BlockRegistry {
     = registerBlock("raw_mithril_block", () -> new Block(MITHRIL_PROPERTIES));
     public static final RegistryObject<Block> MITHRIL_GLASS
     = registerBlock("mithril_glass", () -> new GlassBlock(BlockBehaviour.Properties.copy(Blocks.GLASS).sound(SoundTypeRegistry.ALPHA_GLASS)));
-    //public static final RegistryObject<Block> MITHRIL_GLASS_PANE
-    //= registerBlock("mithril_glass_pane", () -> new GlassBlock(BlockBehaviour.Properties.copy(Blocks.GLASS)));
+    public static final RegistryObject<Block> MITHRIL_GLASS_PANE
+    = registerBlock("mithril_glass_pane", () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.GLASS_PANE).sound(SoundTypeRegistry.ALPHA_GLASS)));
     public static final RegistryObject<Block> MITHRIL_BRICKS 
     = registerBlock("mithril_bricks", () -> new Block(MITHRIL_PROPERTIES));
     
@@ -124,7 +142,7 @@ public class BlockRegistry {
     public static final RegistryObject<RotatedPillarBlock> ALPHA_BIRCH_LOG
     = registerBlock("alpha_birch_log", () -> new RotatedPillarBlock(LOG_PROPERTIES));
     public static final RegistryObject<DoorBlock> ALPHA_DOOR
-    = registerBlock("alpha_door", () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR).sound(SoundTypeRegistry.ALPHA_WOOD), BlockSetRegistry.ALPHA_WOOD_BLOCKSET));
+    = registerBlock("alpha_door", () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.SPRUCE_DOOR).sound(SoundTypeRegistry.ALPHA_WOOD), BlockSetRegistry.ALPHA_WOOD_BLOCKSET));
 
     //Wool
     public static final RegistryObject<Block> ULTRAMARINE_WOOL 
@@ -158,6 +176,8 @@ public class BlockRegistry {
     
     public static final RegistryObject<Block> ALPHA_GLASS
     = registerBlock("alpha_glass", () -> new GlassBlock(BlockBehaviour.Properties.copy(Blocks.GLASS).sound(SoundTypeRegistry.ALPHA_GLASS)));
+    public static final RegistryObject<Block> ALPHA_GLASS_PANE
+    = registerBlock("alpha_glass_pane", () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.GLASS_PANE).sound(SoundTypeRegistry.ALPHA_GLASS)));
 
     public static final RegistryObject<Block> MINT_CROP = BLOCKS.register("mint_crop",
             () -> new MintCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion().noCollission()));

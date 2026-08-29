@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "bottom": "alpha_darkworld:block/mithril_block_bottom",
+    "side": "alpha_darkworld:block/mithril_block_side",
+    "top": "alpha_darkworld:block/mithril_block_top"
+  }
+}

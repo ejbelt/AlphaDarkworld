@@ -9,6 +9,7 @@ import net.res.alphadarkworld.server.compatability.PenumbraAdditionsCompat;
 import net.res.alphadarkworld.server.registry.*;
 import net.minecraft.client.renderer.entity.EntityRendererProvider;
 import net.minecraft.client.renderer.entity.EntityRenderers;
+import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -20,6 +21,8 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.minecraftforge.registries.RegistryObject;
+
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
@@ -31,8 +34,9 @@ public class AlphaDarkworld
 
     public AlphaDarkworld()
     {
+        LOGGER.debug("Starting process for alpha_darkworld");
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
-
+        
         modEventBus.addListener(this::commonSetup);
 
         MinecraftForge.EVENT_BUS.register(this);
@@ -43,6 +47,12 @@ public class AlphaDarkworld
         BlockRegistry.BLOCKS.register(modEventBus);
         ItemRegistry.ITEMS.register(modEventBus);
         EntityRegistry.ENTITY_TYPES.register(modEventBus);
+        AlphaFeatureRegistry.FEATURES.register(modEventBus);
+        LOGGER.debug("Registry: " + AlphaFeatureRegistry.FEATURES.getRegistryName());
+        LOGGER.debug("Alpha Darkworld Feature Count: " + String.valueOf(AlphaFeatureRegistry.FEATURES.getEntries().size()));
+
+
+        LOGGER.debug("At current point of error.");
         CreativeTabRegistry.DEF_REG.register(modEventBus);
 
         modEventBus.addListener(this::addCreative);

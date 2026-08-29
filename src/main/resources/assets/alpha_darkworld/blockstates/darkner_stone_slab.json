@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "alpha_darkworld:block/darkner_stone_slab"
+    },
+    "type=double": {
+      "model": "alpha_darkworld:block/darkner_stone"
+    },
+    "type=top": {
+      "model": "alpha_darkworld:block/darkner_stone_slab_top"
+    }
+  }
+}
