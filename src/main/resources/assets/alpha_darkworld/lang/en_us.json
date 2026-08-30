@@ -47,6 +47,11 @@
   "item.alpha_darkworld.ruby_knife": "Ruby Knife",
   "item.alpha_darkworld.mint_seed": "Heal Mint Bush Seed",
   "item.alpha_darkworld.heal_mint": "Heal Mint",
+  "item.alpha_darkworld.mithril_bucket": "Mithril Bucket",
+  "item.alpha_darkworld.mithril_bucket_water": "Mithril Bucket of Water",
+  "item.alpha_darkworld.mithril_bucket_lava": "Mithril Bucket of Lava",
+  "item.alpha_darkworld.mithril_luminescent_bucket" : "Mithril Bucket of Luminescent Water",
+  "item.alpha_darkworld.mithril_darkness_bucket": "Mithril Bucket of Pure Darkness",
 
   "block.alpha_darkworld.mithril_ore": "Mithril Ore",
   "block.alpha_darkworld.mithril_block": "Block of Mithril",
@@ -73,6 +78,13 @@
   "block.alpha_darkworld.alpha_wooden_slab" : "Placebo Wooden(?) Slab",
   "block.alpha_darkworld.alpha_wooden_stairs" : "Placebo Wooden Stairs",
   "block.alpha_darkworld.darkner_stone" : "Darkner-Stone",
+  "block.alpha_darkworld.darkner_stone_slab" : "Darkner-Stone Slab",
+  "block.alpha_darkworld.darkner_stone_stairs" : "Darkner-Stone Stairs",
+  "block.alpha_darkworld.darkner_stone_wall" : "Darkner-Stone Wall",
+  "block.alpha_darkworld.darkner_stone_bricks" : "Darkner-Stone Bricks",
+  "block.alpha_darkworld.darkner_stone_brick_slab" : "Darkner-Stone Brick Slab",
+  "block.alpha_darkworld.darkner_stone_brick_stairs" : "Darkner-Stone Brick Stairs",
+  "block.alpha_darkworld.darkner_stone_brick_wall" : "Darkner-Stone Brick Wall",
   "block.alpha_darkworld.alpha_cobblestone" : "Cobbled Darkner-Stone",
   "block.alpha_darkworld.alpha_cobblestone_slab" : "Cobbled Darkner-Stone Slab",
   "block.alpha_darkworld.alpha_cobblestone_stairs" : "Cobbled Darkner-Stone Stairs",
@@ -101,11 +113,15 @@
   "block.alpha_darkworld.darkner_coal_ore" : "Darkner-Stone Coal Ore",
   "block.alpha_darkworld.alpha_door" : "Placebo Door",
   "block.alpha_darkworld.alpha_farmland" : "Farmland",
+  "block.alpha_darkworld.alpha_moss" : "Dense Moss",
+  "block.alpha_darkworld.alpha_moss_carpet" : "Dense Moss Carpet",
 
 
   "death.attack.alpha_darkworld.mob_soul_damage" : "%1$s was done away by the might of %2$s",
   "death.attack.alpha_darkworld.mob_soul_damage.item" : "%1$s was done away by the might of %2$s using %3$s",
   "death.attack.alpha_darkworld.other_soul_damage" : "%1$s lost their determination.",
   "death.attack.alpha_darkworld.other_soul_damage.item" : "%1$s lost their determination by the hands of %2$s using %3$s",
-  "death.attack.alpha_darkworld.other_soul_damage.player" : "%1$s lost their determination whilst trying to escape %2$s"
+  "death.attack.alpha_darkworld.other_soul_damage.player" : "%1$s lost their determination whilst trying to escape %2$s",
+
+  "tooltip.alpha_darkworld.heal_mint.effect" : "Instantly heals damages."
 }

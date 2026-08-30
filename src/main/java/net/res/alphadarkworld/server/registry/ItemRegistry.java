@@ -1,8 +1,10 @@
 package net.res.alphadarkworld.server.registry;
 
 import destiny.penumbra_phantasm.server.item.DarkWorldFoodItem;
+import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.res.alphadarkworld.AlphaDarkworld;
 import net.res.alphadarkworld.server.compatability.PenumbraAdditionsCompat;
+import net.res.alphadarkworld.server.item.HealMint;
 import net.res.alphadarkworld.server.item.MithrilBucket;
 import net.res.alphadarkworld.server.registry.TierRegistry;
 import net.minecraft.client.renderer.item.ItemProperties;
@@ -32,7 +34,7 @@ public class ItemRegistry {
 
         //FOOD
         public static final RegistryObject<Item> HEAL_MINT = ITEMS.register("heal_mint",
-                () -> new DarkWorldFoodItem(new Item.Properties().food(FoodRegistry.HEAL_MINT), 0, destiny.penumbra_phantasm.server.registry.SoundRegistry.HEAL.get())); //Ugly :<
+                () -> new HealMint(new Item.Properties().food(FoodRegistry.HEAL_MINT), 0, destiny.penumbra_phantasm.server.registry.SoundRegistry.HEAL.get())); //Ugly :<
 
         //Mithril
         public static final RegistryObject<Item> RAW_MITHRIL = ITEMS.register("raw_mithril",
@@ -119,7 +121,21 @@ public class ItemRegistry {
         public static final RegistryObject<Item> MINT_SEED = ITEMS.register("mint_seed",
                 () -> new ItemNameBlockItem(BlockRegistry.MINT_CROP.get(), new Item.Properties()));        
 
-        
+        public static final RegistryObject<Item> DARKWORLD_ZOMBIE_EGG
+                = ITEMS.register("darkworld_zombie_spawnegg",
+                () -> new ForgeSpawnEggItem(EntityRegistry.DARKWORLD_ZOMBIE, 12345, 54321,
+                        new Item.Properties()));
+
+        public static final RegistryObject<Item> FROZEN_ZOMBIE_EGG
+            = ITEMS.register("frozen_zombie_spawnegg",
+            () -> new ForgeSpawnEggItem(EntityRegistry.FROZEN_ZOMBIE, 12345, 54321,
+                    new Item.Properties()));
+
+        public static final RegistryObject<Item> DARKWORLD_CREEPER_EGG
+            = ITEMS.register("darkworld_creeper_spawnegg",
+            () -> new ForgeSpawnEggItem(EntityRegistry.DARKWORLD_CREEPER, 12345, 54321,
+                    new Item.Properties()));
+
         private static <T extends Item> RegistryObject<T> registerBlockForPenumbraAdditions(String name, Supplier<T> block) {
         
                 if (PenumbraAdditionsCompat.isInstalledServer == false)

@@ -36,22 +36,4 @@ public class ForgeEvents {
 
     }
 
-    /* 
-    //There has to be a better way. No true compatability until we find a better way.
-    @SubscribeEvent
-    public static void onCraftedEvent(ItemCraftedEvent event) {
-
-        if (PenumbraAdditionsCompat.isInstalledServer) {
-            if (DarkWorldUtil.isDarkWorld(event.getEntity().level())) {
-            }
-        }
-
-    }
-        */
-
-    @SubscribeEvent
-    public static void register(RegisterEvent event) {
-        System.out.println("alpha_darkworld: " + event.getRegistryKey().toString() + ", " + event.getResult());
-    }
-
 }
