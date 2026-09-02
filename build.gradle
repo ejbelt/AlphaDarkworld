@@ -226,6 +226,8 @@ dependencies {
 
     annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
 
+    compileOnly(fg.deobf("top.theillusivec4.curios:curios-forge:${curios_version}:api"))
+
     compileOnly(annotationProcessor("io.github.llamalad7:mixinextras-common:0.4.1"))
     implementation(jarJar("io.github.llamalad7:mixinextras-forge:0.4.1")) {
         jarJar.ranged(it, "[0.4.1,)")
@@ -235,7 +237,7 @@ dependencies {
     implementation fg.deobf("maven.modrinth:playeranimatorapi:9E2JcodV")
 
     implementation files(
-            "libs/penumbra_phantasm-1.20.1-1.0-BE18.jar",
+            "libs/penumbra_phantasm-1.20.1-1.0-BE21.jar",
             "libs/penumbra_additions-0.2.2.PATCH2-1.20.1.jar"
     )
 

@@ -92,10 +92,6 @@ public class CreativeTabRegistry {
                 output.accept(ItemRegistry.MITHRIL_SHOVEL.get());
                 output.accept(ItemRegistry.MITHRIL_SWORD.get());
                 output.accept(ItemRegistry.MITHRIL_KNIFE.get());
-                output.accept(ItemRegistry.MITHRIL_HELMET.get());
-                output.accept(ItemRegistry.MITHRIL_CHESTPLATE.get());
-                output.accept(ItemRegistry.MITHRIL_LEGGINGS.get());
-                output.accept(ItemRegistry.MITHRIL_BOOTS.get());
                 output.accept(ItemRegistry.MITHRIL_BUCKET.get());
                 output.accept(ItemRegistry.MITHRIL_WATER_BUCKET.get());
                 output.accept(ItemRegistry.MITHRIL_LAVA_BUCKET.get());
@@ -107,10 +103,6 @@ public class CreativeTabRegistry {
                 output.accept(ItemRegistry.RUBY_SHOVEL.get());
                 output.accept(ItemRegistry.RUBY_SWORD.get());
                 output.accept(ItemRegistry.RUBY_KNIFE.get());
-                output.accept(ItemRegistry.RUBY_HELMET.get());
-                output.accept(ItemRegistry.RUBY_CHESTPLATE.get());
-                output.accept(ItemRegistry.RUBY_LEGGINGS.get());
-                output.accept(ItemRegistry.RUBY_BOOTS.get());
                 output.accept(ItemRegistry.DROOPY_DISC_ITEM.get());
                 output.accept(ItemRegistry.MINT_SEED.get());
                 output.accept(ItemRegistry.HEAL_MINT.get());

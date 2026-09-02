@@ -4,7 +4,7 @@
     "floor_level": -0.7,
     "horizontal_radius_multiplier": 1,
     "lava_level": {
-      "above_bottom": 10
+      "above_bottom": 4
     },
     "probability": 0.2,
     "replaceable": "#alpha_darkworld:alpha_cave_replacables",

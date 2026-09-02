@@ -1,14 +1,6 @@
 {
 "dark_world_allowed":
         [
-        "alpha_darkworld:armor/mithril/mithril_helmet",
-        "alpha_darkworld:armor/mithril/mithril_chestplate",
-        "alpha_darkworld:armor/mithril/mithril_leggings",
-        "alpha_darkworld:armor/mithril/mithril_boots",
-        "alpha_darkworld:armor/ruby/ruby_helmet",
-        "alpha_darkworld:armor/ruby/ruby_chestplate",
-        "alpha_darkworld:armor/ruby/ruby_leggings",
-        "alpha_darkworld:armor/ruby/ruby_boots",
         "alpha_darkworld:blocks/alpha_brick_slab",
         "alpha_darkworld:blocks/alpha_brick_stairs",
         "alpha_darkworld:blocks/alpha_brick_wall",
@@ -173,13 +165,13 @@
 
         "minecraft:ender_eye",
         "minecraft:ender_chest",
-        "minecraft:glass",
-        "minecraft:tnt",
-        "minecraft:bow",
-        "minecraft:arrow"
+        "minecraft:tnt"
         ],
 "dark_world_blocked":
         [
-
+          "alpha_darkworld:armor/mithril/mithril_chestplate",
+          "alpha_darkworld:armor/mithril/mithril_helmet",
+          "alpha_darkworld:armor/ruby/ruby_boots",
+          "alpha_darkworld:armor/ruby/ruby_helmet"
         ]
 }

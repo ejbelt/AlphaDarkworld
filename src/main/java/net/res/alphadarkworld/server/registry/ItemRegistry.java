@@ -58,10 +58,6 @@ public class ItemRegistry {
                 () -> new ArmorItem(ArmorMatieralRegistry.MITHRIL, ArmorItem.Type.HELMET, new Item.Properties()));
         public static final RegistryObject<Item> MITHRIL_CHESTPLATE = ITEMS.register("mithril_chestplate",
                 () -> new ArmorItem(ArmorMatieralRegistry.MITHRIL, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
-        public static final RegistryObject<Item> MITHRIL_LEGGINGS = ITEMS.register("mithril_leggings",
-                () -> new ArmorItem(ArmorMatieralRegistry.MITHRIL, ArmorItem.Type.LEGGINGS, new Item.Properties()));
-        public static final RegistryObject<Item> MITHRIL_BOOTS = ITEMS.register("mithril_boots",
-                () -> new ArmorItem(ArmorMatieralRegistry.MITHRIL, ArmorItem.Type.BOOTS, new Item.Properties()));
 
 
         public static final RegistryObject<Item> MITHRIL_BUCKET = ITEMS.register("mithril_bucket",
@@ -93,10 +89,6 @@ public class ItemRegistry {
 
         public static final RegistryObject<Item> RUBY_HELMET = ITEMS.register("ruby_helmet",
                 () -> new ArmorItem(ArmorMatieralRegistry.RUBY, ArmorItem.Type.HELMET, new Item.Properties()));
-        public static final RegistryObject<Item> RUBY_CHESTPLATE = ITEMS.register("ruby_chestplate",
-                () -> new ArmorItem(ArmorMatieralRegistry.RUBY, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
-        public static final RegistryObject<Item> RUBY_LEGGINGS = ITEMS.register("ruby_leggings",
-                () -> new ArmorItem(ArmorMatieralRegistry.RUBY, ArmorItem.Type.LEGGINGS, new Item.Properties()));
         public static final RegistryObject<Item> RUBY_BOOTS = ITEMS.register("ruby_boots",
                 () -> new ArmorItem(ArmorMatieralRegistry.RUBY, ArmorItem.Type.BOOTS, new Item.Properties()));
 

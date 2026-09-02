@@ -19,7 +19,7 @@
       }
     },
     "lava_level": {
-      "above_bottom": 10
+      "above_bottom": 4
     },
     "replaceable": "#alpha_darkworld:alpha_cave_replacables",
     "horizontal_radius_multiplier": {

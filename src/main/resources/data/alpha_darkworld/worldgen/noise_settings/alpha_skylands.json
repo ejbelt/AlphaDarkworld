@@ -169,7 +169,7 @@
                       "invert": {
                         "type": "minecraft:y_above",
                         "anchor": {
-                          "absolute": 228
+                          "absolute": 128
                         },
                         "surface_depth_multiplier": 0,
                         "add_stone_depth": true
@@ -212,7 +212,7 @@
                   "invert": {
                     "type": "minecraft:y_above",
                     "anchor": {
-                      "absolute": 228
+                      "absolute": 128
                     },
                     "surface_depth_multiplier": 0,
                     "add_stone_depth": true

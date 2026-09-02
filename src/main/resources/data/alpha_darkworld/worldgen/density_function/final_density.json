@@ -50,5 +50,5 @@
           }
         }
       },
-      "argument2": "minecraft:overworld/caves/noodle"
+      "argument2": "alpha_darkworld:cave/noodle"
 }
