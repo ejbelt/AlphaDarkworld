@@ -1,14 +1,53 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "category": "misc",
-  "group": "yellow_dye",
-  "ingredients": [
+  "type": "forge:conditional",
+
+  "recipes": [ 
     {
-      "item": "alpha_darkworld:alpha_flower"
+      
+      "conditions": [
+        
+        {
+          "item": "penumbra_additions:yellow_neo_dye",
+          "type": "forge:item_exists"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "category": "misc",
+        "group": "cyan_dye",
+        "ingredients": [
+          {
+            "item": "alpha_darkworld:alpha_flower"
+          }
+        ],
+        "result": {
+          "item": "penumbra_additions:yellow_neo_dye",
+          "count": 2
+        }
+      }
+    },
+    {
+      
+      "conditions": [
+        
+        {
+          "type": "forge:true"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "category": "misc",
+        "group": "cyan_dye",
+        "ingredients": [
+          {
+            "item": "alpha_darkworld:alpha_flower"
+          }
+        ],
+        "result": {
+          "item": "minecraft:yellow_dye",
+          "count": 2
+        }
+      }
     }
-  ],
-  "result": {
-    "item": "minecraft:yellow_dye",
-    "count": 2
-  }
+  ]
 }

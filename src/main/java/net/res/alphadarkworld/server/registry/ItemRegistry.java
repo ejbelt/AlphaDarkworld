@@ -3,10 +3,11 @@ package net.res.alphadarkworld.server.registry;
 import destiny.penumbra_phantasm.server.item.DarkWorldFoodItem;
 import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.res.alphadarkworld.AlphaDarkworld;
-import net.res.alphadarkworld.server.compatability.PenumbraAdditionsCompat;
+//import net.res.alphadarkworld.server.compatability.PenumbraAdditionsCompat;
 import net.res.alphadarkworld.server.item.HealMint;
 import net.res.alphadarkworld.server.item.MithrilBucket;
 import net.res.alphadarkworld.server.registry.TierRegistry;
+import net.res.alphadarkworld.server.compatability.PenumbraAdditionsCompat;
 import net.minecraft.client.renderer.item.ItemProperties;
 import net.minecraft.core.Direction;
 import net.minecraft.world.food.FoodProperties;
@@ -109,7 +110,6 @@ public class ItemRegistry {
         //Misc
         public static final RegistryObject<RecordItem> DROOPY_DISC_ITEM = ITEMS.register("disc_droopy",
                 () -> new RecordItem(12, SoundRegistry.DROOPY_DISC, (new Item.Properties()).stacksTo(1).rarity(Rarity.RARE), 2336));
-
         public static final RegistryObject<Item> MINT_SEED = ITEMS.register("mint_seed",
                 () -> new ItemNameBlockItem(BlockRegistry.MINT_CROP.get(), new Item.Properties()));        
 
@@ -128,12 +128,20 @@ public class ItemRegistry {
             () -> new ForgeSpawnEggItem(EntityRegistry.DARKWORLD_CREEPER, 12345, 54321,
                     new Item.Properties()));
 
-        private static <T extends Item> RegistryObject<T> registerBlockForPenumbraAdditions(String name, Supplier<T> block) {
+
+        //Penumbra Additions
+        public static final RegistryObject<Item> MINT_BASKET = registerBlockForPenumbraAdditions("box_of_heal_mints", 
+                () -> new HealMint(new Item.Properties().food(FoodRegistry.HEAL_MINT_BASKET), 10, destiny.penumbra_phantasm.server.registry.SoundRegistry.HEAL.get())
+        );
+
+
+
+        private static <T extends Item> RegistryObject<T> registerBlockForPenumbraAdditions(String name, Supplier<T> item) {
         
                 if (PenumbraAdditionsCompat.isInstalledServer == false)
                         return null;
                 
-                RegistryObject<T> toReturn = ITEMS.register(name, block);
+                RegistryObject<T> toReturn = ITEMS.register(name, item);
                 return toReturn;
         }
 }

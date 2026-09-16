@@ -77,7 +77,7 @@
         "weight": 20
       },
       {
-        "type": "alpha_darkworld:darkworld_zombie",
+        "type": "alpha_darkworld:frozen_zombie",
         "maxCount": 4,
         "minCount": 2,
         "weight": 95

@@ -39,10 +39,10 @@ public class AlphaDarkworld
         
         modEventBus.addListener(this::commonSetup);
 
-        MinecraftForge.EVENT_BUS.register(this);
-        
         PenumbraAdditionsCompat.isInstalledServer = ModList.get().isLoaded("penumbra_additions");
 
+        MinecraftForge.EVENT_BUS.register(this);
+        
         SoundRegistry.SOUNDS.register(modEventBus);
         BlockRegistry.BLOCKS.register(modEventBus);
         ItemRegistry.ITEMS.register(modEventBus);

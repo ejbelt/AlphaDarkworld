@@ -3,7 +3,6 @@ package net.res.alphadarkworld.server.registry;
 
 import net.res.alphadarkworld.AlphaDarkworld;
 import net.res.alphadarkworld.server.block.*;
-import net.res.alphadarkworld.server.compatability.PenumbraAdditionsCompat;
 import net.res.alphadarkworld.server.world.worldgen.tree.*;
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffects;
@@ -221,9 +220,6 @@ public class BlockRegistry {
     }
 
     private static <T extends Block> RegistryObject<T> registerBlockForPenumbraAdditions(String name, Supplier<T> block) {
-        
-        if (PenumbraAdditionsCompat.isInstalledServer == false)
-            return null;
         
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);

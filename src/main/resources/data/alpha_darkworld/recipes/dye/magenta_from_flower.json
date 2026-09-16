@@ -1,14 +1,53 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "category": "misc",
-  "group": "magenta_dye",
-  "ingredients": [
+  "type": "forge:conditional",
+
+  "recipes": [ 
     {
-      "item": "alpha_darkworld:paeonia"
+      
+      "conditions": [
+        
+        {
+          "item": "penumbra_additions:cyan_neo_dye",
+          "type": "forge:item_exists"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "category": "misc",
+        "group": "cyan_dye",
+        "ingredients": [
+          {
+            "item": "alpha_darkworld:paeonia"
+          }
+        ],
+        "result": {
+          "item": "penumbra_additions:magenta_neo_dye",
+          "count": 2
+        }
+      }
+    },
+    {
+      
+      "conditions": [
+        
+        {
+          "type": "forge:true"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "category": "misc",
+        "group": "cyan_dye",
+        "ingredients": [
+          {
+            "item": "alpha_darkworld:paeonia"
+          }
+        ],
+        "result": {
+          "item": "minecraft:magenta_dye",
+          "count": 2
+        }
+      }
     }
-  ],
-  "result": {
-    "item": "minecraft:magenta_dye",
-    "count": 2
-  }
+  ]
 }

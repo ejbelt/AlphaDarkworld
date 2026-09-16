@@ -7,7 +7,6 @@ import net.minecraft.world.level.block.Block;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
 import net.res.alphadarkworld.AlphaDarkworld;
-import net.res.alphadarkworld.server.compatability.PenumbraAdditionsCompat;
 
 import net.res.alphadarkworld.server.registry.ItemRegistry;
 import net.res.alphadarkworld.server.registry.BlockRegistry;
@@ -106,10 +105,6 @@ public class CreativeTabRegistry {
                 output.accept(ItemRegistry.DROOPY_DISC_ITEM.get());
                 output.accept(ItemRegistry.MINT_SEED.get());
                 output.accept(ItemRegistry.HEAL_MINT.get());
-
-                if (PenumbraAdditionsCompat.isInstalledServer) {
-                    //Nothing rn.
-                }
 
             })
             .build()

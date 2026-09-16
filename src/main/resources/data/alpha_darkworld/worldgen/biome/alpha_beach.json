@@ -22,47 +22,24 @@
   "features": [
     [],
     [
-      "minecraft:lake_lava_underground",
-      "minecraft:lake_lava_surface"
+      "alpha_darkworld:lava_lake_underground",
+      "alpha_darkworld:lava_lake"
     ],
+    [],
     [
-      "minecraft:amethyst_geode"
-    ],
-    [
-      "minecraft:monster_room",
-      "minecraft:monster_room_deep"
+      "alpha_darkworld:cactus_patch"
     ],
     [],
     [],
     [
-      "minecraft:ore_dirt",
-      "minecraft:ore_gravel",
-      "minecraft:ore_granite_upper",
-      "minecraft:ore_granite_lower",
-      "minecraft:ore_diorite_upper",
-      "minecraft:ore_diorite_lower",
-      "minecraft:ore_andesite_upper",
-      "minecraft:ore_andesite_lower",
-      "minecraft:ore_tuff",
       "minecraft:ore_coal_upper",
       "minecraft:ore_coal_lower",
-      "minecraft:ore_iron_upper",
-      "minecraft:ore_iron_middle",
-      "minecraft:ore_iron_small",
-      "minecraft:ore_gold",
-      "minecraft:ore_gold_lower",
-      "minecraft:ore_redstone",
-      "minecraft:ore_redstone_lower",
-      "minecraft:ore_diamond",
-      "minecraft:ore_diamond_large",
-      "minecraft:ore_diamond_buried",
-      "minecraft:ore_lapis",
-      "minecraft:ore_lapis_buried",
-      "minecraft:ore_copper",
-      "minecraft:underwater_magma",
-      "minecraft:disk_sand",
-      "minecraft:disk_clay",
-      "minecraft:disk_gravel"
+      "alpha_darkworld:ore_mithril_small",
+      "alpha_darkworld:ore_mithril_mid",
+      "alpha_darkworld:ore_mithril_upper",
+      "alpha_darkworld:ore_ruby",
+      "alpha_darkworld:ore_ruby_large",
+      "alpha_darkworld:alpha_coal_lower"
     ],
     [],
     [
@@ -70,12 +47,16 @@
       "minecraft:spring_lava"
     ],
     [
-      "minecraft:glow_lichen",
-      "minecraft:flower_default",
-      "minecraft:patch_grass_badlands",
+      "alpha_darkworld:trees_plains",
+      "alpha_darkworld:flower_plain",
       "minecraft:brown_mushroom_normal",
       "minecraft:red_mushroom_normal",
       "minecraft:patch_sugar_cane",
+      "minecraft:spring_water",
+      "alpha_darkworld:alpha_oak",
+      "alpha_darkworld:alpha_birch",
+      "alpha_darkworld:trees_water",
+      "minecraft:disk_clay",
       "minecraft:patch_pumpkin"
     ],
     [
@@ -85,21 +66,31 @@
   "has_precipitation": true,
   "spawn_costs": {},
   "spawners": {
-    "ambient": [
-      {
-        "type": "minecraft:bat",
-        "maxCount": 8,
-        "minCount": 8,
-        "weight": 10
-      }
-    ],
-    "axolotls": [],
+    "ambient": [],
     "creature": [
       {
-        "type": "minecraft:turtle",
-        "maxCount": 5,
+        "type": "minecraft:sheep",
+        "maxCount": 2,
         "minCount": 2,
-        "weight": 5
+        "weight": 12
+      },
+      {
+        "type": "minecraft:pig",
+        "maxCount": 2,
+        "minCount": 2,
+        "weight": 10
+      },
+      {
+        "type": "minecraft:chicken",
+        "maxCount": 2,
+        "minCount": 2,
+        "weight": 10
+      },
+      {
+        "type": "minecraft:cow",
+        "maxCount": 2,
+        "minCount": 2,
+        "weight": 8
       }
     ],
     "misc": [],
@@ -107,58 +98,46 @@
       {
         "type": "minecraft:spider",
         "maxCount": 4,
-        "minCount": 4,
+        "minCount": 2,
         "weight": 100
       },
       {
-        "type": "minecraft:zombie",
+        "type": "alpha_darkworld:darkworld_zombie",
         "maxCount": 4,
-        "minCount": 4,
+        "minCount": 2,
         "weight": 95
-      },
-      {
-        "type": "minecraft:zombie_villager",
-        "maxCount": 1,
-        "minCount": 1,
-        "weight": 5
       },
       {
         "type": "minecraft:skeleton",
         "maxCount": 4,
-        "minCount": 4,
+        "minCount": 2,
         "weight": 100
       },
       {
-        "type": "minecraft:creeper",
+        "type": "alpha_darkworld:darkworld_creeper",
         "maxCount": 4,
-        "minCount": 4,
+        "minCount": 2,
         "weight": 100
       },
       {
         "type": "minecraft:slime",
         "maxCount": 4,
-        "minCount": 4,
+        "minCount": 2,
         "weight": 100
       },
       {
         "type": "minecraft:enderman",
         "maxCount": 4,
         "minCount": 1,
-        "weight": 10
-      },
-      {
-        "type": "minecraft:witch",
-        "maxCount": 1,
-        "minCount": 1,
-        "weight": 5
+        "weight": 20
       }
     ],
     "underground_water_creature": [
       {
-        "type": "minecraft:glow_squid",
+        "type": "minecraft:squid",
         "maxCount": 6,
         "minCount": 4,
-        "weight": 10
+        "weight": 30
       }
     ],
     "water_ambient": [],
